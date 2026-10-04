@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore & Search Recipes - Recipe Finder</title>
-    <meta name="description" content="Search hundreds of curated recipes by name, ingredient, cuisine, dietary category, and prep time with live filters.">
-    
+    <meta name="description"
+        content="Search hundreds of curated recipes by name, ingredient, cuisine, dietary category, and prep time with live filters.">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/recipes.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/motion.css">
 </head>
+
 <body>
 
     <!-- Sticky Navigation Bar -->
@@ -87,9 +92,14 @@
     </aside>
 
     <main class="container">
+        <!-- Mobile Filter Toggle Button -->
+        <button class="btn-mobile-filter" id="mobileFilterToggle" type="button" aria-label="Toggle Filter Options">
+            <i class="fas fa-sliders-h"></i> <span>Show Filters & Cuisines</span>
+        </button>
+
         <div class="search-page-layout">
             <!-- Filter Sidebar -->
-            <aside class="filter-sidebar">
+            <aside class="filter-sidebar" id="filterSidebar">
                 <div class="filter-header">
                     <h3><i class="fas fa-sliders-h" style="color:var(--primary);"></i> Filters</h3>
                     <button class="btn-reset-filters" id="resetFiltersBtn">Reset All</button>
@@ -165,7 +175,9 @@
                 <div class="search-controls-bar">
                     <div class="search-input-field">
                         <i class="fas fa-search" style="color:var(--text-muted);"></i>
-                        <input type="text" id="searchQueryInput" placeholder="Search by recipe title or ingredients (e.g. Chicken, Garlic, Tomato)..." autocomplete="off">
+                        <input type="text" id="searchQueryInput"
+                            placeholder="Search by recipe title or ingredients (e.g. Chicken, Garlic, Tomato)..."
+                            autocomplete="off">
                     </div>
 
                     <div class="search-sort-wrap">
@@ -178,7 +190,8 @@
                         </select>
 
                         <div class="view-toggle-btns">
-                            <button class="btn-view-toggle active" id="viewGridBtn" title="Grid View" aria-label="Grid View">
+                            <button class="btn-view-toggle active" id="viewGridBtn" title="Grid View"
+                                aria-label="Grid View">
                                 <i class="fas fa-th-large"></i>
                             </button>
                             <button class="btn-view-toggle" id="viewListBtn" title="List View" aria-label="List View">
@@ -189,9 +202,11 @@
                 </div>
 
                 <!-- Active Filters Chips & Counter -->
-                <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+                <div
+                    style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
                     <div class="active-filters-row" id="activeFiltersList"></div>
-                    <span id="resultsCountBadge" style="font-size: 0.88rem; font-weight: 700; color: var(--text-secondary);">
+                    <span id="resultsCountBadge"
+                        style="font-size: 0.88rem; font-weight: 700; color: var(--text-secondary);">
                         Loading recipes...
                     </span>
                 </div>
@@ -235,4 +250,5 @@
     <script src="js/motion.js"></script>
     <script src="js/search.js"></script>
 </body>
+
 </html>

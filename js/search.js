@@ -51,6 +51,19 @@ function initSearchEngine() {
         if (dietSelect) dietSelect.value = currentFilters.diet;
     }
 
+    const mobileFilterToggle = document.getElementById('mobileFilterToggle');
+    const filterSidebar = document.getElementById('filterSidebar');
+
+    if (mobileFilterToggle && filterSidebar) {
+        mobileFilterToggle.addEventListener('click', () => {
+            const isOpen = filterSidebar.classList.toggle('mobile-open');
+            const label = mobileFilterToggle.querySelector('span');
+            if (label) {
+                label.textContent = isOpen ? 'Hide Filters' : 'Show Filters & Cuisines';
+            }
+        });
+    }
+
     // Event Listeners
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/recipes.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/motion.css">
 </head>
 <body>
 
@@ -89,14 +90,14 @@
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="container">
-                <div class="hero-badge">
+                <div class="hero-badge motion-float" data-motion="fade-down">
                     <i class="fas fa-fire"></i> Discover Over 1,000+ Gourmet Recipes
                 </div>
-                <h1 class="hero-title">Discover Delicious <span>Recipes</span> 🍴</h1>
-                <p class="hero-subtitle">Search curated dishes by ingredients, cuisine, cook time, and dietary preferences with step-by-step masterclass instructions.</p>
+                <h1 class="hero-title" data-motion="fade-up" data-motion-delay="100">Discover Delicious <span>Recipes</span> 🍴</h1>
+                <p class="hero-subtitle" data-motion="fade-up" data-motion-delay="150">Search curated dishes by ingredients, cuisine, cook time, and dietary preferences with step-by-step masterclass instructions.</p>
 
                 <!-- Search Form -->
-                <div class="hero-search-wrapper">
+                <div class="hero-search-wrapper" data-motion="fade-up" data-motion-delay="200">
                     <form class="hero-search-form" action="recipes.html" method="GET">
                         <i class="fas fa-search search-icon"></i>
                         <input type="text" name="q" placeholder="Search for recipes or ingredients (e.g. Chicken, Pasta, Rice)..." required autocomplete="off">
@@ -119,7 +120,7 @@
                 </div>
 
                 <!-- Stats Ribbon -->
-                <div class="hero-stats">
+                <div class="hero-stats" data-motion="fade-up" data-motion-delay="250">
                     <div class="stat-item">
                         <div class="stat-number">1,200+</div>
                         <div class="stat-label">Handcrafted Recipes</div>
@@ -141,7 +142,7 @@
         </section>
 
         <!-- Traditional & Heritage Masterclass Recipes Section -->
-        <section class="container" style="padding: 60px 24px 20px;">
+        <section class="container" style="padding: 60px 24px 20px;" data-motion="fade-up">
             <div class="section-header">
                 <div class="section-title-wrap">
                     <h2>👑 Traditional & Heritage Classics</h2>
@@ -158,7 +159,7 @@
         </section>
 
         <!-- Popular Recipes Section -->
-        <section class="container" style="padding: 40px 24px 60px;">
+        <section class="container" style="padding: 40px 24px 60px;" data-motion="fade-up">
             <div class="section-header">
                 <div class="section-title-wrap">
                     <h2>Popular Recipes</h2>
@@ -180,7 +181,7 @@
         </section>
 
         <!-- Curated Recipe Categories Feature -->
-        <section style="background: var(--bg-surface); padding: 70px 0; border-top:1px solid var(--border-subtle); border-bottom:1px solid var(--border-subtle);">
+        <section style="background: var(--bg-surface); padding: 70px 0; border-top:1px solid var(--border-subtle); border-bottom:1px solid var(--border-subtle);" data-motion="fade-up">
             <div class="container">
                 <div class="section-header" style="text-align:center; display:block; margin-bottom:40px;">
                     <h2>Explore by Cuisine Collections</h2>
@@ -188,7 +189,7 @@
                 </div>
 
                 <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:24px;">
-                    <a href="recipes.html?cuisine=Indian" style="position:relative; height:200px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); display:block;">
+                    <a href="recipes.html?cuisine=Indian" class="curated-card" style="position:relative; height:200px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); display:block;" data-motion="zoom-in" data-motion-delay="100">
                         <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=600&q=80" alt="Indian Cuisine" style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;">
                         <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%); display:flex; flex-direction:column; justify-content:flex-end; padding:20px; color:#fff;">
                             <h3 style="color:#fff; font-size:1.3rem;">🍛 Indian Delicacies</h3>
@@ -196,7 +197,7 @@
                         </div>
                     </a>
 
-                    <a href="recipes.html?cuisine=Italian" style="position:relative; height:200px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); display:block;">
+                    <a href="recipes.html?cuisine=Italian" class="curated-card" style="position:relative; height:200px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); display:block;" data-motion="zoom-in" data-motion-delay="200">
                         <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Italian Cuisine" style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;">
                         <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%); display:flex; flex-direction:column; justify-content:flex-end; padding:20px; color:#fff;">
                             <h3 style="color:#fff; font-size:1.3rem;">🍝 Italian Classics</h3>
@@ -204,7 +205,7 @@
                         </div>
                     </a>
 
-                    <a href="recipes.html?cuisine=Chinese" style="position:relative; height:200px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); display:block;">
+                    <a href="recipes.html?cuisine=Chinese" class="curated-card" style="position:relative; height:200px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); display:block;" data-motion="zoom-in" data-motion-delay="300">
                         <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80" alt="Chinese Cuisine" style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;">
                         <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%); display:flex; flex-direction:column; justify-content:flex-end; padding:20px; color:#fff;">
                             <h3 style="color:#fff; font-size:1.3rem;">🥢 Asian Wok & Bowls</h3>
@@ -212,7 +213,7 @@
                         </div>
                     </a>
 
-                    <a href="recipes.html?diet=Vegetarian" style="position:relative; height:200px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); display:block;">
+                    <a href="recipes.html?diet=Vegetarian" class="curated-card" style="position:relative; height:200px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); display:block;" data-motion="zoom-in" data-motion-delay="400">
                         <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="Plant-Based & Healthy" style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;">
                         <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%); display:flex; flex-direction:column; justify-content:flex-end; padding:20px; color:#fff;">
                             <h3 style="color:#fff; font-size:1.3rem;">🌱 Green & Healthy</h3>
@@ -224,9 +225,9 @@
         </section>
 
         <!-- Random Recipe Callout Banner -->
-        <section class="container" style="padding: 70px 24px;">
+        <section class="container" style="padding: 70px 24px;" data-motion="scale-up">
             <div style="background: linear-gradient(135deg, rgba(255, 90, 54, 0.12) 0%, rgba(245, 158, 11, 0.15) 100%); border: 1.5px solid var(--primary-light); border-radius: var(--radius-xl); padding: 48px; text-align: center; position: relative; overflow: hidden;">
-                <span style="font-size: 3rem; display: block; margin-bottom: 12px;">🎲 👩‍🍳</span>
+                <span class="motion-float" style="font-size: 3rem; display: block; margin-bottom: 12px;">🎲 👩‍🍳</span>
                 <h2 style="font-size: 2.2rem; margin-bottom: 12px;">Can't Decide What to Cook Tonight?</h2>
                 <p style="color: var(--text-secondary); max-width: 540px; margin: 0 auto 28px; font-size: 1.05rem;">
                     Let our culinary wheel of flavor pick a surprise dish for you! Complete with ingredients, nutritional metrics, and cooking instructions.
@@ -311,6 +312,7 @@
     <!-- Scripts -->
     <script src="js/data.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/motion.js"></script>
     <script>
         // Render traditional and popular recipes on home page
         document.addEventListener('DOMContentLoaded', () => {

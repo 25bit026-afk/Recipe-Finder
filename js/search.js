@@ -241,6 +241,9 @@ function initSearchEngine() {
         }
 
         resultsGrid.innerHTML = recipes.map(recipe => renderRecipeCard(recipe)).join('');
+        if (typeof window.refreshMotionObserver === 'function') {
+            window.refreshMotionObserver();
+        }
     }
 
     function renderActiveFilters() {

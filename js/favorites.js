@@ -48,6 +48,9 @@ function renderFavoritesList() {
     }
 
     favGrid.innerHTML = savedRecipes.map(recipe => renderRecipeCard(recipe)).join('');
+    if (typeof window.refreshMotionObserver === 'function') {
+        window.refreshMotionObserver();
+    }
 }
 
 function initFavoritesActions() {

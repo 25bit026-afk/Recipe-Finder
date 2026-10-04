@@ -343,6 +343,9 @@ function toggleDetailsFav() {
     if (btn) {
         btn.className = `btn ${isNowFav ? 'btn-primary' : 'btn-outline'}`;
         btn.innerHTML = `<i class="${isNowFav ? 'fas' : 'far'} fa-heart"></i> ${isNowFav ? 'Saved in Favorites' : 'Add to Favorites'}`;
+        if (isNowFav && typeof triggerHeartSparkles === 'function') {
+            triggerHeartSparkles(btn);
+        }
     }
 }
 

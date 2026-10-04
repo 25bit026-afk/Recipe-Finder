@@ -197,6 +197,9 @@ function handleCardFavClick(e, recipeId) {
     if (isNowFav) {
         btn.classList.add('active');
         btn.querySelector('i').className = 'fas fa-heart';
+        if (typeof triggerHeartSparkles === 'function') {
+            triggerHeartSparkles(btn);
+        }
     } else {
         btn.classList.remove('active');
         btn.querySelector('i').className = 'far fa-heart';

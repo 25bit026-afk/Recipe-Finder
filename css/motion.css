@@ -1,0 +1,332 @@
+/* ==========================================================================
+   Recipe Finder - Advanced Motion & Animation Design System
+   ========================================================================== */
+
+/* Top Scroll Reading Progress Bar */
+.scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3.5px;
+    background: linear-gradient(90deg, var(--primary) 0%, #F59E0B 50%, #10B981 100%);
+    box-shadow: 0 0 10px rgba(255, 90, 54, 0.6);
+    z-index: 10001;
+    pointer-events: none;
+    transition: width 0.1s linear;
+}
+
+/* Page Entry Fade */
+body {
+    animation: motionPageFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes motionPageFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================================================
+   Viewport Reveal Elements (Triggered by IntersectionObserver)
+   ========================================================================== */
+[data-motion] {
+    opacity: 0;
+    will-change: transform, opacity;
+    transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-motion="fade-up"] {
+    transform: translateY(36px);
+}
+
+[data-motion="fade-down"] {
+    transform: translateY(-36px);
+}
+
+[data-motion="fade-left"] {
+    transform: translateX(36px);
+}
+
+[data-motion="fade-right"] {
+    transform: translateX(-36px);
+}
+
+[data-motion="zoom-in"] {
+    transform: scale(0.92);
+}
+
+[data-motion="scale-up"] {
+    transform: scale(0.85) translateY(20px);
+}
+
+[data-motion="flip-up"] {
+    transform: perspective(1000px) rotateX(25deg) translateY(30px);
+}
+
+/* Active animated state */
+[data-motion].motion-in-view {
+    opacity: 1 !important;
+    transform: translate3d(0, 0, 0) scale(1) rotateX(0deg) rotateY(0deg) !important;
+}
+
+/* Stagger Delays */
+[data-motion-delay="50"]  { transition-delay: 0.05s; }
+[data-motion-delay="100"] { transition-delay: 0.1s; }
+[data-motion-delay="150"] { transition-delay: 0.15s; }
+[data-motion-delay="200"] { transition-delay: 0.2s; }
+[data-motion-delay="250"] { transition-delay: 0.25s; }
+[data-motion-delay="300"] { transition-delay: 0.3s; }
+[data-motion-delay="350"] { transition-delay: 0.35s; }
+[data-motion-delay="400"] { transition-delay: 0.4s; }
+[data-motion-delay="500"] { transition-delay: 0.5s; }
+[data-motion-delay="600"] { transition-delay: 0.6s; }
+
+/* ==========================================================================
+   Recipe Cards Staggered Animation
+   ========================================================================== */
+.recipes-grid .recipe-card {
+    opacity: 0;
+    transform: translateY(28px) scale(0.98);
+    animation: motionCardEntrance 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    will-change: transform, opacity;
+}
+
+@keyframes motionCardEntrance {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Generate stagger delays for up to 16 cards in a grid */
+.recipes-grid .recipe-card:nth-child(1)  { animation-delay: 0.04s; }
+.recipes-grid .recipe-card:nth-child(2)  { animation-delay: 0.08s; }
+.recipes-grid .recipe-card:nth-child(3)  { animation-delay: 0.12s; }
+.recipes-grid .recipe-card:nth-child(4)  { animation-delay: 0.16s; }
+.recipes-grid .recipe-card:nth-child(5)  { animation-delay: 0.20s; }
+.recipes-grid .recipe-card:nth-child(6)  { animation-delay: 0.24s; }
+.recipes-grid .recipe-card:nth-child(7)  { animation-delay: 0.28s; }
+.recipes-grid .recipe-card:nth-child(8)  { animation-delay: 0.32s; }
+.recipes-grid .recipe-card:nth-child(9)  { animation-delay: 0.36s; }
+.recipes-grid .recipe-card:nth-child(10) { animation-delay: 0.40s; }
+.recipes-grid .recipe-card:nth-child(11) { animation-delay: 0.44s; }
+.recipes-grid .recipe-card:nth-child(12) { animation-delay: 0.48s; }
+
+/* ==========================================================================
+   Interactive 3D Tilt & Glass Sheen
+   ========================================================================== */
+.tilt-card {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: transform 0.2s cubic-bezier(0.2, 0.8, 0.4, 1), box-shadow 0.3s ease;
+    position: relative;
+}
+
+.tilt-glare {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.22) 0%, transparent 65%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 5;
+}
+
+[data-theme="dark"] .tilt-glare {
+    background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.08) 0%, transparent 65%);
+}
+
+.tilt-card:hover .tilt-glare {
+    opacity: 1;
+}
+
+/* ==========================================================================
+   Ambient Floating Particles in Hero
+   ========================================================================== */
+.floating-particle-container {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.floating-particle {
+    position: absolute;
+    user-select: none;
+    font-size: 2rem;
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.08));
+    animation: floatParticle 8s infinite ease-in-out;
+    opacity: 0.45;
+}
+
+[data-theme="dark"] .floating-particle {
+    opacity: 0.28;
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.4));
+}
+
+.floating-particle.p-1 { top: 12%; left: 8%; animation-duration: 9s; font-size: 2.3rem; }
+.floating-particle.p-2 { top: 22%; right: 10%; animation-duration: 11s; animation-delay: 1.5s; font-size: 2.1rem; }
+.floating-particle.p-3 { bottom: 18%; left: 14%; animation-duration: 10s; animation-delay: 3s; font-size: 1.8rem; }
+.floating-particle.p-4 { bottom: 25%; right: 12%; animation-duration: 8.5s; animation-delay: 2s; font-size: 2.4rem; }
+.floating-particle.p-5 { top: 48%; left: 4%; animation-duration: 12s; animation-delay: 4.5s; font-size: 1.6rem; }
+.floating-particle.p-6 { top: 60%; right: 5%; animation-duration: 9.5s; animation-delay: 0.8s; font-size: 1.9rem; }
+
+@keyframes floatParticle {
+    0%, 100% {
+        transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+    }
+    33% {
+        transform: translate3d(14px, -24px, 0) rotate(8deg) scale(1.05);
+    }
+    66% {
+        transform: translate3d(-12px, -14px, 0) rotate(-6deg) scale(0.95);
+    }
+}
+
+/* Floating Badges Keyframes */
+@keyframes floatBadgeSlow {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+.motion-float {
+    animation: floatBadgeSlow 4.5s infinite ease-in-out;
+}
+
+/* ==========================================================================
+   Heart Burst Animation on Favorite Click
+   ========================================================================== */
+.heart-burst {
+    animation: heartPop 0.55s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes heartPop {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.45) rotate(-12deg); }
+    60% { transform: scale(0.9) rotate(8deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+/* Mini Sparkle Particles on Favorite Click */
+.sparkle-particle {
+    position: absolute;
+    pointer-events: none;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #FF5A36;
+    animation: sparkleSpread 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    z-index: 100;
+}
+
+@keyframes sparkleSpread {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(var(--dx), var(--dy)) scale(0);
+    }
+}
+
+/* ==========================================================================
+   Interactive Liquid Ripple Effect on Buttons
+   ========================================================================== */
+.btn, .tag-pill, .btn-icon, .btn-fav-toggle {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(0);
+    animation: rippleAnim 0.6s linear forwards;
+    pointer-events: none;
+}
+
+[data-theme="dark"] .ripple-effect {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+@keyframes rippleAnim {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* ==========================================================================
+   Glowing Pulse Aura on Focus & Highlights
+   ========================================================================== */
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(255, 90, 54, 0.45);
+    }
+    50% {
+        box-shadow: 0 0 0 14px rgba(255, 90, 54, 0);
+    }
+}
+
+.pulse-glow-badge {
+    animation: pulseGlow 2.8s infinite;
+}
+
+/* Shimmer Loading / Highlight bar */
+.shimmer-highlight {
+    position: relative;
+    overflow: hidden;
+}
+
+.shimmer-highlight::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+    transform: skewX(-20deg);
+    animation: shimmerSweep 3.5s infinite;
+    pointer-events: none;
+}
+
+@keyframes shimmerSweep {
+    0% { left: -150%; }
+    50%, 100% { left: 150%; }
+}
+
+/* ==========================================================================
+   Smooth Micro-interactions & Accessible Reduced Motion
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+    *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    [data-motion] {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+    .recipes-grid .recipe-card {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+}

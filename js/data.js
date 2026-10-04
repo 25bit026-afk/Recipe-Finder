@@ -1,45 +1,93 @@
 /**
- * Recipe Finder - Comprehensive Recipe Dataset
- * Includes diverse cuisines, dietary categories, traditional & heritage dishes,
- * nutrition info, spicy levels, and detailed steps.
+ * Recipe Finder - Comprehensive Global Recipe Dataset (100 Recipes)
+ * Includes diverse cuisines, traditional heritage dishes, dietary categories,
+ * nutrition info, spicy levels, scaled ingredients, and masterclass instructions.
  */
 
 const RECIPES_DATA = [
     {
-        id: 1,
-        name: "Royal Chicken Biryani",
-        tagline: "Fragrant basmati rice layered with spiced marinated chicken, saffron & caramelized onions.",
-        cuisine: "Indian",
-        category: "Non-Vegetarian",
-        diet: "Non-Vegetarian",
-        time: 50,
-        prepTime: 20,
-        cookTime: 30,
-        difficulty: "Medium",
-        rating: 4.9,
-        reviewsCount: 342,
-        calories: 620,
-        servings: 4,
-        spicyLevel: 3,
-        featured: true,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Sanjeev R.",
-        ingredients: [
-            { name: "Basmati Rice", amount: 2, unit: "cups" },
-            { name: "Chicken Breast / Thighs (cut in pieces)", amount: 500, unit: "g" },
-            { name: "Plain Greek Yogurt", amount: 0.5, unit: "cup" },
-            { name: "Large Onions (thinly sliced & fried)", amount: 2, unit: "items" },
-            { name: "Ginger Garlic Paste", amount: 2, unit: "tbsp" },
-            { name: "Garam Masala & Biryani Spice Mix", amount: 1.5, unit: "tbsp" },
-            { name: "Turmeric Powder", amount: 0.5, unit: "tsp" },
-            { name: "Red Chili Powder", amount: 1, unit: "tsp" },
-            { name: "Fresh Mint & Coriander Leaves", amount: 0.5, unit: "cup" },
-            { name: "Saffron strands soaked in warm milk", amount: 3, unit: "tbsp" },
-            { name: "Ghee or Butter", amount: 2, unit: "tbsp" },
-            { name: "Salt", amount: 1.5, unit: "tsp" }
+        "id": 1,
+        "name": "Royal Chicken Biryani",
+        "tagline": "Fragrant basmati rice layered with spiced marinated chicken, saffron & caramelized onions.",
+        "cuisine": "Indian",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 50,
+        "prepTime": 20,
+        "cookTime": 30,
+        "difficulty": "Medium",
+        "rating": 4.9,
+        "reviewsCount": 342,
+        "calories": 620,
+        "servings": 4,
+        "spicyLevel": 3,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Sanjeev R.",
+        "ingredients": [
+            {
+                "name": "Basmati Rice",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Chicken Breast / Thighs (cut in pieces)",
+                "amount": 500,
+                "unit": "g"
+            },
+            {
+                "name": "Plain Greek Yogurt",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Large Onions (thinly sliced & fried)",
+                "amount": 2,
+                "unit": "items"
+            },
+            {
+                "name": "Ginger Garlic Paste",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Garam Masala & Biryani Spice Mix",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Turmeric Powder",
+                "amount": 0.5,
+                "unit": "tsp"
+            },
+            {
+                "name": "Red Chili Powder",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Fresh Mint & Coriander Leaves",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Saffron strands soaked in warm milk",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Ghee or Butter",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Salt",
+                "amount": 1.5,
+                "unit": "tsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Marinate the chicken pieces with yogurt, ginger garlic paste, red chili powder, turmeric, garam masala, half of the fried onions, and salt for at least 30 minutes.",
             "Rinse basmati rice thoroughly and soak in water for 20 minutes. Boil in a large pot with whole spices (cloves, cardamom, cinnamon) until 70% cooked. Drain and set aside.",
             "Heat ghee in a heavy-bottom pot or Dutch oven. Add the marinated chicken and sear over medium heat for 7-8 minutes until partially cooked.",
@@ -48,46 +96,82 @@ const RECIPES_DATA = [
             "Seal the pot with a tight lid or aluminum foil. Cook on low heat (Dum) for 20 minutes.",
             "Let rest for 5 minutes, gently fluff with a fork from bottom to top, and serve piping hot with raita."
         ],
-        nutrition: {
-            calories: "620 kcal",
-            protein: "38g",
-            carbs: "72g",
-            fat: "18g",
-            fiber: "4g"
+        "nutrition": {
+            "calories": "620 kcal",
+            "protein": "38g",
+            "carbs": "72g",
+            "fat": "18g",
+            "fiber": "4g"
         }
     },
     {
-        id: 2,
-        name: "Creamy Tuscan Garlic Pasta",
-        tagline: "Silky fettuccine tossed in a rich sun-dried tomato, spinach, and garlic parmesan cream sauce.",
-        cuisine: "Italian",
-        category: "Vegetarian",
-        diet: "Vegetarian",
-        time: 25,
-        prepTime: 10,
-        cookTime: 15,
-        difficulty: "Easy",
-        rating: 4.8,
-        reviewsCount: 289,
-        calories: 540,
-        servings: 2,
-        spicyLevel: 1,
-        featured: true,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1621996346565-e3d5d6281699?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Isabella M.",
-        ingredients: [
-            { name: "Fettuccine or Penne Pasta", amount: 250, unit: "g" },
-            { name: "Heavy Cream (or Coconut Cream for vegan)", amount: 1, unit: "cup" },
-            { name: "Garlic (minced)", amount: 4, unit: "cloves" },
-            { name: "Sun-Dried Tomatoes (drained & chopped)", amount: 0.5, unit: "cup" },
-            { name: "Fresh Baby Spinach", amount: 2, unit: "cups" },
-            { name: "Grated Parmesan Cheese", amount: 0.5, unit: "cup" },
-            { name: "Extra Virgin Olive Oil", amount: 1.5, unit: "tbsp" },
-            { name: "Italian Herb Seasoning & Oregano", amount: 1, unit: "tsp" },
-            { name: "Salt and Black Pepper", amount: 1, unit: "pinch" }
+        "id": 2,
+        "name": "Creamy Tuscan Garlic Pasta",
+        "tagline": "Silky fettuccine tossed in a rich sun-dried tomato, spinach, and garlic parmesan cream sauce.",
+        "cuisine": "Italian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 25,
+        "prepTime": 10,
+        "cookTime": 15,
+        "difficulty": "Easy",
+        "rating": 4.8,
+        "reviewsCount": 289,
+        "calories": 540,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1621996346565-e3d5d6281699?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Isabella M.",
+        "ingredients": [
+            {
+                "name": "Fettuccine or Penne Pasta",
+                "amount": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Heavy Cream (or Coconut Cream for vegan)",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Garlic (minced)",
+                "amount": 4,
+                "unit": "cloves"
+            },
+            {
+                "name": "Sun-Dried Tomatoes (drained & chopped)",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Fresh Baby Spinach",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Grated Parmesan Cheese",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Extra Virgin Olive Oil",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Italian Herb Seasoning & Oregano",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Salt and Black Pepper",
+                "amount": 1,
+                "unit": "pinch"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Bring a large pot of salted water to a boil. Cook pasta according to package directions until al dente. Reserve 1/2 cup pasta water, then drain.",
             "In a large skillet over medium heat, warm olive oil. Add minced garlic and sauté for 1 minute until fragrant (do not burn).",
             "Add sun-dried tomatoes and cook for 2 minutes to release their sweet flavor.",
@@ -96,43 +180,67 @@ const RECIPES_DATA = [
             "Toss the drained pasta into the sauce, stirring to coat completely. Add a splash of pasta water if sauce gets too thick.",
             "Season with black pepper and salt to taste. Garnish with extra parmesan and fresh basil."
         ],
-        nutrition: {
-            calories: "540 kcal",
-            protein: "16g",
-            carbs: "62g",
-            fat: "24g",
-            fiber: "5g"
+        "nutrition": {
+            "calories": "540 kcal",
+            "protein": "16g",
+            "carbs": "62g",
+            "fat": "24g",
+            "fiber": "5g"
         }
     },
     {
-        id: 3,
-        name: "Artisan Margherita Pizza",
-        tagline: "Classic Neapolitan crust topped with San Marzano tomato sauce, fresh mozzarella & sweet basil.",
-        cuisine: "Italian",
-        category: "Vegetarian",
-        diet: "Vegetarian",
-        time: 30,
-        prepTime: 15,
-        cookTime: 15,
-        difficulty: "Medium",
-        rating: 4.7,
-        reviewsCount: 215,
-        calories: 480,
-        servings: 3,
-        spicyLevel: 1,
-        featured: false,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Marco V.",
-        ingredients: [
-            { name: "Pizza Dough Ball", amount: 1, unit: "item" },
-            { name: "Crushed San Marzano Tomatoes", amount: 0.75, unit: "cup" },
-            { name: "Fresh Mozzarella Cheese (sliced/torn)", amount: 150, unit: "g" },
-            { name: "Fresh Basil Leaves", amount: 8, unit: "leaves" },
-            { name: "Extra Virgin Olive Oil", amount: 1, unit: "tbsp" },
-            { name: "Sea Salt & Oregano", amount: 1, unit: "pinch" }
+        "id": 3,
+        "name": "Artisan Margherita Pizza",
+        "tagline": "Classic Neapolitan crust topped with San Marzano tomato sauce, fresh mozzarella & sweet basil.",
+        "cuisine": "Italian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 30,
+        "prepTime": 15,
+        "cookTime": 15,
+        "difficulty": "Medium",
+        "rating": 4.7,
+        "reviewsCount": 215,
+        "calories": 480,
+        "servings": 3,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Marco V.",
+        "ingredients": [
+            {
+                "name": "Pizza Dough Ball",
+                "amount": 1,
+                "unit": "item"
+            },
+            {
+                "name": "Crushed San Marzano Tomatoes",
+                "amount": 0.75,
+                "unit": "cup"
+            },
+            {
+                "name": "Fresh Mozzarella Cheese (sliced/torn)",
+                "amount": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Fresh Basil Leaves",
+                "amount": 8,
+                "unit": "leaves"
+            },
+            {
+                "name": "Extra Virgin Olive Oil",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Sea Salt & Oregano",
+                "amount": 1,
+                "unit": "pinch"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Preheat oven with a pizza stone or baking tray at maximum temperature (250°C / 480°F) for 20 minutes.",
             "Stretch the pizza dough on a floured surface into a 12-inch round with a slightly thicker crust edge.",
             "Spread the crushed tomato sauce evenly over the dough, leaving a 1/2 inch border.",
@@ -140,45 +248,77 @@ const RECIPES_DATA = [
             "Bake for 10-12 minutes until the crust is golden-brown and the cheese is bubbly with blistered spots.",
             "Remove from oven, immediately top with fresh basil leaves, drizzle with extra virgin olive oil, and slice."
         ],
-        nutrition: {
-            calories: "480 kcal",
-            protein: "19g",
-            carbs: "58g",
-            fat: "18g",
-            fiber: "3g"
+        "nutrition": {
+            "calories": "480 kcal",
+            "protein": "19g",
+            "carbs": "58g",
+            "fat": "18g",
+            "fiber": "3g"
         }
     },
     {
-        id: 4,
-        name: "Crispy Masala Dosa with Sambar",
-        tagline: "Golden fermented crepe stuffed with spiced potato mash, served with coconut chutney.",
-        cuisine: "Indian",
-        category: "Vegetarian",
-        diet: "Vegetarian",
-        time: 35,
-        prepTime: 15,
-        cookTime: 20,
-        difficulty: "Medium",
-        rating: 4.8,
-        reviewsCount: 310,
-        calories: 360,
-        servings: 2,
-        spicyLevel: 2,
-        featured: true,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Lakshmi N.",
-        ingredients: [
-            { name: "Fermented Dosa Batter", amount: 2, unit: "cups" },
-            { name: "Boiled Potatoes (mashed coarsely)", amount: 3, unit: "medium" },
-            { name: "Onion (thinly sliced)", amount: 1, unit: "item" },
-            { name: "Green Chilies (chopped)", amount: 2, unit: "items" },
-            { name: "Mustard Seeds & Curry Leaves", amount: 1, unit: "tsp" },
-            { name: "Turmeric Powder", amount: 0.5, unit: "tsp" },
-            { name: "Butter or Sesame Oil for roasting", amount: 2, unit: "tbsp" },
-            { name: "Salt", amount: 1, unit: "tsp" }
+        "id": 4,
+        "name": "Crispy Masala Dosa with Sambar",
+        "tagline": "Golden fermented crepe stuffed with spiced potato mash, served with coconut chutney.",
+        "cuisine": "Indian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 35,
+        "prepTime": 15,
+        "cookTime": 20,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 310,
+        "calories": 360,
+        "servings": 2,
+        "spicyLevel": 2,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Lakshmi N.",
+        "ingredients": [
+            {
+                "name": "Fermented Dosa Batter",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Boiled Potatoes (mashed coarsely)",
+                "amount": 3,
+                "unit": "medium"
+            },
+            {
+                "name": "Onion (thinly sliced)",
+                "amount": 1,
+                "unit": "item"
+            },
+            {
+                "name": "Green Chilies (chopped)",
+                "amount": 2,
+                "unit": "items"
+            },
+            {
+                "name": "Mustard Seeds & Curry Leaves",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Turmeric Powder",
+                "amount": 0.5,
+                "unit": "tsp"
+            },
+            {
+                "name": "Butter or Sesame Oil for roasting",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Salt",
+                "amount": 1,
+                "unit": "tsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "For potato masala: Heat 1 tbsp oil in a pan. Splutter mustard seeds, then add curry leaves, green chilies, and sliced onions. Sauté until translucent.",
             "Add turmeric powder, salt, and mashed boiled potatoes. Mix well with 3 tbsp of water. Cook for 3 minutes, then remove from heat.",
             "Heat a non-stick or cast-iron tawa (griddle). Lightly wipe with oil and sprinkle water drops to cool slightly.",
@@ -187,46 +327,82 @@ const RECIPES_DATA = [
             "Place a portion of potato masala in the center. Fold the dosa into a cylinder or triangle.",
             "Serve immediately with fresh coconut chutney and hot lentil sambar."
         ],
-        nutrition: {
-            calories: "360 kcal",
-            protein: "9g",
-            carbs: "54g",
-            fat: "12g",
-            fiber: "4g"
+        "nutrition": {
+            "calories": "360 kcal",
+            "protein": "9g",
+            "carbs": "54g",
+            "fat": "12g",
+            "fiber": "4g"
         }
     },
     {
-        id: 5,
-        name: "Szechuan Kung Pao Chicken",
-        tagline: "Fiery stir-fried chicken with crunchy peanuts, bell peppers, scallions, and dried red chilies.",
-        cuisine: "Chinese",
-        category: "Non-Vegetarian",
-        diet: "Non-Vegetarian",
-        time: 20,
-        prepTime: 10,
-        cookTime: 10,
-        difficulty: "Easy",
-        rating: 4.8,
-        reviewsCount: 195,
-        calories: 450,
-        servings: 2,
-        spicyLevel: 4,
-        featured: false,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Wei Chen",
-        ingredients: [
-            { name: "Chicken Breast (diced into cubes)", amount: 400, unit: "g" },
-            { name: "Roasted Peanuts", amount: 0.3, unit: "cup" },
-            { name: "Dried Red Szechuan Chilies", amount: 6, unit: "items" },
-            { name: "Bell Pepper (cubed)", amount: 1, unit: "item" },
-            { name: "Soy Sauce (Light & Dark)", amount: 2, unit: "tbsp" },
-            { name: "Rice Vinegar & Sesame Oil", amount: 1, unit: "tbsp" },
-            { name: "Cornstarch (for velvet coating)", amount: 1, unit: "tbsp" },
-            { name: "Minced Ginger & Garlic", amount: 1.5, unit: "tbsp" },
-            { name: "Green Scallions (sliced)", amount: 3, unit: "stalks" }
+        "id": 5,
+        "name": "Szechuan Kung Pao Chicken",
+        "tagline": "Fiery stir-fried chicken with crunchy peanuts, bell peppers, scallions, and dried red chilies.",
+        "cuisine": "Chinese",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 20,
+        "prepTime": 10,
+        "cookTime": 10,
+        "difficulty": "Easy",
+        "rating": 4.8,
+        "reviewsCount": 195,
+        "calories": 450,
+        "servings": 2,
+        "spicyLevel": 4,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Wei Chen",
+        "ingredients": [
+            {
+                "name": "Chicken Breast (diced into cubes)",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Roasted Peanuts",
+                "amount": 0.3,
+                "unit": "cup"
+            },
+            {
+                "name": "Dried Red Szechuan Chilies",
+                "amount": 6,
+                "unit": "items"
+            },
+            {
+                "name": "Bell Pepper (cubed)",
+                "amount": 1,
+                "unit": "item"
+            },
+            {
+                "name": "Soy Sauce (Light & Dark)",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Rice Vinegar & Sesame Oil",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Cornstarch (for velvet coating)",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Minced Ginger & Garlic",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Green Scallions (sliced)",
+                "amount": 3,
+                "unit": "stalks"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Coat diced chicken with 1 tbsp soy sauce, cornstarch, and 1 tsp oil. Let sit for 10 minutes.",
             "Mix the sauce: Combine remaining soy sauce, rice vinegar, a teaspoon of sugar, sesame oil, and 2 tbsp water in a small bowl.",
             "Heat oil in a smoking-hot wok. Add dried chilies and Szechuan peppercorns; fry for 20 seconds until aromatic.",
@@ -235,45 +411,77 @@ const RECIPES_DATA = [
             "Pour in the prepared sauce. Stir continuously until sauce thickens and coats the chicken gloriously.",
             "Fold in roasted peanuts and scallion greens. Serve over steamed jasmine rice."
         ],
-        nutrition: {
-            calories: "450 kcal",
-            protein: "36g",
-            carbs: "22g",
-            fat: "24g",
-            fiber: "3g"
+        "nutrition": {
+            "calories": "450 kcal",
+            "protein": "36g",
+            "carbs": "22g",
+            "fat": "24g",
+            "fiber": "3g"
         }
     },
     {
-        id: 6,
-        name: "Guacamole Street Tacos",
-        tagline: "Charred corn tortillas loaded with black beans, roasted corn, fresh salsa, avocado, and lime.",
-        cuisine: "Mexican",
-        category: "Vegetarian",
-        diet: "Vegan",
-        time: 20,
-        prepTime: 12,
-        cookTime: 8,
-        difficulty: "Easy",
-        rating: 4.6,
-        reviewsCount: 164,
-        calories: 320,
-        servings: 2,
-        spicyLevel: 2,
-        featured: false,
-        popular: false,
-        image: "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Sofia Gomez",
-        ingredients: [
-            { name: "Small Corn Tortillas", amount: 6, unit: "items" },
-            { name: "Black Beans (rinsed & cooked)", amount: 1, unit: "can" },
-            { name: "Sweet Corn Kernels (pan-charred)", amount: 0.5, unit: "cup" },
-            { name: "Ripe Avocados (mashed)", amount: 2, unit: "items" },
-            { name: "Diced Tomatoes & Red Onion", amount: 0.5, unit: "cup" },
-            { name: "Fresh Cilantro & Lime wedges", amount: 1, unit: "bunch" },
-            { name: "Cumin & Smoked Paprika", amount: 1, unit: "tsp" },
-            { name: "Salt and Pepper", amount: 0.5, unit: "tsp" }
+        "id": 6,
+        "name": "Guacamole Street Tacos",
+        "tagline": "Charred corn tortillas loaded with black beans, roasted corn, fresh salsa, avocado, and lime.",
+        "cuisine": "Mexican",
+        "category": "Vegetarian",
+        "diet": "Vegan",
+        "time": 20,
+        "prepTime": 12,
+        "cookTime": 8,
+        "difficulty": "Easy",
+        "rating": 4.6,
+        "reviewsCount": 164,
+        "calories": 320,
+        "servings": 2,
+        "spicyLevel": 2,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Sofia Gomez",
+        "ingredients": [
+            {
+                "name": "Small Corn Tortillas",
+                "amount": 6,
+                "unit": "items"
+            },
+            {
+                "name": "Black Beans (rinsed & cooked)",
+                "amount": 1,
+                "unit": "can"
+            },
+            {
+                "name": "Sweet Corn Kernels (pan-charred)",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Ripe Avocados (mashed)",
+                "amount": 2,
+                "unit": "items"
+            },
+            {
+                "name": "Diced Tomatoes & Red Onion",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Fresh Cilantro & Lime wedges",
+                "amount": 1,
+                "unit": "bunch"
+            },
+            {
+                "name": "Cumin & Smoked Paprika",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Salt and Pepper",
+                "amount": 0.5,
+                "unit": "tsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "In a skillet, warm black beans with cumin, paprika, salt, and 2 tbsp water for 3-4 minutes.",
             "In a dry skillet over high heat, blister the corn tortillas for 30 seconds on each side until warm and slightly charred.",
             "Make guacamole: Mash avocados with lime juice, diced onions, tomatoes, chopped cilantro, and salt.",
@@ -281,47 +489,87 @@ const RECIPES_DATA = [
             "Top with spiced black beans, charred sweet corn, and a drizzle of hot salsa.",
             "Garnish with fresh cilantro sprigs and squeeze generous fresh lime juice before biting."
         ],
-        nutrition: {
-            calories: "320 kcal",
-            protein: "11g",
-            carbs: "46g",
-            fat: "14g",
-            fiber: "9g"
+        "nutrition": {
+            "calories": "320 kcal",
+            "protein": "11g",
+            "carbs": "46g",
+            "fat": "14g",
+            "fiber": "9g"
         }
     },
     {
-        id: 7,
-        name: "Classic Paneer Butter Masala",
-        tagline: "Soft cottage cheese cubes simmered in a silky, mildly spiced tomato, butter, and cashew gravy.",
-        cuisine: "Indian",
-        category: "Vegetarian",
-        diet: "Vegetarian",
-        time: 30,
-        prepTime: 10,
-        cookTime: 20,
-        difficulty: "Easy",
-        rating: 4.9,
-        reviewsCount: 420,
-        calories: 460,
-        servings: 3,
-        spicyLevel: 2,
-        featured: true,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Sanjeev R.",
-        ingredients: [
-            { name: "Fresh Paneer (cubed)", amount: 250, unit: "g" },
-            { name: "Ripe Tomatoes (pureed)", amount: 4, unit: "items" },
-            { name: "Cashews (soaked & ground to paste)", amount: 12, unit: "nuts" },
-            { name: "Butter", amount: 2, unit: "tbsp" },
-            { name: "Fresh Cream", amount: 2, unit: "tbsp" },
-            { name: "Ginger Garlic Paste", amount: 1, unit: "tbsp" },
-            { name: "Kashmiri Chili Powder & Garam Masala", amount: 1.5, unit: "tsp" },
-            { name: "Kasuri Methi (crushed fenugreek leaves)", amount: 1, unit: "tsp" },
-            { name: "Sugar or Honey", amount: 0.5, unit: "tsp" },
-            { name: "Salt", amount: 1, unit: "tsp" }
+        "id": 7,
+        "name": "Classic Paneer Butter Masala",
+        "tagline": "Soft cottage cheese cubes simmered in a silky, mildly spiced tomato, butter, and cashew gravy.",
+        "cuisine": "Indian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 30,
+        "prepTime": 10,
+        "cookTime": 20,
+        "difficulty": "Easy",
+        "rating": 4.9,
+        "reviewsCount": 420,
+        "calories": 460,
+        "servings": 3,
+        "spicyLevel": 2,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Sanjeev R.",
+        "ingredients": [
+            {
+                "name": "Fresh Paneer (cubed)",
+                "amount": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Ripe Tomatoes (pureed)",
+                "amount": 4,
+                "unit": "items"
+            },
+            {
+                "name": "Cashews (soaked & ground to paste)",
+                "amount": 12,
+                "unit": "nuts"
+            },
+            {
+                "name": "Butter",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Cream",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Ginger Garlic Paste",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Kashmiri Chili Powder & Garam Masala",
+                "amount": 1.5,
+                "unit": "tsp"
+            },
+            {
+                "name": "Kasuri Methi (crushed fenugreek leaves)",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Sugar or Honey",
+                "amount": 0.5,
+                "unit": "tsp"
+            },
+            {
+                "name": "Salt",
+                "amount": 1,
+                "unit": "tsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Melt 1 tbsp butter in a pan, add ginger garlic paste and sauté until aroma blooms.",
             "Pour in the fresh tomato puree and cook on medium flame for 8-10 minutes until oil separates.",
             "Stir in Kashmiri chili powder, garam masala, salt, and the smooth cashew paste. Mix with 1/2 cup water.",
@@ -330,45 +578,77 @@ const RECIPES_DATA = [
             "Finish with a spoon of butter, fresh cream, a pinch of sugar, and fragrant crushed kasuri methi.",
             "Serve hot with garlic butter naan or jeera rice."
         ],
-        nutrition: {
-            calories: "460 kcal",
-            protein: "18g",
-            carbs: "19g",
-            fat: "34g",
-            fiber: "3g"
+        "nutrition": {
+            "calories": "460 kcal",
+            "protein": "18g",
+            "carbs": "19g",
+            "fat": "34g",
+            "fiber": "3g"
         }
     },
     {
-        id: 8,
-        name: "Tokyo Teriyaki Salmon Bowl",
-        tagline: "Pan-glazed Atlantic salmon fillet drizzled with homemade sweet teriyaki sauce over fluffy rice.",
-        cuisine: "Japanese",
-        category: "Non-Vegetarian",
-        diet: "Pescatarian",
-        time: 25,
-        prepTime: 10,
-        cookTime: 15,
-        difficulty: "Easy",
-        rating: 4.8,
-        reviewsCount: 178,
-        calories: 510,
-        servings: 2,
-        spicyLevel: 1,
-        featured: false,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Kenji Tanaka",
-        ingredients: [
-            { name: "Salmon Fillets (skin-on)", amount: 2, unit: "fillets" },
-            { name: "Soy Sauce", amount: 3, unit: "tbsp" },
-            { name: "Mirin or Rice Vinegar", amount: 2, unit: "tbsp" },
-            { name: "Honey or Brown Sugar", amount: 1.5, unit: "tbsp" },
-            { name: "Grated Ginger & Minced Garlic", amount: 1, unit: "tsp" },
-            { name: "Steamed Japanese Short Grain Rice", amount: 2, unit: "bowls" },
-            { name: "Steamed Broccoli & Edamame", amount: 1, unit: "cup" },
-            { name: "Toasted Sesame Seeds", amount: 1, unit: "tsp" }
+        "id": 8,
+        "name": "Tokyo Teriyaki Salmon Bowl",
+        "tagline": "Pan-glazed Atlantic salmon fillet drizzled with homemade sweet teriyaki sauce over fluffy rice.",
+        "cuisine": "Japanese",
+        "category": "Non-Vegetarian",
+        "diet": "Pescatarian",
+        "time": 25,
+        "prepTime": 10,
+        "cookTime": 15,
+        "difficulty": "Easy",
+        "rating": 4.8,
+        "reviewsCount": 178,
+        "calories": 510,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Kenji Tanaka",
+        "ingredients": [
+            {
+                "name": "Salmon Fillets (skin-on)",
+                "amount": 2,
+                "unit": "fillets"
+            },
+            {
+                "name": "Soy Sauce",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Mirin or Rice Vinegar",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Honey or Brown Sugar",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Grated Ginger & Minced Garlic",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Steamed Japanese Short Grain Rice",
+                "amount": 2,
+                "unit": "bowls"
+            },
+            {
+                "name": "Steamed Broccoli & Edamame",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Toasted Sesame Seeds",
+                "amount": 1,
+                "unit": "tsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Whisk soy sauce, mirin, honey, grated ginger, and garlic in a small saucepan over low heat for 3 minutes until thickened into a glaze.",
             "Pat salmon dry and season lightly with salt and pepper.",
             "Heat 1 tbsp oil in a non-stick skillet over medium-high heat. Place salmon skin-side down and cook for 4-5 minutes until crispy.",
@@ -377,92 +657,164 @@ const RECIPES_DATA = [
             "Assemble bowls with steamed rice, steamed broccoli florets, and edamame.",
             "Place glazed salmon on top, drizzle remaining glaze, and sprinkle toasted sesame seeds."
         ],
-        nutrition: {
-            calories: "510 kcal",
-            protein: "34g",
-            carbs: "52g",
-            fat: "17g",
-            fiber: "4g"
+        "nutrition": {
+            "calories": "510 kcal",
+            "protein": "34g",
+            "carbs": "52g",
+            "fat": "17g",
+            "fiber": "4g"
         }
     },
     {
-        id: 9,
-        name: "Mediterranean Greek Salad & Hummus",
-        tagline: "Crisp cucumbers, kalamata olives, heirloom tomatoes, and creamy feta paired with silky olive hummus.",
-        cuisine: "Mediterranean",
-        category: "Vegetarian",
-        diet: "Vegetarian",
-        time: 15,
-        prepTime: 15,
-        cookTime: 0,
-        difficulty: "Easy",
-        rating: 4.7,
-        reviewsCount: 142,
-        calories: 340,
-        servings: 2,
-        spicyLevel: 1,
-        featured: false,
-        popular: false,
-        image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Elena Costa",
-        ingredients: [
-            { name: "Heirloom or Cherry Tomatoes (halved)", amount: 2, unit: "cups" },
-            { name: "English Cucumber (diced)", amount: 1, unit: "large" },
-            { name: "Kalamata Olives (pitted)", amount: 0.3, unit: "cup" },
-            { name: "Greek Feta Cheese block (crumbled)", amount: 100, unit: "g" },
-            { name: "Red Onion (thinly sliced)", amount: 0.5, unit: "item" },
-            { name: "Extra Virgin Olive Oil", amount: 2, unit: "tbsp" },
-            { name: "Red Wine Vinegar", amount: 1, unit: "tbsp" },
-            { name: "Dried Wild Oregano", amount: 1, unit: "tsp" },
-            { name: "Warm Pita Bread & Hummus", amount: 2, unit: "servings" }
+        "id": 9,
+        "name": "Mediterranean Greek Salad & Hummus",
+        "tagline": "Crisp cucumbers, kalamata olives, heirloom tomatoes, and creamy feta paired with silky olive hummus.",
+        "cuisine": "Mediterranean",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 15,
+        "prepTime": 15,
+        "cookTime": 0,
+        "difficulty": "Easy",
+        "rating": 4.7,
+        "reviewsCount": 142,
+        "calories": 340,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Elena Costa",
+        "ingredients": [
+            {
+                "name": "Heirloom or Cherry Tomatoes (halved)",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "English Cucumber (diced)",
+                "amount": 1,
+                "unit": "large"
+            },
+            {
+                "name": "Kalamata Olives (pitted)",
+                "amount": 0.3,
+                "unit": "cup"
+            },
+            {
+                "name": "Greek Feta Cheese block (crumbled)",
+                "amount": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Red Onion (thinly sliced)",
+                "amount": 0.5,
+                "unit": "item"
+            },
+            {
+                "name": "Extra Virgin Olive Oil",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Red Wine Vinegar",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Dried Wild Oregano",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Warm Pita Bread & Hummus",
+                "amount": 2,
+                "unit": "servings"
+            }
         ],
-        instructions: [
+        "instructions": [
             "In a large bowl, combine chopped tomatoes, diced cucumber, sliced red onion, and kalamata olives.",
             "In a small ramekin, whisk together extra virgin olive oil, red wine vinegar, dried oregano, salt, and cracked black pepper.",
             "Pour dressing over vegetables and toss gently to coat.",
             "Top with big crumbles of fresh Greek feta cheese and another pinch of oregano.",
             "Spread velvety hummus on a serving platter and arrange salad alongside warm, sliced pita wedges."
         ],
-        nutrition: {
-            calories: "340 kcal",
-            protein: "10g",
-            carbs: "30g",
-            fat: "21g",
-            fiber: "6g"
+        "nutrition": {
+            "calories": "340 kcal",
+            "protein": "10g",
+            "carbs": "30g",
+            "fat": "21g",
+            "fiber": "6g"
         }
     },
     {
-        id: 10,
-        name: "Authentic Thai Green Chicken Curry",
-        tagline: "Aromatic coconut milk curry infused with green chilies, lemongrass, bamboo shoots & kaffir lime.",
-        cuisine: "Thai",
-        category: "Non-Vegetarian",
-        diet: "Non-Vegetarian",
-        time: 30,
-        prepTime: 12,
-        cookTime: 18,
-        difficulty: "Medium",
-        rating: 4.9,
-        reviewsCount: 260,
-        calories: 520,
-        servings: 3,
-        spicyLevel: 3,
-        featured: true,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Anong P.",
-        ingredients: [
-            { name: "Chicken Breast / Thighs (thinly sliced)", amount: 450, unit: "g" },
-            { name: "Thai Green Curry Paste", amount: 3, unit: "tbsp" },
-            { name: "Full-Fat Coconut Milk", amount: 1, unit: "can (400ml)" },
-            { name: "Bamboo Shoots (sliced)", amount: 0.5, unit: "cup" },
-            { name: "Thai Eggplants or Zucchini (sliced)", amount: 1, unit: "cup" },
-            { name: "Fish Sauce (or Soy Sauce)", amount: 1.5, unit: "tbsp" },
-            { name: "Palm Sugar or Brown Sugar", amount: 1, unit: "tsp" },
-            { name: "Kaffir Lime Leaves (torn)", amount: 4, unit: "leaves" },
-            { name: "Fresh Thai Basil Leaves", amount: 1, unit: "cup" }
+        "id": 10,
+        "name": "Authentic Thai Green Chicken Curry",
+        "tagline": "Aromatic coconut milk curry infused with green chilies, lemongrass, bamboo shoots & kaffir lime.",
+        "cuisine": "Thai",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 30,
+        "prepTime": 12,
+        "cookTime": 18,
+        "difficulty": "Medium",
+        "rating": 4.9,
+        "reviewsCount": 260,
+        "calories": 520,
+        "servings": 3,
+        "spicyLevel": 3,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Anong P.",
+        "ingredients": [
+            {
+                "name": "Chicken Breast / Thighs (thinly sliced)",
+                "amount": 450,
+                "unit": "g"
+            },
+            {
+                "name": "Thai Green Curry Paste",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Full-Fat Coconut Milk",
+                "amount": 1,
+                "unit": "can (400ml)"
+            },
+            {
+                "name": "Bamboo Shoots (sliced)",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Thai Eggplants or Zucchini (sliced)",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Fish Sauce (or Soy Sauce)",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Palm Sugar or Brown Sugar",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Kaffir Lime Leaves (torn)",
+                "amount": 4,
+                "unit": "leaves"
+            },
+            {
+                "name": "Fresh Thai Basil Leaves",
+                "amount": 1,
+                "unit": "cup"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Skim 3 tbsp of the thick coconut cream from the top of the can into a hot wok or pot over medium heat.",
             "Add the green curry paste and fry for 2-3 minutes until oil separates and aroma is released.",
             "Add the sliced chicken pieces and stir-fry until the exterior turns opaque (about 3 minutes).",
@@ -471,45 +823,77 @@ const RECIPES_DATA = [
             "Season with fish sauce and palm sugar. Adjust seasoning to strike a balance between spicy, savory, and sweet.",
             "Turn off heat and fold in fresh Thai basil leaves until wilted. Serve with fragrant Jasmine rice."
         ],
-        nutrition: {
-            calories: "520 kcal",
-            protein: "32g",
-            carbs: "14g",
-            fat: "38g",
-            fiber: "3g"
+        "nutrition": {
+            "calories": "520 kcal",
+            "protein": "32g",
+            "carbs": "14g",
+            "fat": "38g",
+            "fiber": "3g"
         }
     },
     {
-        id: 11,
-        name: "Smoky BBQ Loaded Bacon Burger",
-        tagline: "Juicy beef patty grilled to perfection, stacked with smoked cheddar, crispy bacon, and onion rings.",
-        cuisine: "American",
-        category: "Non-Vegetarian",
-        diet: "Non-Vegetarian",
-        time: 25,
-        prepTime: 10,
-        cookTime: 15,
-        difficulty: "Easy",
-        rating: 4.8,
-        reviewsCount: 350,
-        calories: 780,
-        servings: 2,
-        spicyLevel: 1,
-        featured: false,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Jack Miller",
-        ingredients: [
-            { name: "Ground Beef Patty (80/20 blend)", amount: 2, unit: "patties" },
-            { name: "Brioche Burger Buns", amount: 2, unit: "buns" },
-            { name: "Smoked Cheddar Cheese slices", amount: 2, unit: "slices" },
-            { name: "Crispy Bacon strips", amount: 4, unit: "strips" },
-            { name: "Crispy Onion Rings or Caramelized Onions", amount: 0.5, unit: "cup" },
-            { name: "Smoky BBQ Sauce", amount: 3, unit: "tbsp" },
-            { name: "Lettuce leaves & Tomato slices", amount: 2, unit: "servings" },
-            { name: "Butter for toasting", amount: 1, unit: "tbsp" }
+        "id": 11,
+        "name": "Smoky BBQ Loaded Bacon Burger",
+        "tagline": "Juicy beef patty grilled to perfection, stacked with smoked cheddar, crispy bacon, and onion rings.",
+        "cuisine": "American",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 25,
+        "prepTime": 10,
+        "cookTime": 15,
+        "difficulty": "Easy",
+        "rating": 4.8,
+        "reviewsCount": 350,
+        "calories": 780,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Jack Miller",
+        "ingredients": [
+            {
+                "name": "Ground Beef Patty (80/20 blend)",
+                "amount": 2,
+                "unit": "patties"
+            },
+            {
+                "name": "Brioche Burger Buns",
+                "amount": 2,
+                "unit": "buns"
+            },
+            {
+                "name": "Smoked Cheddar Cheese slices",
+                "amount": 2,
+                "unit": "slices"
+            },
+            {
+                "name": "Crispy Bacon strips",
+                "amount": 4,
+                "unit": "strips"
+            },
+            {
+                "name": "Crispy Onion Rings or Caramelized Onions",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Smoky BBQ Sauce",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Lettuce leaves & Tomato slices",
+                "amount": 2,
+                "unit": "servings"
+            },
+            {
+                "name": "Butter for toasting",
+                "amount": 1,
+                "unit": "tbsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Preheat a cast-iron skillet or grill over medium-high heat. Cook bacon strips until crisp, then set aside.",
             "Season beef patties generously with salt, garlic powder, and coarse black pepper.",
             "Place patties in the hot skillet. Sear for 4 minutes without moving to develop a deep golden crust.",
@@ -518,45 +902,77 @@ const RECIPES_DATA = [
             "Spread BBQ sauce on bottom bun, add lettuce and tomato, place the cheesy patty, top with bacon and crispy onion rings.",
             "Crown with the top bun and serve with french fries."
         ],
-        nutrition: {
-            calories: "780 kcal",
-            protein: "44g",
-            carbs: "50g",
-            fat: "46g",
-            fiber: "3g"
+        "nutrition": {
+            "calories": "780 kcal",
+            "protein": "44g",
+            "carbs": "50g",
+            "fat": "46g",
+            "fiber": "3g"
         }
     },
     {
-        id: 12,
-        name: "Avocado Toast with Poached Egg",
-        tagline: "Crunchy sourdough toast layered with seasoned mashed avocado, soft poached eggs & everything bagel spice.",
-        cuisine: "American",
-        category: "Vegetarian",
-        diet: "Vegetarian",
-        time: 15,
-        prepTime: 5,
-        cookTime: 10,
-        difficulty: "Easy",
-        rating: 4.6,
-        reviewsCount: 180,
-        calories: 380,
-        servings: 2,
-        spicyLevel: 1,
-        featured: false,
-        popular: false,
-        image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Chloe Vance",
-        ingredients: [
-            { name: "Thick Artisan Sourdough Slices", amount: 2, unit: "slices" },
-            { name: "Ripe Avocados", amount: 2, unit: "items" },
-            { name: "Fresh Eggs", amount: 2, unit: "items" },
-            { name: "Lemon Juice", amount: 1, unit: "tbsp" },
-            { name: "Red Pepper Flakes & Everything Bagel Seasoning", amount: 1, unit: "tsp" },
-            { name: "Microgreens & Radish slices for garnish", amount: 2, unit: "tbsp" },
-            { name: "Extra Virgin Olive Oil", amount: 1, unit: "tsp" },
-            { name: "Salt and Pepper", amount: 0.5, unit: "tsp" }
+        "id": 12,
+        "name": "Avocado Toast with Poached Egg",
+        "tagline": "Crunchy sourdough toast layered with seasoned mashed avocado, soft poached eggs & everything bagel spice.",
+        "cuisine": "American",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 15,
+        "prepTime": 5,
+        "cookTime": 10,
+        "difficulty": "Easy",
+        "rating": 4.6,
+        "reviewsCount": 180,
+        "calories": 380,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Chloe Vance",
+        "ingredients": [
+            {
+                "name": "Thick Artisan Sourdough Slices",
+                "amount": 2,
+                "unit": "slices"
+            },
+            {
+                "name": "Ripe Avocados",
+                "amount": 2,
+                "unit": "items"
+            },
+            {
+                "name": "Fresh Eggs",
+                "amount": 2,
+                "unit": "items"
+            },
+            {
+                "name": "Lemon Juice",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Red Pepper Flakes & Everything Bagel Seasoning",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Microgreens & Radish slices for garnish",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Extra Virgin Olive Oil",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Salt and Pepper",
+                "amount": 0.5,
+                "unit": "tsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Toast sourdough slices until deeply crisp and golden.",
             "In a small bowl, roughly mash the avocados with lemon juice, salt, pepper, and a drizzle of olive oil.",
             "Bring a small pot of water to a gentle simmer with 1 tsp white vinegar. Swirl to create a whirlpool.",
@@ -565,45 +981,77 @@ const RECIPES_DATA = [
             "Carefully rest a poached egg onto each toast.",
             "Sprinkle with everything seasoning, chili flakes, and fresh microgreens."
         ],
-        nutrition: {
-            calories: "380 kcal",
-            protein: "14g",
-            carbs: "34g",
-            fat: "22g",
-            fiber: "8g"
+        "nutrition": {
+            "calories": "380 kcal",
+            "protein": "14g",
+            "carbs": "34g",
+            "fat": "22g",
+            "fiber": "8g"
         }
     },
     {
-        id: 13,
-        name: "Hearty Chickpea & Veggie Buddha Bowl",
-        tagline: "Vibrant bowl loaded with crispy spiced chickpeas, quinoa, roasted sweet potatoes, and creamy tahini.",
-        cuisine: "Mediterranean",
-        category: "Vegetarian",
-        diet: "Vegan",
-        time: 30,
-        prepTime: 10,
-        cookTime: 20,
-        difficulty: "Easy",
-        rating: 4.8,
-        reviewsCount: 155,
-        calories: 420,
-        servings: 2,
-        spicyLevel: 1,
-        featured: false,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Maya Patel",
-        ingredients: [
-            { name: "Cooked Quinoa", amount: 2, unit: "cups" },
-            { name: "Chickpeas (drained & patted dry)", amount: 1, unit: "can (400g)" },
-            { name: "Sweet Potato (cubed)", amount: 1, unit: "medium" },
-            { name: "Kale or Baby Spinach", amount: 2, unit: "cups" },
-            { name: "Tahini (sesame paste)", amount: 2, unit: "tbsp" },
-            { name: "Lemon Juice & Maple Syrup", amount: 1, unit: "tbsp" },
-            { name: "Smoked Paprika & Cumin", amount: 1, unit: "tsp" },
-            { name: "Olive Oil", amount: 2, unit: "tbsp" }
+        "id": 13,
+        "name": "Hearty Chickpea & Veggie Buddha Bowl",
+        "tagline": "Vibrant bowl loaded with crispy spiced chickpeas, quinoa, roasted sweet potatoes, and creamy tahini.",
+        "cuisine": "Mediterranean",
+        "category": "Vegetarian",
+        "diet": "Vegan",
+        "time": 30,
+        "prepTime": 10,
+        "cookTime": 20,
+        "difficulty": "Easy",
+        "rating": 4.8,
+        "reviewsCount": 155,
+        "calories": 420,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Maya Patel",
+        "ingredients": [
+            {
+                "name": "Cooked Quinoa",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Chickpeas (drained & patted dry)",
+                "amount": 1,
+                "unit": "can (400g)"
+            },
+            {
+                "name": "Sweet Potato (cubed)",
+                "amount": 1,
+                "unit": "medium"
+            },
+            {
+                "name": "Kale or Baby Spinach",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Tahini (sesame paste)",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Lemon Juice & Maple Syrup",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Smoked Paprika & Cumin",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Olive Oil",
+                "amount": 2,
+                "unit": "tbsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Toss cubed sweet potatoes and chickpeas in 1 tbsp olive oil, smoked paprika, cumin, and salt.",
             "Roast in oven or air-fryer at 200°C (400°F) for 20 minutes until sweet potatoes are tender and chickpeas are crunchy.",
             "Whisk tahini, lemon juice, maple syrup, warm water (to thin), and salt into a smooth pourable dressing.",
@@ -611,45 +1059,77 @@ const RECIPES_DATA = [
             "Arrange roasted sweet potatoes, crispy chickpeas, fresh shredded kale, and avocado slices in vibrant sections.",
             "Drizzle creamy tahini dressing generously over the top and serve warm."
         ],
-        nutrition: {
-            calories: "420 kcal",
-            protein: "15g",
-            carbs: "64g",
-            fat: "14g",
-            fiber: "11g"
+        "nutrition": {
+            "calories": "420 kcal",
+            "protein": "15g",
+            "carbs": "64g",
+            "fat": "14g",
+            "fiber": "11g"
         }
     },
     {
-        id: 14,
-        name: "Authentic Mexican Enchiladas Suizas",
-        tagline: "Shredded chicken wrapped in corn tortillas, drenched in creamy roasted tomatillo salsa and melted cheese.",
-        cuisine: "Mexican",
-        category: "Non-Vegetarian",
-        diet: "Non-Vegetarian",
-        time: 40,
-        prepTime: 15,
-        cookTime: 25,
-        difficulty: "Medium",
-        rating: 4.9,
-        reviewsCount: 220,
-        calories: 590,
-        servings: 4,
-        spicyLevel: 3,
-        featured: false,
-        popular: false,
-        image: "https://images.unsplash.com/photo-1534352956036-cd81e27dd615?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Sofia Gomez",
-        ingredients: [
-            { name: "Corn Tortillas", amount: 8, unit: "items" },
-            { name: "Cooked Shredded Chicken", amount: 3, unit: "cups" },
-            { name: "Tomatillos (husked & roasted)", amount: 6, unit: "items" },
-            { name: "Serrano or Jalapeño Pepper", amount: 2, unit: "items" },
-            { name: "Mexican Crema or Sour Cream", amount: 0.5, unit: "cup" },
-            { name: "Monterey Jack or Oaxaca Cheese (shredded)", amount: 1.5, unit: "cups" },
-            { name: "Cilantro & Onion", amount: 0.5, unit: "cup" },
-            { name: "Garlic & Salt", amount: 1, unit: "tsp" }
+        "id": 14,
+        "name": "Authentic Mexican Enchiladas Suizas",
+        "tagline": "Shredded chicken wrapped in corn tortillas, drenched in creamy roasted tomatillo salsa and melted cheese.",
+        "cuisine": "Mexican",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 40,
+        "prepTime": 15,
+        "cookTime": 25,
+        "difficulty": "Medium",
+        "rating": 4.9,
+        "reviewsCount": 220,
+        "calories": 590,
+        "servings": 4,
+        "spicyLevel": 3,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1534352956036-cd81e27dd615?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Sofia Gomez",
+        "ingredients": [
+            {
+                "name": "Corn Tortillas",
+                "amount": 8,
+                "unit": "items"
+            },
+            {
+                "name": "Cooked Shredded Chicken",
+                "amount": 3,
+                "unit": "cups"
+            },
+            {
+                "name": "Tomatillos (husked & roasted)",
+                "amount": 6,
+                "unit": "items"
+            },
+            {
+                "name": "Serrano or Jalapeño Pepper",
+                "amount": 2,
+                "unit": "items"
+            },
+            {
+                "name": "Mexican Crema or Sour Cream",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Monterey Jack or Oaxaca Cheese (shredded)",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Cilantro & Onion",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Garlic & Salt",
+                "amount": 1,
+                "unit": "tsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Roast tomatillos, serrano peppers, and garlic under broiler until charred. Blend with fresh cilantro, crema, and salt into a smooth salsa verde.",
             "Briefly warm tortillas in a skillet with a drop of oil so they become pliable.",
             "Fill each warm tortilla with shredded chicken, roll tightly, and arrange seam-side down in a baking dish.",
@@ -658,46 +1138,82 @@ const RECIPES_DATA = [
             "Bake at 190°C (375°F) for 20 minutes until bubbling and lightly golden on top.",
             "Garnish with chopped cilantro and sliced red onions."
         ],
-        nutrition: {
-            calories: "590 kcal",
-            protein: "39g",
-            carbs: "38g",
-            fat: "32g",
-            fiber: "4g"
+        "nutrition": {
+            "calories": "590 kcal",
+            "protein": "39g",
+            "carbs": "38g",
+            "fat": "32g",
+            "fiber": "4g"
         }
     },
     {
-        id: 15,
-        name: "Authentic Chinese Vegetable Chow Mein",
-        tagline: "Wok-tossed egg noodles with crisp cabbage, bell peppers, carrots, bean sprouts & savory soy sauce.",
-        cuisine: "Chinese",
-        category: "Vegetarian",
-        diet: "Vegetarian",
-        time: 18,
-        prepTime: 10,
-        cookTime: 8,
-        difficulty: "Easy",
-        rating: 4.7,
-        reviewsCount: 168,
-        calories: 390,
-        servings: 2,
-        spicyLevel: 1,
-        featured: false,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Wei Chen",
-        ingredients: [
-            { name: "Chow Mein or Egg Noodles", amount: 250, unit: "g" },
-            { name: "Shredded Green Cabbage", amount: 1.5, unit: "cups" },
-            { name: "Carrots (julienned)", amount: 1, unit: "item" },
-            { name: "Bell Pepper (sliced thin)", amount: 1, unit: "item" },
-            { name: "Fresh Bean Sprouts", amount: 1, unit: "cup" },
-            { name: "Garlic & Ginger (minced)", amount: 1.5, unit: "tbsp" },
-            { name: "Soy Sauce (Dark & Light)", amount: 2, unit: "tbsp" },
-            { name: "Oyster or Vegetarian Mushroom Sauce", amount: 1, unit: "tbsp" },
-            { name: "Sesame Oil", amount: 1, unit: "tsp" }
+        "id": 15,
+        "name": "Authentic Chinese Vegetable Chow Mein",
+        "tagline": "Wok-tossed egg noodles with crisp cabbage, bell peppers, carrots, bean sprouts & savory soy sauce.",
+        "cuisine": "Chinese",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 18,
+        "prepTime": 10,
+        "cookTime": 8,
+        "difficulty": "Easy",
+        "rating": 4.7,
+        "reviewsCount": 168,
+        "calories": 390,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Wei Chen",
+        "ingredients": [
+            {
+                "name": "Chow Mein or Egg Noodles",
+                "amount": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Shredded Green Cabbage",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Carrots (julienned)",
+                "amount": 1,
+                "unit": "item"
+            },
+            {
+                "name": "Bell Pepper (sliced thin)",
+                "amount": 1,
+                "unit": "item"
+            },
+            {
+                "name": "Fresh Bean Sprouts",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Garlic & Ginger (minced)",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Soy Sauce (Dark & Light)",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Oyster or Vegetarian Mushroom Sauce",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Sesame Oil",
+                "amount": 1,
+                "unit": "tsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Cook noodles in boiling water for 3 minutes until just tender, rinse with cold water, and toss with a few drops of oil.",
             "In a small bowl, whisk light soy sauce, dark soy sauce, vegetarian stir-fry sauce, and sesame oil.",
             "Heat 2 tbsp oil in a wok over high heat. Add minced ginger and garlic; stir-fry for 15 seconds.",
@@ -706,96 +1222,164 @@ const RECIPES_DATA = [
             "Toss continuously with tongs for 2 minutes until noodles absorb sauce and take on smoky wok flavor.",
             "Serve hot with chili oil or toasted sesame seeds."
         ],
-        nutrition: {
-            calories: "390 kcal",
-            protein: "11g",
-            carbs: "62g",
-            fat: "12g",
-            fiber: "5g"
+        "nutrition": {
+            "calories": "390 kcal",
+            "protein": "11g",
+            "carbs": "62g",
+            "fat": "12g",
+            "fiber": "5g"
         }
     },
     {
-        id: 16,
-        name: "Fresh Strawberry Basil Smoothie Bowl",
-        tagline: "Thick blended frozen berries, acai, Greek yogurt, topped with chia seeds, banana slices & crunchy granola.",
-        cuisine: "American",
-        category: "Vegetarian",
-        diet: "Vegetarian",
-        time: 10,
-        prepTime: 10,
-        cookTime: 0,
-        difficulty: "Easy",
-        rating: 4.8,
-        reviewsCount: 130,
-        calories: 290,
-        servings: 1,
-        spicyLevel: 1,
-        featured: false,
-        popular: false,
-        image: "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Chloe Vance",
-        ingredients: [
-            { name: "Frozen Strawberries & Blueberries", amount: 1.5, unit: "cups" },
-            { name: "Frozen Banana", amount: 1, unit: "item" },
-            { name: "Greek Yogurt (or Almond Milk)", amount: 0.5, unit: "cup" },
-            { name: "Honey or Maple Syrup", amount: 1, unit: "tbsp" },
-            { name: "Crunchy Granola", amount: 3, unit: "tbsp" },
-            { name: "Chia Seeds", amount: 1, unit: "tsp" },
-            { name: "Fresh Basil & Fresh Berries for topping", amount: 0.25, unit: "cup" }
+        "id": 16,
+        "name": "Fresh Strawberry Basil Smoothie Bowl",
+        "tagline": "Thick blended frozen berries, acai, Greek yogurt, topped with chia seeds, banana slices & crunchy granola.",
+        "cuisine": "American",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 10,
+        "prepTime": 10,
+        "cookTime": 0,
+        "difficulty": "Easy",
+        "rating": 4.8,
+        "reviewsCount": 130,
+        "calories": 290,
+        "servings": 1,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Chloe Vance",
+        "ingredients": [
+            {
+                "name": "Frozen Strawberries & Blueberries",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Frozen Banana",
+                "amount": 1,
+                "unit": "item"
+            },
+            {
+                "name": "Greek Yogurt (or Almond Milk)",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Honey or Maple Syrup",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Crunchy Granola",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Chia Seeds",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Fresh Basil & Fresh Berries for topping",
+                "amount": 0.25,
+                "unit": "cup"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Add frozen strawberries, frozen banana, Greek yogurt, and honey into a high-speed blender.",
             "Blend on low, pushing ingredients down with a tamper, until smooth, ultra-thick, and creamy like soft serve.",
             "Scoop the smoothie into a shallow wide bowl.",
             "Artfully arrange sliced fresh strawberries, blueberries, crunchy granola, and chia seeds in rows.",
             "Garnish with a tiny fresh basil leaf and enjoy immediately with a spoon."
         ],
-        nutrition: {
-            calories: "290 kcal",
-            protein: "12g",
-            carbs: "52g",
-            fat: "4g",
-            fiber: "8g"
+        "nutrition": {
+            "calories": "290 kcal",
+            "protein": "12g",
+            "carbs": "52g",
+            "fat": "4g",
+            "fiber": "8g"
         }
     },
-
-    /* ==========================================================================
-       Traditional & Heritage World Recipes
-       ========================================================================== */
     {
-        id: 17,
-        name: "Traditional South Indian Sambar & Steamed Idli",
-        tagline: "Fluffy steamed fermented rice cakes served with aromatic toor dal lentil vegetable sambar and coconut chutney.",
-        cuisine: "Indian",
-        category: "Vegetarian",
-        diet: "Vegetarian",
-        time: 40,
-        prepTime: 15,
-        cookTime: 25,
-        difficulty: "Medium",
-        rating: 4.9,
-        reviewsCount: 380,
-        calories: 330,
-        servings: 4,
-        spicyLevel: 2,
-        featured: true,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Meenakshi Sundaram",
-        ingredients: [
-            { name: "Fermented Idli Batter", amount: 3, unit: "cups" },
-            { name: "Toor Dal (split pigeon peas)", amount: 1, unit: "cup" },
-            { name: "Shallots / Pearl Onions", amount: 10, unit: "items" },
-            { name: "Drumstick & Carrots (cut into 2-inch pieces)", amount: 1.5, unit: "cups" },
-            { name: "Tamarind Pulp (extracted in warm water)", amount: 3, unit: "tbsp" },
-            { name: "Traditional Sambar Powder", amount: 2, unit: "tbsp" },
-            { name: "Mustard Seeds & Fenugreek Seeds", amount: 1, unit: "tsp" },
-            { name: "Curry Leaves & Dry Red Chilies", amount: 2, unit: "stalks" },
-            { name: "Hing (Asafoetida)", amount: 0.25, unit: "tsp" },
-            { name: "Sesame Oil / Ghee", amount: 1.5, unit: "tbsp" },
-            { name: "Salt", amount: 1.5, unit: "tsp" }
+        "id": 17,
+        "name": "Traditional South Indian Sambar & Steamed Idli",
+        "tagline": "Fluffy steamed fermented rice cakes served with aromatic toor dal lentil vegetable sambar and coconut chutney.",
+        "cuisine": "Indian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 40,
+        "prepTime": 15,
+        "cookTime": 25,
+        "difficulty": "Medium",
+        "rating": 4.9,
+        "reviewsCount": 380,
+        "calories": 330,
+        "servings": 4,
+        "spicyLevel": 2,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Meenakshi Sundaram",
+        "ingredients": [
+            {
+                "name": "Fermented Idli Batter",
+                "amount": 3,
+                "unit": "cups"
+            },
+            {
+                "name": "Toor Dal (split pigeon peas)",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Shallots / Pearl Onions",
+                "amount": 10,
+                "unit": "items"
+            },
+            {
+                "name": "Drumstick & Carrots (cut into 2-inch pieces)",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Tamarind Pulp (extracted in warm water)",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Traditional Sambar Powder",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Mustard Seeds & Fenugreek Seeds",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Curry Leaves & Dry Red Chilies",
+                "amount": 2,
+                "unit": "stalks"
+            },
+            {
+                "name": "Hing (Asafoetida)",
+                "amount": 0.25,
+                "unit": "tsp"
+            },
+            {
+                "name": "Sesame Oil / Ghee",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Salt",
+                "amount": 1.5,
+                "unit": "tsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Grease idli molds with sesame oil. Pour idli batter and steam in an idli steamer for 10-12 minutes until fluffy. Unmold with a wet spoon.",
             "Pressure cook toor dal with turmeric and 2.5 cups water until soft and mushy; mash lightly with a whisk.",
             "In a pot, boil shallots, drumstick, and carrots with tamarind water, sambar powder, turmeric, and salt until vegetables are tender.",
@@ -804,48 +1388,92 @@ const RECIPES_DATA = [
             "Pour hot aromatic tempering over the simmering sambar and immediately cover with a lid to trap the aromas.",
             "Serve steaming soft idlis submerged in hot sambar with freshly ground coconut chutney."
         ],
-        nutrition: {
-            calories: "330 kcal",
-            protein: "14g",
-            carbs: "62g",
-            fat: "5g",
-            fiber: "8g"
+        "nutrition": {
+            "calories": "330 kcal",
+            "protein": "14g",
+            "carbs": "62g",
+            "fat": "5g",
+            "fiber": "8g"
         }
     },
     {
-        id: 18,
-        name: "Authentic Delhi Butter Chicken (Murgh Makhani)",
-        tagline: "Original tandoori marinated chicken simmered in velvety tomato, makhani butter, cashew cream, and fenugreek gravy.",
-        cuisine: "Indian",
-        category: "Non-Vegetarian",
-        diet: "Non-Vegetarian",
-        time: 45,
-        prepTime: 20,
-        cookTime: 25,
-        difficulty: "Medium",
-        rating: 5.0,
-        reviewsCount: 520,
-        calories: 650,
-        servings: 4,
-        spicyLevel: 2,
-        featured: true,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Sanjeev R.",
-        ingredients: [
-            { name: "Boneless Chicken Thighs (cubed)", amount: 600, unit: "g" },
-            { name: "Hung Curd / Greek Yogurt", amount: 0.5, unit: "cup" },
-            { name: "Kashmiri Red Chili Powder", amount: 2, unit: "tbsp" },
-            { name: "Ginger-Garlic Paste", amount: 2, unit: "tbsp" },
-            { name: "Ripe Red Tomatoes (pureed)", amount: 6, unit: "large" },
-            { name: "Cashews (boiled & blended to smooth paste)", amount: 15, unit: "nuts" },
-            { name: "Unsalted Butter (Makhani)", amount: 3, unit: "tbsp" },
-            { name: "Heavy Cooking Cream", amount: 3, unit: "tbsp" },
-            { name: "Kasuri Methi (roasted & crushed)", amount: 1.5, unit: "tsp" },
-            { name: "Garam Masala & Cardamom Powder", amount: 1, unit: "tsp" },
-            { name: "Honey or Sugar", amount: 1, unit: "tsp" }
+        "id": 18,
+        "name": "Authentic Delhi Butter Chicken (Murgh Makhani)",
+        "tagline": "Original tandoori marinated chicken simmered in velvety tomato, makhani butter, cashew cream, and fenugreek gravy.",
+        "cuisine": "Indian",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 45,
+        "prepTime": 20,
+        "cookTime": 25,
+        "difficulty": "Medium",
+        "rating": 5,
+        "reviewsCount": 520,
+        "calories": 650,
+        "servings": 4,
+        "spicyLevel": 2,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Sanjeev R.",
+        "ingredients": [
+            {
+                "name": "Boneless Chicken Thighs (cubed)",
+                "amount": 600,
+                "unit": "g"
+            },
+            {
+                "name": "Hung Curd / Greek Yogurt",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Kashmiri Red Chili Powder",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Ginger-Garlic Paste",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Ripe Red Tomatoes (pureed)",
+                "amount": 6,
+                "unit": "large"
+            },
+            {
+                "name": "Cashews (boiled & blended to smooth paste)",
+                "amount": 15,
+                "unit": "nuts"
+            },
+            {
+                "name": "Unsalted Butter (Makhani)",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Heavy Cooking Cream",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Kasuri Methi (roasted & crushed)",
+                "amount": 1.5,
+                "unit": "tsp"
+            },
+            {
+                "name": "Garam Masala & Cardamom Powder",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Honey or Sugar",
+                "amount": 1,
+                "unit": "tsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Marinate chicken in yogurt, ginger-garlic paste, 1 tbsp Kashmiri chili, garam masala, mustard oil, and salt for 1 hour.",
             "Sear the chicken on high heat in a skillet or grill until lightly charred and smoky (about 8 minutes). Set aside.",
             "For Makhani Gravy: Simmer tomato puree with whole cardamom, cloves, and remaining Kashmiri chili powder until reduced and deep crimson.",
@@ -854,48 +1482,92 @@ const RECIPES_DATA = [
             "Gently slide in the smoky grilled chicken pieces and cook on low heat for 6-8 minutes.",
             "Drizzle with swirl of cream and serve with hot garlic naan or saffron pulao."
         ],
-        nutrition: {
-            calories: "650 kcal",
-            protein: "42g",
-            carbs: "18g",
-            fat: "46g",
-            fiber: "3g"
+        "nutrition": {
+            "calories": "650 kcal",
+            "protein": "42g",
+            "carbs": "18g",
+            "fat": "46g",
+            "fiber": "3g"
         }
     },
     {
-        id: 19,
-        name: "Traditional Spanish Seafood Paella Valenciana",
-        tagline: "Authentic saffron-infused Bomba rice loaded with juicy king prawns, fresh mussels, calamari & rosemary.",
-        cuisine: "Mediterranean",
-        category: "Non-Vegetarian",
-        diet: "Pescatarian",
-        time: 45,
-        prepTime: 15,
-        cookTime: 30,
-        difficulty: "Hard",
-        rating: 4.9,
-        reviewsCount: 290,
-        calories: 560,
-        servings: 4,
-        spicyLevel: 1,
-        featured: true,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Mateo Alarcón",
-        ingredients: [
-            { name: "Spanish Bomba or Calasparra Rice", amount: 2, unit: "cups" },
-            { name: "Tiger Prawns / Shrimp (shell on)", amount: 300, unit: "g" },
-            { name: "Fresh Mussels (scrubbed & debearded)", amount: 250, unit: "g" },
-            { name: "Calamari Rings (squid)", amount: 200, unit: "g" },
-            { name: "Seafood or Fish Broth (infused with saffron)", amount: 4, unit: "cups" },
-            { name: "Spanish Saffron threads", amount: 0.5, unit: "tsp" },
-            { name: "Sweet Smoked Spanish Paprika (Pimentón)", amount: 1.5, unit: "tsp" },
-            { name: "Grated Tomatoes & Minced Garlic", amount: 0.5, unit: "cup" },
-            { name: "Red Bell Pepper (sliced into strips)", amount: 1, unit: "item" },
-            { name: "Extra Virgin Olive Oil", amount: 3, unit: "tbsp" },
-            { name: "Fresh Lemon wedges & Rosemary sprig", amount: 1, unit: "serving" }
+        "id": 19,
+        "name": "Traditional Spanish Seafood Paella Valenciana",
+        "tagline": "Authentic saffron-infused Bomba rice loaded with juicy king prawns, fresh mussels, calamari & rosemary.",
+        "cuisine": "Mediterranean",
+        "category": "Non-Vegetarian",
+        "diet": "Pescatarian",
+        "time": 45,
+        "prepTime": 15,
+        "cookTime": 30,
+        "difficulty": "Hard",
+        "rating": 4.9,
+        "reviewsCount": 290,
+        "calories": 560,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Mateo Alarcón",
+        "ingredients": [
+            {
+                "name": "Spanish Bomba or Calasparra Rice",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Tiger Prawns / Shrimp (shell on)",
+                "amount": 300,
+                "unit": "g"
+            },
+            {
+                "name": "Fresh Mussels (scrubbed & debearded)",
+                "amount": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Calamari Rings (squid)",
+                "amount": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Seafood or Fish Broth (infused with saffron)",
+                "amount": 4,
+                "unit": "cups"
+            },
+            {
+                "name": "Spanish Saffron threads",
+                "amount": 0.5,
+                "unit": "tsp"
+            },
+            {
+                "name": "Sweet Smoked Spanish Paprika (Pimentón)",
+                "amount": 1.5,
+                "unit": "tsp"
+            },
+            {
+                "name": "Grated Tomatoes & Minced Garlic",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Red Bell Pepper (sliced into strips)",
+                "amount": 1,
+                "unit": "item"
+            },
+            {
+                "name": "Extra Virgin Olive Oil",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Lemon wedges & Rosemary sprig",
+                "amount": 1,
+                "unit": "serving"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Warm seafood broth in a small pot and steep saffron threads for 10 minutes until deep golden-amber.",
             "Heat olive oil in a wide, shallow paella pan. Sear prawns and calamari for 2 minutes, then remove and set aside.",
             "In the same pan, sauté bell pepper strips and minced garlic, then add grated tomato paste and smoked paprika (Sofrito).",
@@ -905,46 +1577,82 @@ const RECIPES_DATA = [
             "Increase heat to medium-high for the last 2 minutes to create the legendary caramelized crispy bottom crust (Socarrat).",
             "Rest covered with a clean tea towel for 5 minutes, garnish with lemon wedges, and serve straight from the pan."
         ],
-        nutrition: {
-            calories: "560 kcal",
-            protein: "36g",
-            carbs: "68g",
-            fat: "16g",
-            fiber: "4g"
+        "nutrition": {
+            "calories": "560 kcal",
+            "protein": "36g",
+            "carbs": "68g",
+            "fat": "16g",
+            "fiber": "4g"
         }
     },
     {
-        id: 20,
-        name: "Traditional Tokyo Shoyu Ramen with Chashu",
-        tagline: "Handcrafted springy ramen noodles in a rich umami dashi broth with melt-in-mouth chashu pork, soft ajitsuke egg, and nori.",
-        cuisine: "Japanese",
-        category: "Non-Vegetarian",
-        diet: "Non-Vegetarian",
-        time: 50,
-        prepTime: 20,
-        cookTime: 30,
-        difficulty: "Medium",
-        rating: 4.9,
-        reviewsCount: 315,
-        calories: 590,
-        servings: 2,
-        spicyLevel: 1,
-        featured: true,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Kenji Tanaka",
-        ingredients: [
-            { name: "Fresh Ramen Noodles", amount: 2, unit: "portions" },
-            { name: "Rich Chicken & Dashi Broth", amount: 4, unit: "cups" },
-            { name: "Braised Chashu Pork slices", amount: 6, unit: "slices" },
-            { name: "Ajitsuke Tamago (soft ramen eggs, halved)", amount: 2, unit: "eggs" },
-            { name: "Shoyu Tare (Japanese soy sauce seasoning blend)", amount: 4, unit: "tbsp" },
-            { name: "Menma (seasoned bamboo shoots)", amount: 0.25, unit: "cup" },
-            { name: "Green Scallions (finely sliced)", amount: 3, unit: "stalks" },
-            { name: "Crispy Nori Seaweed sheets", amount: 2, unit: "sheets" },
-            { name: "Aroma Sesame & Garlic Oil (Mayu)", amount: 1, unit: "tbsp" }
+        "id": 20,
+        "name": "Traditional Tokyo Shoyu Ramen with Chashu",
+        "tagline": "Handcrafted springy ramen noodles in a rich umami dashi broth with melt-in-mouth chashu pork, soft ajitsuke egg, and nori.",
+        "cuisine": "Japanese",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 50,
+        "prepTime": 20,
+        "cookTime": 30,
+        "difficulty": "Medium",
+        "rating": 4.9,
+        "reviewsCount": 315,
+        "calories": 590,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Kenji Tanaka",
+        "ingredients": [
+            {
+                "name": "Fresh Ramen Noodles",
+                "amount": 2,
+                "unit": "portions"
+            },
+            {
+                "name": "Rich Chicken & Dashi Broth",
+                "amount": 4,
+                "unit": "cups"
+            },
+            {
+                "name": "Braised Chashu Pork slices",
+                "amount": 6,
+                "unit": "slices"
+            },
+            {
+                "name": "Ajitsuke Tamago (soft ramen eggs, halved)",
+                "amount": 2,
+                "unit": "eggs"
+            },
+            {
+                "name": "Shoyu Tare (Japanese soy sauce seasoning blend)",
+                "amount": 4,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Menma (seasoned bamboo shoots)",
+                "amount": 0.25,
+                "unit": "cup"
+            },
+            {
+                "name": "Green Scallions (finely sliced)",
+                "amount": 3,
+                "unit": "stalks"
+            },
+            {
+                "name": "Crispy Nori Seaweed sheets",
+                "amount": 2,
+                "unit": "sheets"
+            },
+            {
+                "name": "Aroma Sesame & Garlic Oil (Mayu)",
+                "amount": 1,
+                "unit": "tbsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Bring the dashi and chicken broth to a gentle simmer in a soup pot.",
             "In each serving ramen bowl, add 2 tbsp of shoyu tare and 1 tsp aroma oil.",
             "Cook fresh ramen noodles in a pot of rolling boiling water for exactly 90 seconds (firm al dente). Drain vigorously.",
@@ -953,47 +1661,87 @@ const RECIPES_DATA = [
             "Top with tender braised chashu pork slices, seasoned bamboo shoots, half-cut jammy ramen egg, and green scallions.",
             "Tuck crispy nori sheets on the rim of the bowl and serve immediately while steaming hot."
         ],
-        nutrition: {
-            calories: "590 kcal",
-            protein: "34g",
-            carbs: "66g",
-            fat: "21g",
-            fiber: "4g"
+        "nutrition": {
+            "calories": "590 kcal",
+            "protein": "34g",
+            "carbs": "66g",
+            "fat": "21g",
+            "fiber": "4g"
         }
     },
     {
-        id: 21,
-        name: "Traditional Middle Eastern Shakshuka",
-        tagline: "Farm fresh eggs gently poached in a spiced, bubbling skillet of roasted bell peppers, tomatoes, garlic, cumin, and feta.",
-        cuisine: "Mediterranean",
-        category: "Vegetarian",
-        diet: "Vegetarian",
-        time: 25,
-        prepTime: 10,
-        cookTime: 15,
-        difficulty: "Easy",
-        rating: 4.8,
-        reviewsCount: 240,
-        calories: 340,
-        servings: 2,
-        spicyLevel: 2,
-        featured: false,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Omar Haddad",
-        ingredients: [
-            { name: "Fresh Eggs", amount: 4, unit: "items" },
-            { name: "Crushed San Marzano Tomatoes", amount: 1, unit: "can (400g)" },
-            { name: "Red Bell Pepper (diced)", amount: 1, unit: "large" },
-            { name: "Onion & Garlic cloves (minced)", amount: 4, unit: "cloves" },
-            { name: "Ground Cumin & Smoked Paprika", amount: 1.5, unit: "tsp" },
-            { name: "Harissa Paste or Chili Flakes", amount: 1, unit: "tsp" },
-            { name: "Crumbled Feta Cheese", amount: 60, unit: "g" },
-            { name: "Extra Virgin Olive Oil", amount: 2, unit: "tbsp" },
-            { name: "Fresh Cilantro & Parsley", amount: 0.25, unit: "cup" },
-            { name: "Crusty Bread or Challah for dipping", amount: 2, unit: "servings" }
+        "id": 21,
+        "name": "Traditional Middle Eastern Shakshuka",
+        "tagline": "Farm fresh eggs gently poached in a spiced, bubbling skillet of roasted bell peppers, tomatoes, garlic, cumin, and feta.",
+        "cuisine": "Mediterranean",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 25,
+        "prepTime": 10,
+        "cookTime": 15,
+        "difficulty": "Easy",
+        "rating": 4.8,
+        "reviewsCount": 240,
+        "calories": 340,
+        "servings": 2,
+        "spicyLevel": 2,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1590412200988-a436970781fa?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Omar Haddad",
+        "ingredients": [
+            {
+                "name": "Fresh Eggs",
+                "amount": 4,
+                "unit": "items"
+            },
+            {
+                "name": "Crushed San Marzano Tomatoes",
+                "amount": 1,
+                "unit": "can (400g)"
+            },
+            {
+                "name": "Red Bell Pepper (diced)",
+                "amount": 1,
+                "unit": "large"
+            },
+            {
+                "name": "Onion & Garlic cloves (minced)",
+                "amount": 4,
+                "unit": "cloves"
+            },
+            {
+                "name": "Ground Cumin & Smoked Paprika",
+                "amount": 1.5,
+                "unit": "tsp"
+            },
+            {
+                "name": "Harissa Paste or Chili Flakes",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Crumbled Feta Cheese",
+                "amount": 60,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Cilantro & Parsley",
+                "amount": 0.25,
+                "unit": "cup"
+            },
+            {
+                "name": "Crusty Bread or Challah for dipping",
+                "amount": 2,
+                "unit": "servings"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Heat extra virgin olive oil in a heavy cast-iron skillet over medium heat.",
             "Add diced onions and red bell peppers; cook for 5 minutes until soft and caramelized around edges.",
             "Stir in minced garlic, ground cumin, smoked paprika, and harissa paste; fry for 1 minute until fragrant.",
@@ -1003,47 +1751,87 @@ const RECIPES_DATA = [
             "Sprinkle with crumbled feta cheese and chopped fresh parsley and cilantro.",
             "Serve right in the sizzling skillet with thick slices of warm crusty bread."
         ],
-        nutrition: {
-            calories: "340 kcal",
-            protein: "19g",
-            carbs: "18g",
-            fat: "22g",
-            fiber: "5g"
+        "nutrition": {
+            "calories": "340 kcal",
+            "protein": "19g",
+            "carbs": "18g",
+            "fat": "22g",
+            "fiber": "5g"
         }
     },
     {
-        id: 22,
-        name: "Traditional Italian Tagliatelle al Ragù Bolognese",
-        tagline: "Slow-simmered heritage meat ragù with mirepoix, red wine, tomatoes & whole milk over golden fresh tagliatelle.",
-        cuisine: "Italian",
-        category: "Non-Vegetarian",
-        diet: "Non-Vegetarian",
-        time: 60,
-        prepTime: 20,
-        cookTime: 40,
-        difficulty: "Medium",
-        rating: 4.9,
-        reviewsCount: 390,
-        calories: 610,
-        servings: 4,
-        spicyLevel: 1,
-        featured: true,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1621996346565-e3d5d6281699?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Marco V.",
-        ingredients: [
-            { name: "Fresh Tagliatelle Pasta (egg pasta)", amount: 400, unit: "g" },
-            { name: "Coarsely Ground Beef & Pork (blend)", amount: 500, unit: "g" },
-            { name: "Finely Minced Onion, Celery & Carrot (Soffritto)", amount: 1.5, unit: "cups" },
-            { name: "Pancetta (finely diced)", amount: 60, unit: "g" },
-            { name: "Dry Italian Red Wine (Chianti)", amount: 0.5, unit: "cup" },
-            { name: "Whole Milk", amount: 0.5, unit: "cup" },
-            { name: "Tomato Paste & Passata", amount: 1.5, unit: "cups" },
-            { name: "Beef Broth", amount: 1, unit: "cup" },
-            { name: "Parmigiano-Reggiano (freshly grated)", amount: 0.5, unit: "cup" },
-            { name: "Butter & Olive Oil", amount: 2, unit: "tbsp" }
+        "id": 22,
+        "name": "Traditional Italian Tagliatelle al Ragù Bolognese",
+        "tagline": "Slow-simmered heritage meat ragù with mirepoix, red wine, tomatoes & whole milk over golden fresh tagliatelle.",
+        "cuisine": "Italian",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 60,
+        "prepTime": 20,
+        "cookTime": 40,
+        "difficulty": "Medium",
+        "rating": 4.9,
+        "reviewsCount": 390,
+        "calories": 610,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1621996346565-e3d5d6281699?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Marco V.",
+        "ingredients": [
+            {
+                "name": "Fresh Tagliatelle Pasta (egg pasta)",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Coarsely Ground Beef & Pork (blend)",
+                "amount": 500,
+                "unit": "g"
+            },
+            {
+                "name": "Finely Minced Onion, Celery & Carrot (Soffritto)",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Pancetta (finely diced)",
+                "amount": 60,
+                "unit": "g"
+            },
+            {
+                "name": "Dry Italian Red Wine (Chianti)",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Whole Milk",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Tomato Paste & Passata",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Beef Broth",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Parmigiano-Reggiano (freshly grated)",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Butter & Olive Oil",
+                "amount": 2,
+                "unit": "tbsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "In a heavy Dutch oven, render diced pancetta in 1 tbsp olive oil over medium heat.",
             "Add the soffritto (onion, celery, carrot) and sauté gently for 10 minutes until tender and sweet.",
             "Add ground meat, breaking up with a spoon, and brown thoroughly until moisture evaporates.",
@@ -1053,46 +1841,82 @@ const RECIPES_DATA = [
             "Cook fresh egg tagliatelle in salted boiling water for 2-3 minutes until al dente.",
             "Toss the hot pasta directly into the rich ragù with a knob of butter and generous Parmigiano-Reggiano."
         ],
-        nutrition: {
-            calories: "610 kcal",
-            protein: "38g",
-            carbs: "56g",
-            fat: "26g",
-            fiber: "4g"
+        "nutrition": {
+            "calories": "610 kcal",
+            "protein": "38g",
+            "carbs": "56g",
+            "fat": "26g",
+            "fiber": "4g"
         }
     },
     {
-        id: 23,
-        name: "Traditional Mexican Chicken Pozole Rojo",
-        tagline: "Ancient Aztec heritage hominy stew simmered with shredded chicken in a rich ancho & guajillo chili broth.",
-        cuisine: "Mexican",
-        category: "Non-Vegetarian",
-        diet: "Non-Vegetarian",
-        time: 55,
-        prepTime: 20,
-        cookTime: 35,
-        difficulty: "Medium",
-        rating: 4.8,
-        reviewsCount: 205,
-        calories: 460,
-        servings: 4,
-        spicyLevel: 3,
-        featured: false,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Sofia Gomez",
-        ingredients: [
-            { name: "Shredded Chicken Breast / Thighs", amount: 500, unit: "g" },
-            { name: "White Hominy (Maíz Pozolero, rinsed & drained)", amount: 1, unit: "large can (800g)" },
-            { name: "Dried Ancho Chilies (stemmed & seeded)", amount: 3, unit: "items" },
-            { name: "Dried Guajillo Chilies (stemmed & seeded)", amount: 3, unit: "items" },
-            { name: "Chicken Broth", amount: 5, unit: "cups" },
-            { name: "Garlic cloves & White Onion", amount: 5, unit: "cloves" },
-            { name: "Mexican Oregano & Ground Cumin", amount: 1.5, unit: "tsp" },
-            { name: "Shredded Cabbage, Radishes & Limes for garnish", amount: 2, unit: "cups" },
-            { name: "Crispy Corn Tostadas", amount: 4, unit: "items" }
+        "id": 23,
+        "name": "Traditional Mexican Chicken Pozole Rojo",
+        "tagline": "Ancient Aztec heritage hominy stew simmered with shredded chicken in a rich ancho & guajillo chili broth.",
+        "cuisine": "Mexican",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 55,
+        "prepTime": 20,
+        "cookTime": 35,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 205,
+        "calories": 460,
+        "servings": 4,
+        "spicyLevel": 3,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Sofia Gomez",
+        "ingredients": [
+            {
+                "name": "Shredded Chicken Breast / Thighs",
+                "amount": 500,
+                "unit": "g"
+            },
+            {
+                "name": "White Hominy (Maíz Pozolero, rinsed & drained)",
+                "amount": 1,
+                "unit": "large can (800g)"
+            },
+            {
+                "name": "Dried Ancho Chilies (stemmed & seeded)",
+                "amount": 3,
+                "unit": "items"
+            },
+            {
+                "name": "Dried Guajillo Chilies (stemmed & seeded)",
+                "amount": 3,
+                "unit": "items"
+            },
+            {
+                "name": "Chicken Broth",
+                "amount": 5,
+                "unit": "cups"
+            },
+            {
+                "name": "Garlic cloves & White Onion",
+                "amount": 5,
+                "unit": "cloves"
+            },
+            {
+                "name": "Mexican Oregano & Ground Cumin",
+                "amount": 1.5,
+                "unit": "tsp"
+            },
+            {
+                "name": "Shredded Cabbage, Radishes & Limes for garnish",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Crispy Corn Tostadas",
+                "amount": 4,
+                "unit": "items"
+            }
         ],
-        instructions: [
+        "instructions": [
             "Toast dried ancho and guajillo chilies in a dry pan for 1-2 minutes until fragrant, then soak in hot water for 15 minutes to soften.",
             "Transfer softened chilies, garlic, half an onion, oregano, cumin, and 1 cup of soaking water into a blender. Blend until super smooth, then strain through a mesh sieve.",
             "In a large soup pot, heat 1 tbsp oil, pour the strained red chili sauce, and fry for 4 minutes until dark and fragrant.",
@@ -1101,45 +1925,77 @@ const RECIPES_DATA = [
             "Stir in the shredded chicken and cook on low for an additional 10 minutes. Season with sea salt.",
             "Ladle hot pozole into bowls and top with shredded crunchy cabbage, thinly sliced radishes, a sprinkle of Mexican oregano, and fresh lime wedges."
         ],
-        nutrition: {
-            calories: "460 kcal",
-            protein: "38g",
-            carbs: "48g",
-            fat: "12g",
-            fiber: "9g"
+        "nutrition": {
+            "calories": "460 kcal",
+            "protein": "38g",
+            "carbs": "48g",
+            "fat": "12g",
+            "fiber": "9g"
         }
     },
     {
-        id: 24,
-        name: "Traditional Chinese Steamed Pork & Scallion Dumplings (Jiaozi)",
-        tagline: "Handcrafted tender wrappers filled with juicy seasoned pork, fresh ginger, scallions, and served with black vinegar chili dip.",
-        cuisine: "Chinese",
-        category: "Non-Vegetarian",
-        diet: "Non-Vegetarian",
-        time: 40,
-        prepTime: 25,
-        cookTime: 15,
-        difficulty: "Medium",
-        rating: 4.9,
-        reviewsCount: 310,
-        calories: 390,
-        servings: 3,
-        spicyLevel: 1,
-        featured: false,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Wei Chen",
-        ingredients: [
-            { name: "Round Dumpling Wrappers (Jiaozi skin)", amount: 24, unit: "wrappers" },
-            { name: "Ground Pork (or minced chicken)", amount: 350, unit: "g" },
-            { name: "Finely Chopped Scallions", amount: 4, unit: "stalks" },
-            { name: "Fresh Ginger (grated)", amount: 1.5, unit: "tbsp" },
-            { name: "Chinese Shaoxing Cooking Wine", amount: 1, unit: "tbsp" },
-            { name: "Light Soy Sauce & Toasted Sesame Oil", amount: 2, unit: "tbsp" },
-            { name: "White Pepper & Salt", amount: 0.5, unit: "tsp" },
-            { name: "Chinese Chinkiang Black Vinegar & Chili Oil for dip", amount: 3, unit: "tbsp" }
+        "id": 24,
+        "name": "Traditional Chinese Steamed Pork & Scallion Dumplings (Jiaozi)",
+        "tagline": "Handcrafted tender wrappers filled with juicy seasoned pork, fresh ginger, scallions, and served with black vinegar chili dip.",
+        "cuisine": "Chinese",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 40,
+        "prepTime": 25,
+        "cookTime": 15,
+        "difficulty": "Medium",
+        "rating": 4.9,
+        "reviewsCount": 310,
+        "calories": 390,
+        "servings": 3,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Wei Chen",
+        "ingredients": [
+            {
+                "name": "Round Dumpling Wrappers (Jiaozi skin)",
+                "amount": 24,
+                "unit": "wrappers"
+            },
+            {
+                "name": "Ground Pork (or minced chicken)",
+                "amount": 350,
+                "unit": "g"
+            },
+            {
+                "name": "Finely Chopped Scallions",
+                "amount": 4,
+                "unit": "stalks"
+            },
+            {
+                "name": "Fresh Ginger (grated)",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Chinese Shaoxing Cooking Wine",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Light Soy Sauce & Toasted Sesame Oil",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "White Pepper & Salt",
+                "amount": 0.5,
+                "unit": "tsp"
+            },
+            {
+                "name": "Chinese Chinkiang Black Vinegar & Chili Oil for dip",
+                "amount": 3,
+                "unit": "tbsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "In a mixing bowl, combine ground pork, grated ginger, chopped scallions, soy sauce, Shaoxing wine, sesame oil, white pepper, and salt.",
             "Stir the meat filling vigorously in one direction for 2 minutes until it becomes sticky and emulsified.",
             "Place a dumpling wrapper on your palm, spoon 1 tablespoon of filling in the center, and moisten edges with water.",
@@ -1148,47 +2004,87 @@ const RECIPES_DATA = [
             "Steam over boiling water on high heat for 10-12 minutes until wrappers become translucent and juicy.",
             "Serve immediately with a dipping saucer of Chinkiang black vinegar, chili oil, and julienned ginger."
         ],
-        nutrition: {
-            calories: "390 kcal",
-            protein: "22g",
-            carbs: "38g",
-            fat: "17g",
-            fiber: "2g"
+        "nutrition": {
+            "calories": "390 kcal",
+            "protein": "22g",
+            "carbs": "38g",
+            "fat": "17g",
+            "fiber": "2g"
         }
     },
     {
-        id: 25,
-        name: "Traditional Rajasthani Dal Baati Churma",
-        tagline: "Authentic desert delicacy of golden baked whole wheat baatis soaked in desi ghee, spicy panchmel dal & sweet churma.",
-        cuisine: "Indian",
-        category: "Vegetarian",
-        diet: "Vegetarian",
-        time: 55,
-        prepTime: 20,
-        cookTime: 35,
-        difficulty: "Hard",
-        rating: 4.9,
-        reviewsCount: 360,
-        calories: 680,
-        servings: 4,
-        spicyLevel: 3,
-        featured: true,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Sanjeev R.",
-        ingredients: [
-            { name: "Coarse Whole Wheat Flour (Atta)", amount: 2, unit: "cups" },
-            { name: "Semolina (Sooji / Rava)", amount: 0.5, unit: "cup" },
-            { name: "Pure Desi Ghee (for dough & dipping)", amount: 0.75, unit: "cup" },
-            { name: "Panchmel Dal Mix (Toor, Moong, Chana, Urad & Masoor)", amount: 1.5, unit: "cups" },
-            { name: "Carom Seeds (Ajwain)", amount: 1, unit: "tsp" },
-            { name: "Jaggery / Powdered Sugar (for sweet Churma)", amount: 0.5, unit: "cup" },
-            { name: "Ginger, Garlic & Green Chilies (minced)", amount: 2, unit: "tbsp" },
-            { name: "Hing, Cumin & Dry Red Chilies", amount: 1, unit: "tsp" },
-            { name: "Turmeric & Red Chili Powder", amount: 1.5, unit: "tsp" },
-            { name: "Salt", amount: 1.5, unit: "tsp" }
+        "id": 25,
+        "name": "Traditional Rajasthani Dal Baati Churma",
+        "tagline": "Authentic desert delicacy of golden baked whole wheat baatis soaked in desi ghee, spicy panchmel dal & sweet churma.",
+        "cuisine": "Indian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 55,
+        "prepTime": 20,
+        "cookTime": 35,
+        "difficulty": "Hard",
+        "rating": 4.9,
+        "reviewsCount": 360,
+        "calories": 680,
+        "servings": 4,
+        "spicyLevel": 3,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Sanjeev R.",
+        "ingredients": [
+            {
+                "name": "Coarse Whole Wheat Flour (Atta)",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Semolina (Sooji / Rava)",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Pure Desi Ghee (for dough & dipping)",
+                "amount": 0.75,
+                "unit": "cup"
+            },
+            {
+                "name": "Panchmel Dal Mix (Toor, Moong, Chana, Urad & Masoor)",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Carom Seeds (Ajwain)",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Jaggery / Powdered Sugar (for sweet Churma)",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Ginger, Garlic & Green Chilies (minced)",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Hing, Cumin & Dry Red Chilies",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Turmeric & Red Chili Powder",
+                "amount": 1.5,
+                "unit": "tsp"
+            },
+            {
+                "name": "Salt",
+                "amount": 1.5,
+                "unit": "tsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "For Baati: Mix wheat flour, semolina, ajwain, salt, and 4 tbsp melted ghee. Knead into a stiff, firm dough with warm water. Divide into smooth round balls.",
             "Bake baatis in a preheated tandoor, oven, or baati maker at 200°C (400°F) for 25-30 minutes, turning halfway until golden brown and crackled on top.",
             "For Panchmel Dal: Pressure cook mixed 5 lentils with turmeric, salt, and water for 4 whistles until soft. Whisk gently.",
@@ -1197,47 +2093,87 @@ const RECIPES_DATA = [
             "To serve: Lightly crack the hot baatis and submerge completely into a bowl of warm desi ghee.",
             "Serve hot dipped baatis alongside spicy panchmel dal, sweet churma, and raw onions with lemon."
         ],
-        nutrition: {
-            calories: "680 kcal",
-            protein: "21g",
-            carbs: "84g",
-            fat: "31g",
-            fiber: "12g"
+        "nutrition": {
+            "calories": "680 kcal",
+            "protein": "21g",
+            "carbs": "84g",
+            "fat": "31g",
+            "fiber": "12g"
         }
     },
     {
-        id: 26,
-        name: "Traditional French Beef Bourguignon",
-        tagline: "Classic Parisian braised beef chunks slow-cooked in rich Burgundy Pinot Noir with baby pearl onions & portobello mushrooms.",
-        cuisine: "Mediterranean",
-        category: "Non-Vegetarian",
-        diet: "Non-Vegetarian",
-        time: 75,
-        prepTime: 20,
-        cookTime: 55,
-        difficulty: "Hard",
-        rating: 4.9,
-        reviewsCount: 275,
-        calories: 640,
-        servings: 4,
-        spicyLevel: 1,
-        featured: false,
-        popular: true,
-        image: "https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=1000&q=80",
-        author: "Chef Jean-Luc Dubois",
-        ingredients: [
-            { name: "Beef Chuck Roast (cut into 2-inch cubes)", amount: 700, unit: "g" },
-            { name: "French Red Wine (Burgundy or Pinot Noir)", amount: 2, unit: "cups" },
-            { name: "Rich Beef Bone Broth", amount: 2, unit: "cups" },
-            { name: "Baby Pearl Onions (peeled)", amount: 1, unit: "cup" },
-            { name: "Cremini / Portobello Mushrooms (quartered)", amount: 250, unit: "g" },
-            { name: "Carrots (sliced into thick chunks)", amount: 2, unit: "items" },
-            { name: "Thick Cut Smoked Bacon (lardons)", amount: 100, unit: "g" },
-            { name: "Tomato Paste & Garlic", amount: 2, unit: "tbsp" },
-            { name: "Fresh Thyme sprigs & Bay leaves (Bouquet Garni)", amount: 3, unit: "sprigs" },
-            { name: "Butter and Flour for thickening", amount: 2, unit: "tbsp" }
+        "id": 26,
+        "name": "Traditional French Beef Bourguignon",
+        "tagline": "Classic Parisian braised beef chunks slow-cooked in rich Burgundy Pinot Noir with baby pearl onions & portobello mushrooms.",
+        "cuisine": "French",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 75,
+        "prepTime": 20,
+        "cookTime": 55,
+        "difficulty": "Hard",
+        "rating": 4.9,
+        "reviewsCount": 275,
+        "calories": 640,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Jean-Luc Dubois",
+        "ingredients": [
+            {
+                "name": "Beef Chuck Roast (cut into 2-inch cubes)",
+                "amount": 700,
+                "unit": "g"
+            },
+            {
+                "name": "French Red Wine (Burgundy or Pinot Noir)",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Rich Beef Bone Broth",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Baby Pearl Onions (peeled)",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Cremini / Portobello Mushrooms (quartered)",
+                "amount": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Carrots (sliced into thick chunks)",
+                "amount": 2,
+                "unit": "items"
+            },
+            {
+                "name": "Thick Cut Smoked Bacon (lardons)",
+                "amount": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Tomato Paste & Garlic",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Thyme sprigs & Bay leaves (Bouquet Garni)",
+                "amount": 3,
+                "unit": "sprigs"
+            },
+            {
+                "name": "Butter and Flour for thickening",
+                "amount": 2,
+                "unit": "tbsp"
+            }
         ],
-        instructions: [
+        "instructions": [
             "In a heavy French Dutch oven, crisp the bacon lardons over medium heat, then transfer bacon to a plate, leaving the fat in the pot.",
             "Pat beef cubes completely dry with paper towels, season with salt and pepper, and sear in batches in the hot fat until deeply browned on all sides. Remove beef.",
             "Add carrots and sliced onions to the pot and sauté for 4 minutes. Stir in tomato paste and minced garlic.",
@@ -1247,12 +2183,5108 @@ const RECIPES_DATA = [
             "In a separate skillet, sauté quartered mushrooms and pearl onions in butter until golden, then fold into the stew for the final 10 minutes of cooking.",
             "Serve steaming hot over buttery mashed potatoes or buttered egg noodles with fresh chopped parsley."
         ],
-        nutrition: {
-            calories: "640 kcal",
-            protein: "48g",
-            carbs: "24g",
-            fat: "36g",
-            fiber: "4g"
+        "nutrition": {
+            "calories": "640 kcal",
+            "protein": "48g",
+            "carbs": "24g",
+            "fat": "36g",
+            "fiber": "4g"
+        }
+    },
+    {
+        "id": 27,
+        "name": "Authentic Hyderabadi Mutton Dum Biryani",
+        "tagline": "Kacchi yakhni raw spiced tender goat meat slow cooked with long grain basmati rice, saffron & fried mint.",
+        "cuisine": "Indian",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 75,
+        "prepTime": 30,
+        "cookTime": 45,
+        "difficulty": "Hard",
+        "rating": 5,
+        "reviewsCount": 450,
+        "calories": 710,
+        "servings": 4,
+        "spicyLevel": 4,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1000&q=80",
+        "author": "Ustad Ghulam Nabi",
+        "ingredients": [
+            {
+                "name": "Mutton / Goat Meat (bone-in)",
+                "amount": 750,
+                "unit": "g"
+            },
+            {
+                "name": "Aged Basmati Rice",
+                "amount": 2.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Thick Curd / Yogurt",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Biryani Masala & Shahi Jeera",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fried Golden Onions (Birista)",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Raw Papaya Paste (meat tenderizer)",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Desi Ghee & Saffron Milk",
+                "amount": 4,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Mint & Green Chilies",
+                "amount": 0.5,
+                "unit": "cup"
+            }
+        ],
+        "instructions": [
+            "Marinate mutton with raw papaya paste, ginger-garlic, chili powder, garam masala, yogurt, fried onions, and mint for 2 hours.",
+            "Parboil basmati rice with whole spices (mace, star anise, black cardamom) till 60% done.",
+            "Layer raw marinated meat at bottom of a heavy handi, top with parboiled rice, saffron milk, ghee, and mint.",
+            "Seal handi tightly with wheat dough lid and slow cook on dum for 40 minutes.",
+            "Rest for 10 minutes before unsealing and gently mixing layers."
+        ],
+        "nutrition": {
+            "calories": "710 kcal",
+            "protein": "46g",
+            "carbs": "68g",
+            "fat": "28g",
+            "fiber": "3g"
+        }
+    },
+    {
+        "id": 28,
+        "name": "Traditional Punjabi Chole Bhature",
+        "tagline": "Spicy dark chickpea curry simmered with tea leaves and anardana, paired with puffed golden bhature.",
+        "cuisine": "Indian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 45,
+        "prepTime": 20,
+        "cookTime": 25,
+        "difficulty": "Medium",
+        "rating": 4.9,
+        "reviewsCount": 395,
+        "calories": 580,
+        "servings": 3,
+        "spicyLevel": 3,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Harpal S.",
+        "ingredients": [
+            {
+                "name": "Kabuli Chana (Chickpeas, soaked)",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "All-Purpose Flour (Maida)",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Dry Pomegranate Seeds (Anardana)",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Tea Bag (for deep dark color)",
+                "amount": 1,
+                "unit": "item"
+            },
+            {
+                "name": "Chole Masala, Cumin & Coriander",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Ginger Juliennes & Green Chilies",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Yogurt & Semolina (for bhatura dough)",
+                "amount": 3,
+                "unit": "tbsp"
+            }
+        ],
+        "instructions": [
+            "Pressure cook soaked chickpeas with tea bag, salt, and cinnamon until meltingly tender.",
+            "Knead flour with yogurt, semolina, baking soda, and warm water; let dough rest for 1 hour.",
+            "Sauté onions, ginger, garlic, anardana, and spices in ghee; add cooked chana and simmer for 15 minutes.",
+            "Roll rested dough into ovals and deep fry in hot oil until they puff like golden balloons.",
+            "Serve hot with pickled onions, green chilies, and tangy amchur chutney."
+        ],
+        "nutrition": {
+            "calories": "580 kcal",
+            "protein": "18g",
+            "carbs": "78g",
+            "fat": "22g",
+            "fiber": "10g"
+        }
+    },
+    {
+        "id": 29,
+        "name": "Authentic Goan Prawn Curry with Rice",
+        "tagline": "Tangy coconut milk and Kashmiri chili curry infused with fresh prawns, kokum, and ground spices.",
+        "cuisine": "Indian",
+        "category": "Non-Vegetarian",
+        "diet": "Pescatarian",
+        "time": 30,
+        "prepTime": 10,
+        "cookTime": 20,
+        "difficulty": "Easy",
+        "rating": 4.9,
+        "reviewsCount": 280,
+        "calories": 490,
+        "servings": 3,
+        "spicyLevel": 3,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Maria Fernandes",
+        "ingredients": [
+            {
+                "name": "Fresh Tiger Prawns (cleaned & deveined)",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Fresh Grated Coconut",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Dried Kokum Petals (or Tamarind)",
+                "amount": 5,
+                "unit": "items"
+            },
+            {
+                "name": "Kashmiri Red Chilies & Coriander Seeds",
+                "amount": 5,
+                "unit": "items"
+            },
+            {
+                "name": "Turmeric & Garlic cloves",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Coconut Oil",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Green Chilies (slit)",
+                "amount": 2,
+                "unit": "items"
+            }
+        ],
+        "instructions": [
+            "Grind coconut, dried red chilies, coriander seeds, cumin, garlic, and turmeric with water into a silky paste.",
+            "Heat coconut oil in an earthenware pot, add slit green chilies and sliced onion; sauté till translucent.",
+            "Pour in the ground coconut masala and 1.5 cups water; bring to a simmer.",
+            "Add kokum petals and sea salt, letting the sourness infuse into the coconut broth.",
+            "Slide in prawns and cook on low heat for exactly 5 minutes until plump and tender.",
+            "Serve hot over steamed Goan red or basmati rice."
+        ],
+        "nutrition": {
+            "calories": "490 kcal",
+            "protein": "32g",
+            "carbs": "36g",
+            "fat": "24g",
+            "fiber": "5g"
+        }
+    },
+    {
+        "id": 30,
+        "name": "Traditional South Indian Chettinad Chicken",
+        "tagline": "Fiery Karaikudi style chicken roasted with stone-ground Kalpasi (black stone flower), peppercorns & fennel.",
+        "cuisine": "Indian",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 40,
+        "prepTime": 15,
+        "cookTime": 25,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 310,
+        "calories": 520,
+        "servings": 3,
+        "spicyLevel": 4,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Ramanathan C.",
+        "ingredients": [
+            {
+                "name": "Chicken (bone-in pieces)",
+                "amount": 600,
+                "unit": "g"
+            },
+            {
+                "name": "Whole Black Peppercorns",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Kalpasi (Stone Flower) & Star Anise",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Fennel & Cumin Seeds",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Shallots (Sambar Onions, peeled)",
+                "amount": 15,
+                "unit": "items"
+            },
+            {
+                "name": "Curry Leaves & Dry Guntur Chilies",
+                "amount": 3,
+                "unit": "stalks"
+            },
+            {
+                "name": "Gingelly (Sesame) Oil",
+                "amount": 2,
+                "unit": "tbsp"
+            }
+        ],
+        "instructions": [
+            "Dry roast peppercorns, coriander, cumin, fennel, cinnamon, cloves, kalpasi, and dry chilies; grind to aromatic coarse powder.",
+            "Heat gingelly oil, add mustard seeds, curry leaves, and shallots; fry until deeply golden.",
+            "Add ginger-garlic paste and tomatoes; cook until oil separates.",
+            "Add chicken pieces and sear for 5 minutes. Mix in the freshly ground Chettinad spice blend.",
+            "Add 1 cup water, cover and cook on medium-low for 18 minutes until gravy is thick and clinging to chicken.",
+            "Garnish with fresh curry leaves and serve with hot parotta or dosa."
+        ],
+        "nutrition": {
+            "calories": "520 kcal",
+            "protein": "38g",
+            "carbs": "14g",
+            "fat": "34g",
+            "fiber": "4g"
+        }
+    },
+    {
+        "id": 31,
+        "name": "Authentic Kashmiri Rogan Josh",
+        "tagline": "Slow braised lamb in aromatic gravy infused with Kashmiri red chilies, fennel powder & dry ginger (Saunth).",
+        "cuisine": "Indian",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 60,
+        "prepTime": 20,
+        "cookTime": 40,
+        "difficulty": "Hard",
+        "rating": 4.9,
+        "reviewsCount": 265,
+        "calories": 640,
+        "servings": 4,
+        "spicyLevel": 3,
+        "featured": true,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1545247181-516773cae7be?auto=format&fit=crop&w=1000&q=80",
+        "author": "Waza Farooq Ahmed",
+        "ingredients": [
+            {
+                "name": "Lamb Shoulder / Shank (cubed)",
+                "amount": 700,
+                "unit": "g"
+            },
+            {
+                "name": "Mustard Oil",
+                "amount": 4,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Kashmiri Mirch Powder (dissolved in warm water)",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fennel Powder (Saunf)",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Dry Ginger Powder (Saunth)",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Asafoetida (Hing) & Black Cardamom",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Whisked Yogurt",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Ratan Jot (Alkanet root for natural crimson hue)",
+                "amount": 1,
+                "unit": "piece"
+            }
+        ],
+        "instructions": [
+            "Smoke mustard oil in a heavy pot until it reaches smoking point, cool slightly, then add hing, cloves, and black cardamom.",
+            "Add lamb cubes and brown vigorously on high heat for 8 minutes.",
+            "Slowly pour in Kashmiri chili water, stirring constantly to build a vibrant crimson color without burning.",
+            "Add whisked yogurt, fennel powder, and dry ginger powder with 1.5 cups water.",
+            "Cover tightly and simmer on low heat for 45 minutes until meat is butter-soft and oil floats on top.",
+            "Serve with piping hot steamed Kashmiri rice."
+        ],
+        "nutrition": {
+            "calories": "640 kcal",
+            "protein": "44g",
+            "carbs": "12g",
+            "fat": "46g",
+            "fiber": "3g"
+        }
+    },
+    {
+        "id": 32,
+        "name": "Traditional Bengali Shorshe Ilish (Mustard Hilsa)",
+        "tagline": "Precious Hilsa fish steaks steamed in freshly ground yellow & black mustard seed paste with green chilies.",
+        "cuisine": "Indian",
+        "category": "Non-Vegetarian",
+        "diet": "Pescatarian",
+        "time": 25,
+        "prepTime": 10,
+        "cookTime": 15,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 220,
+        "calories": 460,
+        "servings": 2,
+        "spicyLevel": 3,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Debolina Sen",
+        "ingredients": [
+            {
+                "name": "Ilish / Hilsa Fish Steaks (fresh)",
+                "amount": 4,
+                "unit": "steaks"
+            },
+            {
+                "name": "Black & Yellow Mustard Seeds (soaked)",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Green Chilies (slit)",
+                "amount": 6,
+                "unit": "items"
+            },
+            {
+                "name": "Pure Mustard Oil (Kachi Ghani)",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Turmeric Powder & Nigella Seeds (Kalonji)",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Salt",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Grind soaked mustard seeds with 2 green chilies, pinch of salt, and little water into a fine, pungent paste.",
+            "Marinate Hilsa fish steaks with turmeric, salt, and half the mustard oil.",
+            "Heat remaining mustard oil in a pan, add kalonji and slit green chilies.",
+            "Pour in the mustard paste and 1/2 cup warm water; bring to a gentle simmer.",
+            "Gently place fish steaks in the gravy, cover with lid, and steam on low heat for 8 minutes.",
+            "Drizzle 1 tsp raw mustard oil on top and serve with steaming hot Gobindobhog rice."
+        ],
+        "nutrition": {
+            "calories": "460 kcal",
+            "protein": "28g",
+            "carbs": "8g",
+            "fat": "36g",
+            "fiber": "2g"
+        }
+    },
+    {
+        "id": 33,
+        "name": "Authentic Gujarati Dal Dhokli",
+        "tagline": "Hand-rolled spiced spiced wheat flour dumplings simmered in a sweet, spicy, and tangy toor dal broth.",
+        "cuisine": "Indian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 35,
+        "prepTime": 15,
+        "cookTime": 20,
+        "difficulty": "Medium",
+        "rating": 4.7,
+        "reviewsCount": 190,
+        "calories": 380,
+        "servings": 3,
+        "spicyLevel": 2,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Bhavna Mehta",
+        "ingredients": [
+            {
+                "name": "Toor Dal (cooked & pureed)",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Whole Wheat Flour",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Jaggery (Gud) & Kokum / Lemon",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Raw Peanuts (boiled)",
+                "amount": 0.25,
+                "unit": "cup"
+            },
+            {
+                "name": "Ajwain, Turmeric & Red Chili Powder",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Ghee & Mustard Seeds",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Curry Leaves & Fresh Cilantro",
+                "amount": 2,
+                "unit": "tbsp"
+            }
+        ],
+        "instructions": [
+            "Knead wheat flour with ajwain, turmeric, chili powder, oil, and water into semi-soft dough.",
+            "Roll thin rotis, cut into diamond shaped dhoklis with a knife.",
+            "Boil toor dal with water, peanuts, jaggery, kokum, and spices until it starts rolling.",
+            "Drop the raw dhokli diamonds one by one into the boiling dal so they don't stick.",
+            "Simmer for 12 minutes until dhoklis are cooked and tender.",
+            "Temper with ghee, mustard seeds, cumin, and curry leaves. Garnish with chopped cilantro and fresh ghee."
+        ],
+        "nutrition": {
+            "calories": "380 kcal",
+            "protein": "14g",
+            "carbs": "62g",
+            "fat": "9g",
+            "fiber": "7g"
+        }
+    },
+    {
+        "id": 34,
+        "name": "Authentic Awadhi Galouti Kebab",
+        "tagline": "Melt-in-your-mouth royal minced meat kebabs infused with 16 secret Lucknowi spices and rose water.",
+        "cuisine": "Indian",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 40,
+        "prepTime": 25,
+        "cookTime": 15,
+        "difficulty": "Hard",
+        "rating": 4.9,
+        "reviewsCount": 310,
+        "calories": 420,
+        "servings": 3,
+        "spicyLevel": 2,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Imtiaz Qureshi",
+        "ingredients": [
+            {
+                "name": "Finely Minced Lamb / Goat (ground 4 times)",
+                "amount": 500,
+                "unit": "g"
+            },
+            {
+                "name": "Raw Papaya Paste",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Roasted Gram Flour (Besan)",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Potli Masala & Rose Water (Gulab Jal)",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Desi Ghee (for shallow frying)",
+                "amount": 4,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fried Onion Paste & Cashew Paste",
+                "amount": 2,
+                "unit": "tbsp"
+            }
+        ],
+        "instructions": [
+            "Mix minced meat with raw papaya paste and let rest for 30 minutes to break down fibers.",
+            "Incorporate roasted besan, fried onion paste, cashew paste, potli spice blend, and a drop of rose water.",
+            "Knead with the heel of your palm for 10 minutes until mixture turns into a velvet-like paste.",
+            "Shape into delicate flat patties.",
+            "Shallow fry on a heavy iron tawa in hot ghee for 2 minutes on each side until crust forms while interior stays molten.",
+            "Serve hot over mini Ulte Tawe Ka Paratha with mint chutney."
+        ],
+        "nutrition": {
+            "calories": "420 kcal",
+            "protein": "32g",
+            "carbs": "12g",
+            "fat": "28g",
+            "fiber": "2g"
+        }
+    },
+    {
+        "id": 35,
+        "name": "Traditional South Indian Filter Coffee & Medu Vada",
+        "tagline": "Crispy savory lentil donuts with golden crust and fluffy interior, paired with authentic chicory filter kaapi.",
+        "cuisine": "Indian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 30,
+        "prepTime": 15,
+        "cookTime": 15,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 270,
+        "calories": 320,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef K. Sundaram",
+        "ingredients": [
+            {
+                "name": "Urad Dal (soaked 3 hours)",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Cracked Black Peppercorns & Cumin",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Ginger & Green Chilies (minced)",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Coconut bits & Curry Leaves",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Oil for deep frying",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Filter Coffee Decoction & Frothy Milk",
+                "amount": 2,
+                "unit": "cups"
+            }
+        ],
+        "instructions": [
+            "Grind soaked urad dal with minimal water in a grinder into a light, airy, fluffy batter (fluff test in water).",
+            "Fold in whole peppercorns, cumin, minced ginger, green chilies, coconut bits, and salt.",
+            "Wet hands, take a ball of batter, flatten on palm, poke a hole in center with thumb, and gently slide into medium-hot oil.",
+            "Deep fry until crisp and deep golden brown on both sides.",
+            "Brew fresh filter coffee using brass dabarah set and serve alongside hot coconut chutney and sambar."
+        ],
+        "nutrition": {
+            "calories": "320 kcal",
+            "protein": "12g",
+            "carbs": "38g",
+            "fat": "14g",
+            "fiber": "6g"
+        }
+    },
+    {
+        "id": 36,
+        "name": "Traditional Roman Spaghetti Carbonara",
+        "tagline": "Authentic Roman recipe using guanciale, farm egg yolks, Pecorino Romano & freshly cracked tellicherry black pepper.",
+        "cuisine": "Italian",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 20,
+        "prepTime": 10,
+        "cookTime": 10,
+        "difficulty": "Medium",
+        "rating": 4.9,
+        "reviewsCount": 480,
+        "calories": 580,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Antonio Carluccio",
+        "ingredients": [
+            {
+                "name": "Spaghetti (Bronze-die cut)",
+                "amount": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Guanciale (cured pork jowl, sliced)",
+                "amount": 120,
+                "unit": "g"
+            },
+            {
+                "name": "Fresh Large Egg Yolks",
+                "amount": 4,
+                "unit": "yolks"
+            },
+            {
+                "name": "Pecorino Romano (freshly grated)",
+                "amount": 60,
+                "unit": "g"
+            },
+            {
+                "name": "Coarse Black Peppercorns (toasted & cracked)",
+                "amount": 1.5,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Crisp sliced guanciale in a dry skillet over medium-low heat until golden and fat has rendered. Remove pan from heat.",
+            "In a bowl, whisk egg yolks with finely grated Pecorino Romano and cracked black pepper until thick paste forms.",
+            "Boil spaghetti in salted water until very al dente. Reserve 1/2 cup pasta water.",
+            "Add hot pasta directly into skillet with guanciale fat, tossing to coat.",
+            "Pour egg and cheese mixture into skillet off heat, adding splashes of starchy pasta water while stirring vigorously to create glossy emulsion.",
+            "Serve immediately topped with crispy guanciale, extra Pecorino, and black pepper (NO cream ever!)."
+        ],
+        "nutrition": {
+            "calories": "580 kcal",
+            "protein": "26g",
+            "carbs": "58g",
+            "fat": "28g",
+            "fiber": "3g"
+        }
+    },
+    {
+        "id": 37,
+        "name": "Authentic Neapolitan Eggplant Parmigiana",
+        "tagline": "Layers of fried eggplant slices, sweet San Marzano tomato sauce, fresh mozzarella, and aromatic basil.",
+        "cuisine": "Italian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 50,
+        "prepTime": 20,
+        "cookTime": 30,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 290,
+        "calories": 440,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Rosanna M.",
+        "ingredients": [
+            {
+                "name": "Large Globe Eggplants (sliced 1/3-inch)",
+                "amount": 2,
+                "unit": "large"
+            },
+            {
+                "name": "San Marzano Tomato Sauce",
+                "amount": 3,
+                "unit": "cups"
+            },
+            {
+                "name": "Fresh Mozzarella (shredded)",
+                "amount": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Parmigiano Reggiano",
+                "amount": 0.75,
+                "unit": "cup"
+            },
+            {
+                "name": "Fresh Basil Leaves",
+                "amount": 12,
+                "unit": "leaves"
+            },
+            {
+                "name": "Olive Oil for frying",
+                "amount": 0.5,
+                "unit": "cup"
+            }
+        ],
+        "instructions": [
+            "Salt eggplant slices and drain on paper towels for 20 minutes to remove bitter juices, then pat dry.",
+            "Pan fry eggplant slices in olive oil until golden brown on both sides; drain on paper towels.",
+            "Spread a thin layer of tomato sauce in a baking dish, followed by a layer of fried eggplant.",
+            "Top with mozzarella, grated Parmesan, and fresh basil leaves.",
+            "Repeat layers 3 times, finishing with tomato sauce and generous Parmesan.",
+            "Bake at 190°C (375°F) for 25-30 minutes until bubbling and deeply golden on top.",
+            "Let rest 10 minutes before slicing to allow layers to set."
+        ],
+        "nutrition": {
+            "calories": "440 kcal",
+            "protein": "20g",
+            "carbs": "26g",
+            "fat": "30g",
+            "fiber": "7g"
+        }
+    },
+    {
+        "id": 38,
+        "name": "Traditional Risotto alla Milanese",
+        "tagline": "Creamy Carnaroli rice infused with genuine Persian saffron, bone marrow stock, white wine & cold butter.",
+        "cuisine": "Italian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 35,
+        "prepTime": 10,
+        "cookTime": 25,
+        "difficulty": "Hard",
+        "rating": 4.9,
+        "reviewsCount": 230,
+        "calories": 460,
+        "servings": 3,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1633964913295-ceb43826e7c9?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Gualtiero M.",
+        "ingredients": [
+            {
+                "name": "Carnaroli or Vialone Nano Rice",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Saffron threads (steeped in broth)",
+                "amount": 1,
+                "unit": "pinch"
+            },
+            {
+                "name": "Dry White Wine (Pinot Grigio)",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Hot Vegetable or Beef Broth",
+                "amount": 4.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Finely Minced Shallots",
+                "amount": 1,
+                "unit": "item"
+            },
+            {
+                "name": "Cold Unsalted Butter (for mantecatura)",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Parmigiano-Reggiano",
+                "amount": 0.5,
+                "unit": "cup"
+            }
+        ],
+        "instructions": [
+            "Steep saffron threads in a small ladle of hot broth for 15 minutes.",
+            "Sauté minced shallots in 1 tbsp butter over low heat until translucent.",
+            "Add Carnaroli rice and toast dry for 2 minutes until grains are hot and translucent around edges.",
+            "Deglaze with white wine and stir until completely evaporated.",
+            "Ladle hot broth one cup at a time, stirring continuously until each ladle is absorbed before adding next.",
+            "After 14 minutes, pour in the vibrant saffron infusion and stir.",
+            "Turn off heat (Mantecatura): vigorously whip in cold cubed butter and Parmigiano to create wave-like creamy texture (all'onda)."
+        ],
+        "nutrition": {
+            "calories": "460 kcal",
+            "protein": "12g",
+            "carbs": "64g",
+            "fat": "18g",
+            "fiber": "2g"
+        }
+    },
+    {
+        "id": 39,
+        "name": "Traditional Sicilian Cannoli",
+        "tagline": "Crispy fried pastry shells with blistered bubbles, filled with sweetened sheep milk ricotta & pistachio crumbs.",
+        "cuisine": "Italian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 40,
+        "prepTime": 25,
+        "cookTime": 15,
+        "difficulty": "Hard",
+        "rating": 4.9,
+        "reviewsCount": 310,
+        "calories": 310,
+        "servings": 6,
+        "spicyLevel": 1,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Salvatore C.",
+        "ingredients": [
+            {
+                "name": "Cannoli Shells (or dough with Marsala wine)",
+                "amount": 6,
+                "unit": "tubes"
+            },
+            {
+                "name": "Drained Sheep Milk Ricotta",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Powdered Confectioners Sugar",
+                "amount": 0.75,
+                "unit": "cup"
+            },
+            {
+                "name": "Dark Chocolate Chips (mini)",
+                "amount": 0.25,
+                "unit": "cup"
+            },
+            {
+                "name": "Crushed Bronte Pistachios & Candied Orange Peel",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Cinnamon & Vanilla Extract",
+                "amount": 0.5,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Pass drained ricotta through a fine sieve twice to achieve ultra-velvety texture.",
+            "Fold in powdered sugar, vanilla, tiny pinch of cinnamon, and mini dark chocolate chips. Chill in fridge for 1 hour.",
+            "Transfer filling into a piping bag fitted with a wide round tip.",
+            "Pipe sweet ricotta filling from both ends of crisp fried cannoli shells right before serving.",
+            "Dip one end in crushed emerald green pistachios and other in candied orange peel.",
+            "Dust lightly with powdered sugar and enjoy with espresso."
+        ],
+        "nutrition": {
+            "calories": "310 kcal",
+            "protein": "9g",
+            "carbs": "36g",
+            "fat": "15g",
+            "fiber": "2g"
+        }
+    },
+    {
+        "id": 40,
+        "name": "Traditional Greek Moussaka",
+        "tagline": "Baked casserole of spiced ground lamb, layered roasted eggplant and potatoes, topped with golden béchamel.",
+        "cuisine": "Greek",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 65,
+        "prepTime": 25,
+        "cookTime": 40,
+        "difficulty": "Hard",
+        "rating": 4.8,
+        "reviewsCount": 275,
+        "calories": 620,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Nikos Kazantzakis",
+        "ingredients": [
+            {
+                "name": "Ground Lamb or Beef",
+                "amount": 500,
+                "unit": "g"
+            },
+            {
+                "name": "Eggplants & Russet Potatoes (sliced)",
+                "amount": 2,
+                "unit": "items each"
+            },
+            {
+                "name": "Crushed Tomatoes & Red Wine",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Cinnamon stick & Ground Allspice",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Rich Béchamel Sauce (butter, flour, milk, egg yolks)",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Grated Kefalotyri or Pecorino Cheese",
+                "amount": 0.5,
+                "unit": "cup"
+            }
+        ],
+        "instructions": [
+            "Roast sliced potatoes and eggplants with olive oil at 200°C (400°F) for 20 minutes until tender.",
+            "Cook ground lamb with onions, garlic, red wine, tomatoes, cinnamon, and allspice until rich meat sauce forms.",
+            "Prepare silky thick béchamel sauce and whisk in egg yolks and a pinch of nutmeg.",
+            "In a baking dish, layer roasted potatoes, followed by half the roasted eggplant.",
+            "Spread the spiced lamb meat sauce evenly, top with remaining eggplant.",
+            "Pour thick béchamel over the top, smoothing with spatula, and scatter grated cheese.",
+            "Bake at 180°C (350°F) for 40 minutes until top is bubbly and blistered chestnut brown.",
+            "Rest for 20 minutes before slicing into squares."
+        ],
+        "nutrition": {
+            "calories": "620 kcal",
+            "protein": "34g",
+            "carbs": "42g",
+            "fat": "36g",
+            "fiber": "6g"
+        }
+    },
+    {
+        "id": 41,
+        "name": "Authentic Turkish Adana Kebab",
+        "tagline": "Hand-minced spicy lamb skewers seasoned with sumac, red pepper paste & grilled over smoky hardwood charcoal.",
+        "cuisine": "Middle Eastern",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 35,
+        "prepTime": 20,
+        "cookTime": 15,
+        "difficulty": "Medium",
+        "rating": 4.9,
+        "reviewsCount": 340,
+        "calories": 540,
+        "servings": 3,
+        "spicyLevel": 3,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=80",
+        "author": "Usta Mehmet Adanalı",
+        "ingredients": [
+            {
+                "name": "Minced Lamb Meat with Tail Fat (Kuyruk Yağı)",
+                "amount": 600,
+                "unit": "g"
+            },
+            {
+                "name": "Turkish Sweet Red Pepper Paste (Biber Salçası)",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Red Bell Pepper (finely hand-diced & squeezed dry)",
+                "amount": 1,
+                "unit": "item"
+            },
+            {
+                "name": "Flaky Chili Peppers (Pul Biber)",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Lavash / Pita Breads",
+                "amount": 3,
+                "unit": "flatbreads"
+            },
+            {
+                "name": "Sumac Red Onion Salad",
+                "amount": 1,
+                "unit": "cup"
+            }
+        ],
+        "instructions": [
+            "Knead minced lamb, tail fat, drained red peppers, biber salçası, pul biber, and salt for 10 minutes until tacky.",
+            "Chill the meat in refrigerator for 30 minutes.",
+            "Mold meat onto wide, flat iron skewers using wet hands, pressing distinct thumb ridges along the skewer.",
+            "Grill over hot charcoal embers (or cast-iron grill pan) for 3-4 minutes per side, turning frequently.",
+            "Press warm lavash bread directly onto the grilling kebab to absorb juices.",
+            "Slide kebab off skewer into warm lavash, serve with sumac onion salad and grilled tomatoes."
+        ],
+        "nutrition": {
+            "calories": "540 kcal",
+            "protein": "38g",
+            "carbs": "28g",
+            "fat": "32g",
+            "fiber": "3g"
+        }
+    },
+    {
+        "id": 42,
+        "name": "Traditional Lebanese Crispy Falafel & Tahini",
+        "tagline": "Golden crispy herbed chickpea patties loaded with parsley, cilantro, garlic, cumin, and sesame tahini sauce.",
+        "cuisine": "Mediterranean",
+        "category": "Vegetarian",
+        "diet": "Vegan",
+        "time": 30,
+        "prepTime": 15,
+        "cookTime": 15,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 290,
+        "calories": 380,
+        "servings": 3,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1593001874117-c99c800e3eb7?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Layla Touma",
+        "ingredients": [
+            {
+                "name": "Dry Raw Chickpeas (soaked overnight, NOT canned)",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Fresh Parsley & Cilantro leaves",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Garlic cloves & Red Onion",
+                "amount": 5,
+                "unit": "cloves"
+            },
+            {
+                "name": "Ground Cumin & Coriander",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Toasted Sesame Seeds",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Baking Powder",
+                "amount": 0.75,
+                "unit": "tsp"
+            },
+            {
+                "name": "Lemon Tahini Dressing & Pickled Turnips",
+                "amount": 0.5,
+                "unit": "cup"
+            }
+        ],
+        "instructions": [
+            "Pulse soaked raw chickpeas, herbs, onion, garlic, and spices in food processor until finely minced like coarse sand (do not puree).",
+            "Stir in sesame seeds and baking powder. Chill in fridge for 30 minutes.",
+            "Scoop with falafel tool or wet hands into small discs.",
+            "Deep fry in medium-hot oil (180°C / 350°F) for 3-4 minutes until deep chestnut brown and shatteringly crisp.",
+            "Serve inside warm pita pockets stuffed with cucumbers, tomatoes, pickled turnips, and creamy tahini sauce."
+        ],
+        "nutrition": {
+            "calories": "380 kcal",
+            "protein": "16g",
+            "carbs": "48g",
+            "fat": "16g",
+            "fiber": "11g"
+        }
+    },
+    {
+        "id": 43,
+        "name": "Authentic Spanish Gazpacho Andaluz",
+        "tagline": "Refreshing chilled raw vegetable soup blended with ripe plum tomatoes, cucumber, bell pepper, and Sherry vinegar.",
+        "cuisine": "Spanish",
+        "category": "Vegetarian",
+        "diet": "Vegan",
+        "time": 15,
+        "prepTime": 15,
+        "cookTime": 0,
+        "difficulty": "Easy",
+        "rating": 4.7,
+        "reviewsCount": 160,
+        "calories": 210,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Carmen Morales",
+        "ingredients": [
+            {
+                "name": "Very Ripe Plum Tomatoes",
+                "amount": 1,
+                "unit": "kg"
+            },
+            {
+                "name": "Cucumber (peeled)",
+                "amount": 1,
+                "unit": "medium"
+            },
+            {
+                "name": "Green Italian Pepper",
+                "amount": 1,
+                "unit": "item"
+            },
+            {
+                "name": "Garlic clove & Day-old Crustless White Bread",
+                "amount": 1,
+                "unit": "slice"
+            },
+            {
+                "name": "Sherry Vinegar (Vinagre de Jerez)",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Spanish Extra Virgin Olive Oil",
+                "amount": 4,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Sea Salt & Ice Cold Water",
+                "amount": 0.5,
+                "unit": "cup"
+            }
+        ],
+        "instructions": [
+            "Roughly chop tomatoes, cucumber, green pepper, and garlic.",
+            "Place all vegetables, soaked bread, sherry vinegar, and salt into high-speed blender.",
+            "Blend on high for 2 full minutes until completely smooth.",
+            "With blender running on low, slowly drizzle in extra virgin olive oil to emulsify into creamy orange-pink soup.",
+            "Strain through a fine sieve for ultra-silky texture.",
+            "Chill in refrigerator for at least 2 hours. Serve in bowls garnished with diced cucumber, peppers, and olive oil drizzle."
+        ],
+        "nutrition": {
+            "calories": "210 kcal",
+            "protein": "4g",
+            "carbs": "18g",
+            "fat": "15g",
+            "fiber": "4g"
+        }
+    },
+    {
+        "id": 44,
+        "name": "Traditional French Ratatouille Provençale",
+        "tagline": "Slowly simmered Provençal vegetable stew of layered zucchini, eggplant, bell peppers, tomatoes & herbes de Provence.",
+        "cuisine": "French",
+        "category": "Vegetarian",
+        "diet": "Vegan",
+        "time": 45,
+        "prepTime": 20,
+        "cookTime": 25,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 210,
+        "calories": 260,
+        "servings": 3,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Remy Laurent",
+        "ingredients": [
+            {
+                "name": "Zucchini & Yellow Squash (sliced thin)",
+                "amount": 2,
+                "unit": "items"
+            },
+            {
+                "name": "Japanese Eggplant (sliced thin)",
+                "amount": 2,
+                "unit": "items"
+            },
+            {
+                "name": "Roma Tomatoes (sliced thin)",
+                "amount": 4,
+                "unit": "items"
+            },
+            {
+                "name": "Piperade Base (bell peppers, onions, crushed tomatoes)",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Herbes de Provence & Fresh Thyme",
+                "amount": 1.5,
+                "unit": "tsp"
+            },
+            {
+                "name": "Garlic cloves & Extra Virgin Olive Oil",
+                "amount": 3,
+                "unit": "tbsp"
+            }
+        ],
+        "instructions": [
+            "Spread cooked piperade pepper-tomato sauce evenly across the bottom of a round baking dish.",
+            "Arrange alternating thin slices of eggplant, zucchini, squash, and tomato in concentric rings over the sauce.",
+            "Mince garlic and mix with olive oil, fresh thyme, and herbes de Provence; brush generously over vegetable slices.",
+            "Cover with parchment paper and bake at 180°C (350°F) for 35 minutes.",
+            "Uncover and bake 10 more minutes until vegetable edges are tender and lightly caramelized.",
+            "Serve warm or at room temperature with crusty baguette."
+        ],
+        "nutrition": {
+            "calories": "260 kcal",
+            "protein": "6g",
+            "carbs": "28g",
+            "fat": "16g",
+            "fiber": "8g"
+        }
+    },
+    {
+        "id": 45,
+        "name": "Authentic Turkish Baklava with Pistachios",
+        "tagline": "40 whisper-thin layers of buttery filo pastry filled with crushed Antep pistachios and drenched in lemon sugar syrup.",
+        "cuisine": "Middle Eastern",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 60,
+        "prepTime": 30,
+        "cookTime": 30,
+        "difficulty": "Hard",
+        "rating": 5,
+        "reviewsCount": 420,
+        "calories": 460,
+        "servings": 8,
+        "spicyLevel": 1,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=1000&q=80",
+        "author": "Usta Burhan Gaziantep",
+        "ingredients": [
+            {
+                "name": "Filo Pastry Sheets (thawed)",
+                "amount": 1,
+                "unit": "package (450g)"
+            },
+            {
+                "name": "Finely Chopped Antep Pistachios",
+                "amount": 2.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Clarified Butter (Sade Yağ, melted)",
+                "amount": 1.25,
+                "unit": "cups"
+            },
+            {
+                "name": "Sugar Syrup (sugar, water, lemon juice)",
+                "amount": 2,
+                "unit": "cups"
+            }
+        ],
+        "instructions": [
+            "Boil sugar and water with lemon juice for 15 minutes to make fragrant thick syrup; cool completely.",
+            "Butter a baking pan and layer 18 filo sheets, brushing each sheet thoroughly with warm clarified butter.",
+            "Distribute crushed pistachios in an even layer across the center.",
+            "Top with remaining 18 filo sheets, brushing each with melted butter.",
+            "Slice diamond shapes with a razor-sharp knife all the way through the bottom.",
+            "Bake at 170°C (340°F) for 40 minutes until crisp and golden brown.",
+            "Immediately pour cold sugar syrup over the sizzling hot baked baklava. Let steep for 4 hours before serving."
+        ],
+        "nutrition": {
+            "calories": "460 kcal",
+            "protein": "8g",
+            "carbs": "56g",
+            "fat": "24g",
+            "fiber": "3g"
+        }
+    },
+    {
+        "id": 46,
+        "name": "Authentic Japanese Chicken Katsu Curry",
+        "tagline": "Crispy panko breaded chicken cutlet served over Japanese short grain rice with rich caramelized vegetable curry sauce.",
+        "cuisine": "Japanese",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 35,
+        "prepTime": 15,
+        "cookTime": 20,
+        "difficulty": "Medium",
+        "rating": 4.9,
+        "reviewsCount": 380,
+        "calories": 680,
+        "servings": 2,
+        "spicyLevel": 2,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Hiroshi Watanabe",
+        "ingredients": [
+            {
+                "name": "Chicken Breast / Thigh Fillets",
+                "amount": 2,
+                "unit": "fillets"
+            },
+            {
+                "name": "Japanese Panko Breadcrumbs",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Japanese Curry Roux blocks",
+                "amount": 2,
+                "unit": "cubes"
+            },
+            {
+                "name": "Carrots & Potatoes (cubed)",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Caramelized Onions & Grated Apple",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Steamed Japanese Short Grain Rice",
+                "amount": 2,
+                "unit": "bowls"
+            },
+            {
+                "name": "Fukujinzuke (pickles)",
+                "amount": 2,
+                "unit": "tbsp"
+            }
+        ],
+        "instructions": [
+            "Sauté sliced onions slowly until deeply caramelized; add cubed carrots, potatoes, grated apple, and broth. Simmer for 15 minutes.",
+            "Melt Japanese curry roux cubes into the broth; simmer until thick and glossy.",
+            "Pound chicken cutlets to even thickness, dredge in flour, egg, and press into airy panko breadcrumbs.",
+            "Deep fry katsu in hot oil (175°C / 350°F) for 5-6 minutes until crunchy and golden. Slice into strips.",
+            "Plate fluffy steamed rice, arrange sliced crunchy katsu on side, and pour velvety hot curry over half the plate.",
+            "Serve with sweet red fukujinzuke pickles."
+        ],
+        "nutrition": {
+            "calories": "680 kcal",
+            "protein": "42g",
+            "carbs": "78g",
+            "fat": "22g",
+            "fiber": "5g"
+        }
+    },
+    {
+        "id": 47,
+        "name": "Authentic Korean Bibimbap with Gochujang",
+        "tagline": "Colorful bowl of steamed rice topped with seasoned namul vegetables, marinated beef bulgogi, fried egg & spicy gochujang sauce.",
+        "cuisine": "Korean",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 30,
+        "prepTime": 20,
+        "cookTime": 10,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 350,
+        "calories": 540,
+        "servings": 2,
+        "spicyLevel": 3,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1553163147-622ab57be1c7?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Min-Jae Park",
+        "ingredients": [
+            {
+                "name": "Thinly Sliced Beef Ribeye (Bulgogi marinated)",
+                "amount": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Steamed Short Grain Rice",
+                "amount": 2,
+                "unit": "bowls"
+            },
+            {
+                "name": "Bean Sprouts, Spinach & Shiitake Mushrooms",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Carrot & Zucchini (julienned)",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Korean Gochujang Chili Sauce blend",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Sunny Side Up Eggs",
+                "amount": 2,
+                "unit": "eggs"
+            },
+            {
+                "name": "Toasted Sesame Oil & Seeds",
+                "amount": 1,
+                "unit": "tbsp"
+            }
+        ],
+        "instructions": [
+            "Blanch and season vegetables separately with sesame oil, minced garlic, and salt (Namul).",
+            "Quickly stir fry marinated beef slices in a smoking hot skillet.",
+            "Warm two heavy stone dolsot bowls (or regular bowls) with a drizzle of sesame oil at bottom.",
+            "Add a mound of steamed rice in center.",
+            "Artfully arrange each colorful seasoned vegetable and bulgogi beef in separate wedges over the rice.",
+            "Crown with a sunny side up fried egg and a dollop of sweet spicy Gochujang bibimbap sauce.",
+            "Mix everything thoroughly with a spoon right before eating."
+        ],
+        "nutrition": {
+            "calories": "540 kcal",
+            "protein": "32g",
+            "carbs": "68g",
+            "fat": "16g",
+            "fiber": "6g"
+        }
+    },
+    {
+        "id": 48,
+        "name": "Authentic Vietnamese Beef Pho Bo",
+        "tagline": "Fragrant 8-hour star anise bone broth poured over rice noodles, rare beef eye of round, herbs, and lime.",
+        "cuisine": "Vietnamese",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 60,
+        "prepTime": 20,
+        "cookTime": 40,
+        "difficulty": "Hard",
+        "rating": 4.9,
+        "reviewsCount": 410,
+        "calories": 480,
+        "servings": 2,
+        "spicyLevel": 2,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Nguyen Van Minh",
+        "ingredients": [
+            {
+                "name": "Flat Pho Rice Noodles",
+                "amount": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Beef Eye of Round (paper-thin slices)",
+                "amount": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Slow Simmered Beef Bone Broth (with charred ginger & onion)",
+                "amount": 5,
+                "unit": "cups"
+            },
+            {
+                "name": "Whole Star Anise, Cinnamon, Cardamom & Cloves",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fish Sauce & Rock Sugar",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Thai Basil, Bean Sprouts, Jalapeño & Limes",
+                "amount": 2,
+                "unit": "cups"
+            }
+        ],
+        "instructions": [
+            "Char onion and whole ginger over open flame until blackened; toast whole spices in a dry pan.",
+            "Simmer charred aromatics and toasted spices in beef broth with fish sauce and rock sugar for 30 minutes; strain to crystal clear broth.",
+            "Cook flat rice noodles in boiling water for 60 seconds; divide into large serving bowls.",
+            "Arrange raw paper-thin beef slices over the noodles.",
+            "Ladle boiling hot broth directly over the beef slices (the boiling broth cooks the beef to tender perfection instantly).",
+            "Serve immediately with fresh Thai basil, crunchy bean sprouts, lime wedges, hoisin sauce, and sriracha."
+        ],
+        "nutrition": {
+            "calories": "480 kcal",
+            "protein": "36g",
+            "carbs": "62g",
+            "fat": "10g",
+            "fiber": "3g"
+        }
+    },
+    {
+        "id": 49,
+        "name": "Traditional Thai Pad Thai Noodles with Prawns",
+        "tagline": "Wok-tossed flat rice noodles with juicy prawns, tamarind palm sugar sauce, crispy tofu, eggs & crushed peanuts.",
+        "cuisine": "Thai",
+        "category": "Non-Vegetarian",
+        "diet": "Pescatarian",
+        "time": 20,
+        "prepTime": 10,
+        "cookTime": 10,
+        "difficulty": "Easy",
+        "rating": 4.9,
+        "reviewsCount": 390,
+        "calories": 510,
+        "servings": 2,
+        "spicyLevel": 2,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Somchai Prasert",
+        "ingredients": [
+            {
+                "name": "Rice Noodles (soaked in warm water)",
+                "amount": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Large Tiger Prawns (peeled)",
+                "amount": 8,
+                "unit": "items"
+            },
+            {
+                "name": "Firm Yellow Tofu (cubed)",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Tamarind Pulp, Fish Sauce & Palm Sugar Sauce",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Eggs",
+                "amount": 2,
+                "unit": "items"
+            },
+            {
+                "name": "Fresh Garlic Chives & Bean Sprouts",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Crushed Roasted Peanuts & Lime wedge",
+                "amount": 3,
+                "unit": "tbsp"
+            }
+        ],
+        "instructions": [
+            "Whisk tamarind paste, fish sauce, palm sugar, and 2 tbsp water into sweet-sour Pad Thai sauce.",
+            "Heat oil in a hot wok, sear prawns and tofu cubes for 2 minutes; push to the side.",
+            "Crack eggs into the empty side and scramble gently.",
+            "Add drained rice noodles and pour in the tamarind sauce.",
+            "Toss vigorously on high heat for 2 minutes until noodles absorb sauce and become chewy.",
+            "Fold in bean sprouts and garlic chives for 30 seconds.",
+            "Serve hot garnished with crushed roasted peanuts, chili flakes, and a squeeze of fresh lime juice."
+        ],
+        "nutrition": {
+            "calories": "510 kcal",
+            "protein": "28g",
+            "carbs": "68g",
+            "fat": "15g",
+            "fiber": "4g"
+        }
+    },
+    {
+        "id": 50,
+        "name": "Authentic Chinese Mapo Tofu",
+        "tagline": "Silken tofu cubes and minced pork simmered in fiery fermented chili bean paste (Pixian Doubanjiang) and numbing Szechuan pepper.",
+        "cuisine": "Chinese",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 25,
+        "prepTime": 10,
+        "cookTime": 15,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 290,
+        "calories": 390,
+        "servings": 3,
+        "spicyLevel": 4,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Chen Kenmin",
+        "ingredients": [
+            {
+                "name": "Silken or Soft Tofu (cut in 1-inch cubes)",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Minced Pork or Beef",
+                "amount": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Pixian Doubanjiang (fermented chili broad bean paste)",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Szechuan Peppercorns (freshly roasted & ground)",
+                "amount": 1.5,
+                "unit": "tsp"
+            },
+            {
+                "name": "Fermented Black Beans (Douchi)",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Chicken Broth & Cornstarch Slurry",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Garlic Greens or Scallions",
+                "amount": 0.5,
+                "unit": "cup"
+            }
+        ],
+        "instructions": [
+            "Gently simmer tofu cubes in warm salted water for 2 minutes to firm up and drain.",
+            "In a hot wok, brown minced meat in oil until crispy and fragrant.",
+            "Add Pixian Doubanjiang and fermented black beans; fry until oil turns brilliant red.",
+            "Add minced garlic, ginger, and pour in chicken broth; bring to a simmer.",
+            "Carefully slide in the drained tofu cubes and simmer gently for 5 minutes.",
+            "Swirl in cornstarch slurry in three batches until glossy red sauce coats the tofu.",
+            "Transfer to serving bowl and dust generously with ground Szechuan peppercorns and garlic greens."
+        ],
+        "nutrition": {
+            "calories": "390 kcal",
+            "protein": "24g",
+            "carbs": "12g",
+            "fat": "27g",
+            "fiber": "3g"
+        }
+    },
+    {
+        "id": 51,
+        "name": "Traditional Indonesian Nasi Goreng with Satay",
+        "tagline": "Fragrant sweet and spicy wok-fried jasmine rice with kecap manis, shrimp paste, fried shallots, and chicken satay skewers.",
+        "cuisine": "Indonesian",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 25,
+        "prepTime": 10,
+        "cookTime": 15,
+        "difficulty": "Easy",
+        "rating": 4.8,
+        "reviewsCount": 260,
+        "calories": 590,
+        "servings": 2,
+        "spicyLevel": 3,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Wayan Sudira",
+        "ingredients": [
+            {
+                "name": "Day-old Cooked Jasmine Rice",
+                "amount": 3,
+                "unit": "cups"
+            },
+            {
+                "name": "Kecap Manis (sweet Indonesian soy sauce)",
+                "amount": 2.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Shrimp Paste (Terasi/Belacan, toasted)",
+                "amount": 0.5,
+                "unit": "tsp"
+            },
+            {
+                "name": "Sambal Oelek & Garlic",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Chicken Satay Skewers with Peanut Sauce",
+                "amount": 4,
+                "unit": "skewers"
+            },
+            {
+                "name": "Fried Eggs (Telur Ceplok) & Prawn Crackers (Krupuk)",
+                "amount": 2,
+                "unit": "items"
+            }
+        ],
+        "instructions": [
+            "Pound shallots, garlic, red chilies, and toasted shrimp paste into Bumbu paste.",
+            "Stir fry bumbu paste in a hot wok with oil until fragrant.",
+            "Add cold day-old rice, breaking up clumps with spatula.",
+            "Drizzle Kecap Manis and light soy sauce around edges of wok, tossing vigorously over high heat to achieve wok hei aroma.",
+            "Plate fried rice with a crispy fried egg on top.",
+            "Serve with grilled chicken satay skewers, creamy peanut dipping sauce, cucumber slices, and crunchy krupuk crackers."
+        ],
+        "nutrition": {
+            "calories": "590 kcal",
+            "protein": "32g",
+            "carbs": "74g",
+            "fat": "20g",
+            "fiber": "3g"
+        }
+    },
+    {
+        "id": 52,
+        "name": "Authentic Japanese Nigiri & Dragon Roll Sushi",
+        "tagline": "Seasoned sushi rice draped with fresh Atlantic salmon, tuna, avocado, and unagi glaze with pickled ginger.",
+        "cuisine": "Japanese",
+        "category": "Non-Vegetarian",
+        "diet": "Pescatarian",
+        "time": 40,
+        "prepTime": 30,
+        "cookTime": 10,
+        "difficulty": "Hard",
+        "rating": 4.9,
+        "reviewsCount": 390,
+        "calories": 450,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1000&q=80",
+        "author": "Master Jiro Ono",
+        "ingredients": [
+            {
+                "name": "Seasoned Sushi Rice (with rice vinegar & sugar)",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Sashimi-Grade Fresh Salmon & Tuna",
+                "amount": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Grilled BBQ Eel (Unagi)",
+                "amount": 100,
+                "unit": "g"
+            },
+            {
+                "name": "Nori Seaweed Sheets & Ripe Avocado",
+                "amount": 2,
+                "unit": "items"
+            },
+            {
+                "name": "Japanese Wasabi & Pickled Ginger (Gari)",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Unagi Sweet Glaze & Toasted Sesame",
+                "amount": 2,
+                "unit": "tbsp"
+            }
+        ],
+        "instructions": [
+            "Fan cooked sushi rice while folding in seasoned rice vinegar until glossy and at body temperature.",
+            "Shape bite-sized oval mounds of rice with dampened hands, dab tiny touch of wasabi, and drape with fresh salmon/tuna slices.",
+            "For Dragon Roll: Roll crab and cucumber in nori and sushi rice, top with sliced avocado and eel, wrap in plastic and press with bamboo mat.",
+            "Slice into 8 neat rounds with a sharp, wet chef knife.",
+            "Drizzle unagi sweet glaze and sprinkle toasted sesame seeds.",
+            "Serve with premium soy sauce, freshly grated wasabi, and pickled pink ginger."
+        ],
+        "nutrition": {
+            "calories": "450 kcal",
+            "protein": "26g",
+            "carbs": "62g",
+            "fat": "11g",
+            "fiber": "3g"
+        }
+    },
+    {
+        "id": 53,
+        "name": "Traditional Thai Tom Yum Goong (Spicy Prawn Soup)",
+        "tagline": "Iconic clear spicy-sour soup simmering with king prawns, lemongrass, galangal, kaffir lime leaves & bird's eye chilies.",
+        "cuisine": "Thai",
+        "category": "Non-Vegetarian",
+        "diet": "Pescatarian",
+        "time": 20,
+        "prepTime": 10,
+        "cookTime": 10,
+        "difficulty": "Easy",
+        "rating": 4.9,
+        "reviewsCount": 330,
+        "calories": 280,
+        "servings": 2,
+        "spicyLevel": 4,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1548946526-f69e2424cf45?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Kanya R.",
+        "ingredients": [
+            {
+                "name": "Tiger Prawns (head and shells on for broth)",
+                "amount": 10,
+                "unit": "prawns"
+            },
+            {
+                "name": "Lemongrass stalks (bruised) & Galangal slices",
+                "amount": 2,
+                "unit": "stalks"
+            },
+            {
+                "name": "Kaffir Lime Leaves & Bird's Eye Chilies (smashed)",
+                "amount": 5,
+                "unit": "leaves"
+            },
+            {
+                "name": "Straw Mushrooms or Oyster Mushrooms",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Thai Chili Jam (Nam Prik Pao) & Fish Sauce",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Lime Juice & Cilantro sprigs",
+                "amount": 3,
+                "unit": "tbsp"
+            }
+        ],
+        "instructions": [
+            "Boil prawn heads and shells in 3 cups water for 5 minutes to create rich seafood stock; strain.",
+            "Add crushed lemongrass, sliced galangal, torn kaffir lime leaves, and smashed chilies to the stock; bring to boil.",
+            "Stir in Thai chili jam (Nam Prik Pao), fish sauce, and mushrooms; simmer for 2 minutes.",
+            "Add prawns and cook for 2 minutes until they turn pink and curled.",
+            "Turn off heat and immediately stir in fresh lime juice (cooking lime juice creates bitterness).",
+            "Garnish with fresh cilantro sprigs and serve piping hot."
+        ],
+        "nutrition": {
+            "calories": "280 kcal",
+            "protein": "26g",
+            "carbs": "14g",
+            "fat": "12g",
+            "fiber": "2g"
+        }
+    },
+    {
+        "id": 54,
+        "name": "Authentic Chinese Cantonese Dim Sum Siu Mai",
+        "tagline": "Open-topped steamed dumplings filled with juicy minced pork, shrimp, shiitake mushrooms, topped with orange crab roe.",
+        "cuisine": "Chinese",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 35,
+        "prepTime": 20,
+        "cookTime": 15,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 295,
+        "calories": 360,
+        "servings": 3,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Chan Kwok",
+        "ingredients": [
+            {
+                "name": "Wonton / Siu Mai Yellow Wrappers",
+                "amount": 18,
+                "unit": "wrappers"
+            },
+            {
+                "name": "Ground Pork & Chopped Raw Shrimp",
+                "amount": 350,
+                "unit": "g"
+            },
+            {
+                "name": "Dried Shiitake Mushrooms (soaked & finely diced)",
+                "amount": 3,
+                "unit": "caps"
+            },
+            {
+                "name": "Shaoxing Wine, Sesame Oil & White Pepper",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Crab Roe or Finely Diced Carrot (for garnish)",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Soy Sauce & Chili Oil for dipping",
+                "amount": 2,
+                "unit": "tbsp"
+            }
+        ],
+        "instructions": [
+            "Mix ground pork, shrimp chunks, diced mushrooms, Shaoxing wine, sesame oil, cornstarch, and salt; stir vigorously until bouncy and sticky.",
+            "Place wrapper over circle of thumb and index finger, spoon in filling, and squeeze gently into an open-topped cup.",
+            "Flatten base on counter so dumpling stands upright.",
+            "Garnish the exposed center with crab roe or a tiny dot of minced carrot.",
+            "Steam in a bamboo steamer lined with perforated parchment for 10-12 minutes.",
+            "Serve hot with Chinese mustard and soy sauce."
+        ],
+        "nutrition": {
+            "calories": "360 kcal",
+            "protein": "24g",
+            "carbs": "26g",
+            "fat": "16g",
+            "fiber": "2g"
+        }
+    },
+    {
+        "id": 55,
+        "name": "Traditional Vietnamese Crispy Banh Mi Baguette",
+        "tagline": "Crisp French-Vietnamese baguette stuffed with pork liver pâté, Vietnamese ham, pickled daikon & carrots, fresh cilantro & jalapeño.",
+        "cuisine": "Vietnamese",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 20,
+        "prepTime": 15,
+        "cookTime": 5,
+        "difficulty": "Easy",
+        "rating": 4.9,
+        "reviewsCount": 360,
+        "calories": 490,
+        "servings": 2,
+        "spicyLevel": 2,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Mai Linh",
+        "ingredients": [
+            {
+                "name": "Crispy Airy Vietnamese Baguettes",
+                "amount": 2,
+                "unit": "baguettes"
+            },
+            {
+                "name": "Pork Liver Pâté & French Mayonnaise",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Vietnamese Steamed Pork Roll (Chả Lụa) & Roast Pork",
+                "amount": 150,
+                "unit": "g"
+            },
+            {
+                "name": "Pickled Daikon Radish & Carrots (Đồ Chua)",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Cucumber spears, Jalapeño slices & Cilantro",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Maggi Seasoning Liquid or Soy Sauce",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Warm baguettes in oven until exterior is paper-thin and crackly.",
+            "Slice lengthwise and generously spread creamy mayonnaise on one side and savory pork pâté on the other.",
+            "Layer sliced chả lụa and roasted pork slices.",
+            "Stuff generously with crunchy pickled daikon and carrots, cucumber spears, and fresh cilantro sprigs.",
+            "Add thinly sliced jalapeño peppers and a light dash of Maggi seasoning.",
+            "Press together and serve immediately."
+        ],
+        "nutrition": {
+            "calories": "490 kcal",
+            "protein": "24g",
+            "carbs": "54g",
+            "fat": "18g",
+            "fiber": "4g"
+        }
+    },
+    {
+        "id": 56,
+        "name": "Traditional New York Baked Cheesecake",
+        "tagline": "Dense, velvety cream cheese filling with graham cracker butter crust and fresh berry compote.",
+        "cuisine": "American",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 70,
+        "prepTime": 20,
+        "cookTime": 50,
+        "difficulty": "Medium",
+        "rating": 4.9,
+        "reviewsCount": 380,
+        "calories": 460,
+        "servings": 8,
+        "spicyLevel": 1,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Junior's Bakery",
+        "ingredients": [
+            {
+                "name": "Cream Cheese (room temperature)",
+                "amount": 680,
+                "unit": "g"
+            },
+            {
+                "name": "Graham Cracker Crumbs",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Unsalted Butter (melted)",
+                "amount": 5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Granulated Sugar & Sour Cream",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Large Eggs & Vanilla Extract",
+                "amount": 3,
+                "unit": "items"
+            },
+            {
+                "name": "Fresh Strawberry & Blueberry Coulis",
+                "amount": 0.5,
+                "unit": "cup"
+            }
+        ],
+        "instructions": [
+            "Press graham cracker crumbs and melted butter into a 9-inch springform pan; bake for 10 minutes at 175°C (350°F).",
+            "Beat cream cheese, sugar, and sour cream on low speed until perfectly smooth.",
+            "Add eggs one at a time, mixing just until combined (do not whip air).",
+            "Pour filling over crust and bake in a water bath at 160°C (325°F) for 55 minutes until center gently jiggles.",
+            "Cool slowly in oven with door cracked open for 1 hour, then chill in refrigerator for 6 hours.",
+            "Top with fresh strawberry coulis and slice with a warm knife."
+        ],
+        "nutrition": {
+            "calories": "460 kcal",
+            "protein": "8g",
+            "carbs": "38g",
+            "fat": "32g",
+            "fiber": "1g"
+        }
+    },
+    {
+        "id": 57,
+        "name": "Authentic Mexican Fresh Molcajete Guacamole",
+        "tagline": "Table-side mashed Hass avocados with serrano chilies, white onion, lime juice, sea salt, and homemade tortilla chips.",
+        "cuisine": "Mexican",
+        "category": "Vegetarian",
+        "diet": "Vegan",
+        "time": 15,
+        "prepTime": 15,
+        "cookTime": 0,
+        "difficulty": "Easy",
+        "rating": 4.9,
+        "reviewsCount": 310,
+        "calories": 220,
+        "servings": 3,
+        "spicyLevel": 2,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Roberto Santibañez",
+        "ingredients": [
+            {
+                "name": "Ripe Hass Avocados",
+                "amount": 3,
+                "unit": "items"
+            },
+            {
+                "name": "Serrano or Jalapeño Pepper (finely minced)",
+                "amount": 1.5,
+                "unit": "items"
+            },
+            {
+                "name": "White Onion (finely diced)",
+                "amount": 0.3,
+                "unit": "cup"
+            },
+            {
+                "name": "Fresh Cilantro (chopped)",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Fresh Lime Juice & Coarse Sea Salt",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Crispy Corn Tortilla Chips (Totopos)",
+                "amount": 1,
+                "unit": "basket"
+            }
+        ],
+        "instructions": [
+            "In a volcanic stone molcajete (or sturdy bowl), grind minced serrano pepper, half the cilantro, salt, and onion into a fragrant aromatic paste.",
+            "Cut avocados in half, remove pit, and scoop flesh into the molcajete.",
+            "Coarsely mash with pestle or fork, keeping pleasant chunky texture.",
+            "Fold in fresh lime juice and remaining diced onions and cilantro.",
+            "Taste and adjust salt and acidity with extra lime.",
+            "Serve immediately with hot crispy corn tortilla chips."
+        ],
+        "nutrition": {
+            "calories": "220 kcal",
+            "protein": "3g",
+            "carbs": "12g",
+            "fat": "20g",
+            "fiber": "8g"
+        }
+    },
+    {
+        "id": 58,
+        "name": "Traditional British Crispy Fish & Chips",
+        "tagline": "Golden ale beer-battered flaky Atlantic cod fillets served with thick triple-cooked chips, mushy peas & tartar sauce.",
+        "cuisine": "British",
+        "category": "Non-Vegetarian",
+        "diet": "Pescatarian",
+        "time": 35,
+        "prepTime": 15,
+        "cookTime": 20,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 340,
+        "calories": 690,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Gordon Ramsay",
+        "ingredients": [
+            {
+                "name": "Fresh Cod or Haddock Fillets",
+                "amount": 2,
+                "unit": "fillets (200g each)"
+            },
+            {
+                "name": "Cold British Pale Ale or IPA",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "All-Purpose Flour & Rice Flour (for extra crunch)",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Baking Powder & Sea Salt",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Maris Piper Potatoes (cut into thick chips)",
+                "amount": 4,
+                "unit": "large"
+            },
+            {
+                "name": "Malted Vinegar, Mushy Peas & Tartar Sauce",
+                "amount": 1,
+                "unit": "serving"
+            }
+        ],
+        "instructions": [
+            "Parboil thick potato chips in salted water for 5 minutes, dry on a rack, and fry at 140°C (280°F) for 6 minutes. Cool.",
+            "Whisk flour, rice flour, baking powder, salt, and ice-cold beer into a bubbly, airy batter.",
+            "Dust cod fillets in dry flour, dip into beer batter, and lower into hot oil (190°C / 375°F) for 5-6 minutes until amber and crisp.",
+            "Double-fry chips at 190°C (375°F) for 3 minutes until golden brown and glass-like crispy.",
+            "Drain on wire rack and season immediately with flaky sea salt and malt vinegar.",
+            "Serve with warm buttered mushy peas, tangy caper tartar sauce, and lemon wedges."
+        ],
+        "nutrition": {
+            "calories": "690 kcal",
+            "protein": "42g",
+            "carbs": "72g",
+            "fat": "26g",
+            "fiber": "6g"
+        }
+    },
+    {
+        "id": 59,
+        "name": "Authentic Moroccan Lamb & Apricot Tagine",
+        "tagline": "Slow-simmered tender lamb shanks with honeyed Turkish apricots, toasted almonds, saffron, and Ras el Hanout.",
+        "cuisine": "Middle Eastern",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 70,
+        "prepTime": 20,
+        "cookTime": 50,
+        "difficulty": "Hard",
+        "rating": 4.9,
+        "reviewsCount": 280,
+        "calories": 620,
+        "servings": 4,
+        "spicyLevel": 2,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Fatima Mountassir",
+        "ingredients": [
+            {
+                "name": "Lamb Shoulder / Shanks (cubed)",
+                "amount": 750,
+                "unit": "g"
+            },
+            {
+                "name": "Dried Turkish Apricots (soaked)",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Moroccan Ras el Hanout Spice Blend",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Saffron threads & Cinnamon stick",
+                "amount": 1,
+                "unit": "item"
+            },
+            {
+                "name": "Orange Blossom Water & Wild Honey",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Toasted Slivered Almonds & Sesame Seeds",
+                "amount": 0.25,
+                "unit": "cup"
+            },
+            {
+                "name": "Steamed Fluffy Couscous",
+                "amount": 2,
+                "unit": "cups"
+            }
+        ],
+        "instructions": [
+            "Rub lamb pieces with Ras el Hanout, ginger, garlic, cinnamon, saffron, and olive oil; marinate for 1 hour.",
+            "In a conical clay tagine or heavy Dutch oven, sear lamb until deeply caramelized.",
+            "Add grated onions and 1.5 cups water; cover with tagine lid and simmer on low heat for 45 minutes.",
+            "In a small pan, simmer dried apricots with honey, butter, a pinch of cinnamon, and orange blossom water until glazed.",
+            "Arrange glazed apricots over the tender lamb in the tagine for the last 10 minutes of cooking.",
+            "Scatter toasted almonds and sesame seeds on top.",
+            "Serve hot directly in the tagine with warm steamed semolina couscous."
+        ],
+        "nutrition": {
+            "calories": "620 kcal",
+            "protein": "45g",
+            "carbs": "48g",
+            "fat": "28g",
+            "fiber": "5g"
+        }
+    },
+    {
+        "id": 60,
+        "name": "Traditional Southern Buttermilk Fried Chicken",
+        "tagline": "Crispy seasoned golden crusted chicken pieces marinated in cayenne buttermilk and fried to juicy perfection.",
+        "cuisine": "American",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 45,
+        "prepTime": 25,
+        "cookTime": 20,
+        "difficulty": "Medium",
+        "rating": 4.9,
+        "reviewsCount": 460,
+        "calories": 720,
+        "servings": 4,
+        "spicyLevel": 2,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Edna Lewis",
+        "ingredients": [
+            {
+                "name": "Whole Chicken (cut into 8 pieces)",
+                "amount": 1.2,
+                "unit": "kg"
+            },
+            {
+                "name": "Real Buttermilk",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Hot Sauce & Pickle Juice",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Flour & Cornstarch Dredge",
+                "amount": 2.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Smoked Paprika, Garlic Powder & Cayenne",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Peanut Oil for deep frying",
+                "amount": 4,
+                "unit": "cups"
+            },
+            {
+                "name": "Warm Honey & Buttermilk Biscuits",
+                "amount": 4,
+                "unit": "servings"
+            }
+        ],
+        "instructions": [
+            "Submerge chicken pieces in buttermilk whisked with hot sauce, pickle juice, garlic, and salt for at least 4 hours.",
+            "Whisk flour, cornstarch, paprika, garlic powder, onion powder, cayenne, salt, and pepper in a shallow dish.",
+            "Drizzle 3 tbsp buttermilk marinade into the flour to create crunchy craggy bits.",
+            "Dredge chicken pieces thoroughly, packing flour onto every crevice.",
+            "Deep fry in peanut oil at 165°C (330°F) in batches for 14-16 minutes until deep golden brown and internal temperature hits 75°C (165°F).",
+            "Rest on wire rack for 5 minutes, drizzle with spicy honey, and serve with warm buttermilk biscuits."
+        ],
+        "nutrition": {
+            "calories": "720 kcal",
+            "protein": "52g",
+            "carbs": "42g",
+            "fat": "38g",
+            "fiber": "2g"
+        }
+    },
+    {
+        "id": 61,
+        "name": "Traditional Italian Tiramisù al Mascarpone",
+        "tagline": "Airy espresso-soaked Savoiardi ladyfingers layered with whipped egg yolk mascarpone cream and raw Dutch cocoa.",
+        "cuisine": "Italian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 25,
+        "prepTime": 25,
+        "cookTime": 0,
+        "difficulty": "Easy",
+        "rating": 5,
+        "reviewsCount": 510,
+        "calories": 390,
+        "servings": 6,
+        "spicyLevel": 1,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Iginio Massari",
+        "ingredients": [
+            {
+                "name": "Italian Savoiardi Ladyfingers",
+                "amount": 24,
+                "unit": "biscuits"
+            },
+            {
+                "name": "Fresh Mascarpone Cheese",
+                "amount": 500,
+                "unit": "g"
+            },
+            {
+                "name": "Fresh Egg Yolks & Granulated Sugar",
+                "amount": 4,
+                "unit": "yolks"
+            },
+            {
+                "name": "Strong Brewed Espresso (cooled)",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Marsala Wine or Coffee Liqueur",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Dutch Process Unsweetened Cocoa Powder",
+                "amount": 3,
+                "unit": "tbsp"
+            }
+        ],
+        "instructions": [
+            "Whisk egg yolks and sugar with an electric mixer for 5 minutes until pale and voluminous.",
+            "Gently fold in softened mascarpone cheese until silky smooth cream forms.",
+            "Combine cooled espresso and Marsala wine in a wide shallow dish.",
+            "Quickly dip ladyfingers for 1 second on each side (do not over-saturate) and arrange tightly in a rectangular dish.",
+            "Spread half the mascarpone cream evenly over the biscuits.",
+            "Add a second layer of espresso-dipped ladyfingers and top with remaining velvety cream.",
+            "Dust generously with dark cocoa powder through a fine mesh sieve.",
+            "Chill in refrigerator for at least 4 hours (ideally overnight) before serving."
+        ],
+        "nutrition": {
+            "calories": "390 kcal",
+            "protein": "7g",
+            "carbs": "34g",
+            "fat": "26g",
+            "fiber": "1g"
+        }
+    },
+    {
+        "id": 62,
+        "name": "Authentic Spanish Churros con Chocolate",
+        "tagline": "Crispy extruded golden star churros rolled in cinnamon sugar, served with ultra-thick dark Spanish dipping chocolate.",
+        "cuisine": "Spanish",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 25,
+        "prepTime": 15,
+        "cookTime": 10,
+        "difficulty": "Medium",
+        "rating": 4.9,
+        "reviewsCount": 320,
+        "calories": 420,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chocolatería San Ginés",
+        "ingredients": [
+            {
+                "name": "All-Purpose Flour & Boiling Water",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Unsalted Butter & Sea Salt",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Cinnamon Sugar (for rolling)",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Dark Spanish Chocolate (chopped)",
+                "amount": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Whole Milk & Cornstarch (for thickness)",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sunflower Oil for deep frying",
+                "amount": 3,
+                "unit": "cups"
+            }
+        ],
+        "instructions": [
+            "Bring water, butter, and salt to a boil in a pot; add flour all at once and stir vigorously until smooth dough forms.",
+            "Transfer dough to a piping bag fitted with a closed star nozzle.",
+            "Pipe 5-inch strips of dough directly into hot oil (180°C / 350°F), cutting ends with kitchen scissors.",
+            "Fry for 3-4 minutes until golden-amber and crispy; drain on paper towels.",
+            "Immediately roll warm churros in cinnamon sugar.",
+            "Make chocolate: Heat milk, whisk in cornstarch and chopped dark chocolate until thick and spoon-coating.",
+            "Dip hot crunchy churros into rich chocolate and enjoy."
+        ],
+        "nutrition": {
+            "calories": "420 kcal",
+            "protein": "6g",
+            "carbs": "52g",
+            "fat": "22g",
+            "fiber": "3g"
+        }
+    },
+    {
+        "id": 63,
+        "name": "Traditional Japanese Chicken Yakitori Skewers",
+        "tagline": "Skewered juicy chicken thighs and scallions glazed over charcoal with sweet savory mirin tare sauce.",
+        "cuisine": "Japanese",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 25,
+        "prepTime": 15,
+        "cookTime": 10,
+        "difficulty": "Easy",
+        "rating": 4.8,
+        "reviewsCount": 290,
+        "calories": 380,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Kenzo Takahashi",
+        "ingredients": [
+            {
+                "name": "Chicken Thighs (cut in bite size chunks)",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Tokyo Scallions / Negi (cut into 1-inch pieces)",
+                "amount": 4,
+                "unit": "stalks"
+            },
+            {
+                "name": "Yakitori Tare (soy sauce, mirin, sake, brown sugar)",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Bamboo Skewers (soaked in water)",
+                "amount": 8,
+                "unit": "skewers"
+            },
+            {
+                "name": "Shichimi Togarashi (Japanese 7-spice)",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Simmer soy sauce, mirin, sake, and brown sugar in a saucepan for 8 minutes until reduced to glossy glaze (Tare).",
+            "Thread chicken pieces and scallion rounds alternately onto soaked bamboo skewers (Negima style).",
+            "Grill skewers over high heat or cast-iron grill pan for 3 minutes per side until lightly charred.",
+            "Brush generously with tare sauce, flip, and grill for 1 minute so glaze caramelizes into smoky lacquer.",
+            "Brush one final coat of tare sauce right before taking off grill.",
+            "Sprinkle with Shichimi Togarashi and serve with cold draft beer."
+        ],
+        "nutrition": {
+            "calories": "380 kcal",
+            "protein": "34g",
+            "carbs": "16g",
+            "fat": "19g",
+            "fiber": "2g"
+        }
+    },
+    {
+        "id": 64,
+        "name": "Authentic Indian Palak Paneer with Garlic Naan",
+        "tagline": "Fresh cottage cheese cubes folded into a vibrant, silky spiced spinach gravy with cream and roasted garlic.",
+        "cuisine": "Indian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 30,
+        "prepTime": 10,
+        "cookTime": 20,
+        "difficulty": "Easy",
+        "rating": 4.9,
+        "reviewsCount": 410,
+        "calories": 430,
+        "servings": 3,
+        "spicyLevel": 2,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Sanjeev R.",
+        "ingredients": [
+            {
+                "name": "Fresh Spinach Leaves (Palak, blanched)",
+                "amount": 500,
+                "unit": "g"
+            },
+            {
+                "name": "Fresh Paneer Cubes (lightly pan-seared)",
+                "amount": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Garlic cloves (sliced & minced)",
+                "amount": 8,
+                "unit": "cloves"
+            },
+            {
+                "name": "Ginger & Green Chilies",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Desi Ghee & Fresh Cream",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Garam Masala & Kasuri Methi",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Warm Garlic Butter Naan",
+                "amount": 3,
+                "unit": "naans"
+            }
+        ],
+        "instructions": [
+            "Blanch spinach leaves in boiling water for 2 minutes, then plunge immediately into ice-cold water to lock bright emerald green color.",
+            "Blend blanched spinach with green chilies and ginger into a smooth puree.",
+            "Heat ghee in a pan, add cumin seeds and lots of minced garlic; sauté until golden and fragrant.",
+            "Add finely chopped onions and cook until translucent; stir in garam masala and salt.",
+            "Pour in the spinach puree and simmer gently for 5 minutes.",
+            "Fold in paneer cubes and crushed kasuri methi; finish with a swirl of fresh heavy cream.",
+            "Serve hot with charred garlic butter naan."
+        ],
+        "nutrition": {
+            "calories": "430 kcal",
+            "protein": "20g",
+            "carbs": "18g",
+            "fat": "32g",
+            "fiber": "6g"
+        }
+    },
+    {
+        "id": 65,
+        "name": "Traditional French Classic Crème Brûlée",
+        "tagline": "Silky rich vanilla bean egg custard with a brittle, shatteringly crisp caramelized sugar crust.",
+        "cuisine": "French",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 45,
+        "prepTime": 15,
+        "cookTime": 30,
+        "difficulty": "Medium",
+        "rating": 5,
+        "reviewsCount": 360,
+        "calories": 380,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Paul Bocuse",
+        "ingredients": [
+            {
+                "name": "Heavy Whipping Cream",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Fresh Egg Yolks",
+                "amount": 5,
+                "unit": "yolks"
+            },
+            {
+                "name": "Madagascar Vanilla Bean (split & scraped)",
+                "amount": 1,
+                "unit": "pod"
+            },
+            {
+                "name": "Granulated Sugar",
+                "amount": 0.3,
+                "unit": "cup"
+            },
+            {
+                "name": "Turbinado Sugar (for torching crust)",
+                "amount": 4,
+                "unit": "tbsp"
+            }
+        ],
+        "instructions": [
+            "Heat heavy cream with split vanilla bean pod and seeds until simmering; remove from heat and steep 15 minutes.",
+            "Whisk egg yolks and sugar together until pale.",
+            "Slowly temper hot cream into egg mixture while whisking constantly.",
+            "Strain custard through a fine sieve and pour into 4 shallow ceramic ramekins.",
+            "Bake in a water bath at 150°C (300°F) for 30-35 minutes until edges are set and center has a soft jiggle.",
+            "Chill in refrigerator for 4 hours.",
+            "Before serving, sprinkle an even layer of sugar on top and caramelize with a kitchen blowtorch until bubbly and amber-glass hard."
+        ],
+        "nutrition": {
+            "calories": "380 kcal",
+            "protein": "5g",
+            "carbs": "26g",
+            "fat": "30g",
+            "fiber": "0g"
+        }
+    },
+    {
+        "id": 66,
+        "name": "Authentic Jalisco Beef Birria Quesa-Tacos",
+        "tagline": "Slow-braised shredded beef in chili broth stuffed inside crispy cheese-crusted corn tortillas with consomé for dipping.",
+        "cuisine": "Mexican",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 75,
+        "prepTime": 25,
+        "cookTime": 50,
+        "difficulty": "Hard",
+        "rating": 5,
+        "reviewsCount": 540,
+        "calories": 680,
+        "servings": 4,
+        "spicyLevel": 3,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Teddy Vasquez",
+        "ingredients": [
+            {
+                "name": "Beef Chuck Roast & Short Ribs",
+                "amount": 800,
+                "unit": "g"
+            },
+            {
+                "name": "Guajillo, Ancho & Pasilla Dried Chilies",
+                "amount": 6,
+                "unit": "items"
+            },
+            {
+                "name": "Oaxaca or Monterey Jack Cheese (shredded)",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Corn Tortillas",
+                "amount": 8,
+                "unit": "tortillas"
+            },
+            {
+                "name": "Mexican Cinnamon, Cloves & Oregano",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Beef Broth & Apple Cider Vinegar",
+                "amount": 3,
+                "unit": "cups"
+            },
+            {
+                "name": "Diced Onion, Cilantro & Lime wedges",
+                "amount": 1,
+                "unit": "cup"
+            }
+        ],
+        "instructions": [
+            "Toast dried chilies, blend with onions, garlic, vinegar, spices, and broth into smooth adobo sauce.",
+            "Sear beef in a Dutch oven, pour adobo broth over meat, and slow cook on low heat for 50 minutes until meat shreds effortlessly.",
+            "Shred beef and reserve the top layer of rich red chili fat from the consomé.",
+            "Dip corn tortillas into the red fat, lay onto hot skillet.",
+            "Top with shredded Oaxaca cheese and generous portion of juicy birria beef; fold in half and fry until crunchy and cheesy.",
+            "Serve hot with a steaming cup of cilantro-onion laced consomé for continuous dipping."
+        ],
+        "nutrition": {
+            "calories": "680 kcal",
+            "protein": "48g",
+            "carbs": "38g",
+            "fat": "36g",
+            "fiber": "5g"
+        }
+    },
+    {
+        "id": 67,
+        "name": "Traditional Greek Spanakopita (Spinach & Feta Pie)",
+        "tagline": "Flaky golden layered filo pastry baked with creamy seasoned spinach, Greek feta cheese, leeks & fresh dill.",
+        "cuisine": "Greek",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 50,
+        "prepTime": 20,
+        "cookTime": 30,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 260,
+        "calories": 380,
+        "servings": 6,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Maria Loi",
+        "ingredients": [
+            {
+                "name": "Filo Pastry Sheets",
+                "amount": 12,
+                "unit": "sheets"
+            },
+            {
+                "name": "Fresh Baby Spinach (washed & chopped)",
+                "amount": 600,
+                "unit": "g"
+            },
+            {
+                "name": "Authentic Greek Feta Cheese (crumbled)",
+                "amount": 250,
+                "unit": "g"
+            },
+            {
+                "name": "Leeks & Green Onions (sliced)",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Fresh Dill & Mint (chopped)",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Large Eggs & Extra Virgin Olive Oil",
+                "amount": 2,
+                "unit": "items"
+            },
+            {
+                "name": "Nutmeg & Black Pepper",
+                "amount": 0.5,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Sauté leeks and green onions; toss in spinach until wilted. Squeeze in a colander until bone dry.",
+            "Mix cooled spinach with crumbled feta, beaten eggs, chopped dill, mint, nutmeg, and black pepper.",
+            "Brush a 9x13 baking dish with olive oil and layer 6 filo sheets, brushing each with olive oil.",
+            "Spread spinach feta filling evenly across pastry.",
+            "Top with remaining 6 filo sheets, brushing each layer with olive oil.",
+            "Score top layers into diamond shapes with a sharp knife.",
+            "Bake at 180°C (350°F) for 35 minutes until crust is blistered and golden brown.",
+            "Cool 10 minutes before slicing."
+        ],
+        "nutrition": {
+            "calories": "380 kcal",
+            "protein": "14g",
+            "carbs": "32g",
+            "fat": "22g",
+            "fiber": "4g"
+        }
+    },
+    {
+        "id": 68,
+        "name": "Authentic Indian Dal Makhani (24-Hour Style)",
+        "tagline": "Slow-simmered whole black urad lentils and kidney beans enriched with pure butter, cream & smoky coal dhungar.",
+        "cuisine": "Indian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 60,
+        "prepTime": 15,
+        "cookTime": 45,
+        "difficulty": "Medium",
+        "rating": 5,
+        "reviewsCount": 490,
+        "calories": 440,
+        "servings": 4,
+        "spicyLevel": 2,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Kundan Lal Gujral",
+        "ingredients": [
+            {
+                "name": "Whole Black Urad Lentils (Sabut Urad)",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Red Kidney Beans (Rajma)",
+                "amount": 0.25,
+                "unit": "cup"
+            },
+            {
+                "name": "Fresh Tomato Puree",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Kashmiri Chili Powder & Ginger Paste",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "White Butter (Makhan)",
+                "amount": 4,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Heavy Cream",
+                "amount": 3,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Kasuri Methi & Garam Masala",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Soak black lentils and rajma overnight; pressure cook with salt and water for 6 whistles until meltingly soft.",
+            "Mash some lentils with the back of a ladle to release natural creaminess.",
+            "In a heavy pot, cook fresh tomato puree with butter, ginger paste, and Kashmiri chili powder until glossy.",
+            "Add cooked lentils and 1.5 cups water; simmer on lowest flame for at least 45 minutes, stirring periodically.",
+            "Incorporate generous white butter, fresh cream, and crushed roasted kasuri methi.",
+            "Perform dhungar method with a hot red charcoal and ghee for authentic Bukhara smokiness.",
+            "Serve hot with butter naan or steamed rice."
+        ],
+        "nutrition": {
+            "calories": "440 kcal",
+            "protein": "18g",
+            "carbs": "46g",
+            "fat": "22g",
+            "fiber": "11g"
+        }
+    },
+    {
+        "id": 69,
+        "name": "Authentic Lebanese Hummus with Spiced Lamb (Hummus bil Lahme)",
+        "tagline": "Velvety smooth olive oil chickpea hummus topped with warm pan-seared spiced minced lamb and toasted pine nuts.",
+        "cuisine": "Mediterranean",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 25,
+        "prepTime": 15,
+        "cookTime": 10,
+        "difficulty": "Easy",
+        "rating": 4.9,
+        "reviewsCount": 310,
+        "calories": 460,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Kamal Mouzawak",
+        "ingredients": [
+            {
+                "name": "Cooked Skinless Chickpeas",
+                "amount": 2,
+                "unit": "cups"
+            },
+            {
+                "name": "Premium Sesame Tahini & Lemon Juice",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Ground Lamb or Beef",
+                "amount": 200,
+                "unit": "g"
+            },
+            {
+                "name": "Seven Spice (Baharat) & Cinnamon",
+                "amount": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Toasted Pine Nuts & Pomegranate Molasses",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Extra Virgin Olive Oil & Warm Pita",
+                "amount": 3,
+                "unit": "tbsp"
+            }
+        ],
+        "instructions": [
+            "Blend warm cooked chickpeas, tahini, ice cubes, garlic, lemon juice, and salt in food processor until silky and cloud-like.",
+            "In a hot skillet, brown ground lamb with butter, pine nuts, baharat 7-spice, cinnamon, and sea salt.",
+            "Spread velvety hummus on a shallow serving plate, creating a decorative swirl well with the back of a spoon.",
+            "Spoon sizzling spiced lamb and toasted golden pine nuts directly into the center well.",
+            "Drizzle with cold-pressed olive oil, a swirl of tangy pomegranate molasses, and fresh parsley.",
+            "Serve with warm fluffy pita wedges."
+        ],
+        "nutrition": {
+            "calories": "460 kcal",
+            "protein": "24g",
+            "carbs": "36g",
+            "fat": "26g",
+            "fiber": "8g"
+        }
+    },
+    {
+        "id": 70,
+        "name": "Authentic Chinese Sweet and Sour Crispy Pork (Gu Lao Rou)",
+        "tagline": "Crispy double-fried pork tenderloin bites glazed in a vibrant red hawthorn berry sweet and sour sauce with bell peppers.",
+        "cuisine": "Chinese",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 30,
+        "prepTime": 15,
+        "cookTime": 15,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 280,
+        "calories": 520,
+        "servings": 3,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Martin Yan",
+        "ingredients": [
+            {
+                "name": "Pork Tenderloin / Shoulder (cubed)",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Cornstarch or Potato Starch (for coating)",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Fresh Pineapple chunks & Bell Peppers",
+                "amount": 1.5,
+                "unit": "cups"
+            },
+            {
+                "name": "Chinese Sweet & Sour Sauce (plum sauce, vinegar, sugar)",
+                "amount": 0.5,
+                "unit": "cup"
+            },
+            {
+                "name": "Shaoxing Wine & Light Soy Sauce",
+                "amount": 1,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Oil for double-frying",
+                "amount": 3,
+                "unit": "cups"
+            }
+        ],
+        "instructions": [
+            "Marinate pork cubes with soy sauce, Shaoxing wine, and pinch of salt for 10 minutes.",
+            "Coat pork cubes in egg and pack firmly with cornstarch.",
+            "Deep fry in oil at 170°C (340°F) for 4 minutes; remove and drain.",
+            "Increase oil heat to 195°C (380°F) and flash-fry pork for 60 seconds to achieve glass-shattering crispness.",
+            "In a hot wok, quickly toss pineapple chunks, onions, and bell peppers; pour in sweet and sour sauce until bubbling and thick.",
+            "Immediately toss crispy pork in the sauce for 15 seconds so every piece is coated without losing crunch.",
+            "Serve right away with steamed jasmine rice."
+        ],
+        "nutrition": {
+            "calories": "520 kcal",
+            "protein": "28g",
+            "carbs": "52g",
+            "fat": "22g",
+            "fiber": "2g"
+        }
+    },
+    {
+        "id": 71,
+        "name": "Traditional American Baked Four-Cheese Macaroni",
+        "tagline": "Elbow pasta baked with sharp cheddar, gruyère, gouda & parmesan breadcrumb crust.",
+        "cuisine": "American",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 35,
+        "prepTime": 14,
+        "cookTime": 21,
+        "difficulty": "Medium",
+        "rating": 5,
+        "reviewsCount": 434,
+        "calories": 580,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1621996346565-e3d5d6281699?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "580 kcal",
+            "protein": "31g",
+            "carbs": "46g",
+            "fat": "23g",
+            "fiber": "8g"
+        }
+    },
+    {
+        "id": 72,
+        "name": "Authentic Thai Roasted Duck Red Curry",
+        "tagline": "Crispy roasted duck breast simmered with red curry paste, coconut milk, lychees & cherry tomatoes.",
+        "cuisine": "Thai",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 35,
+        "prepTime": 14,
+        "cookTime": 21,
+        "difficulty": "Medium",
+        "rating": 4.7,
+        "reviewsCount": 438,
+        "calories": 640,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "640 kcal",
+            "protein": "32g",
+            "carbs": "47g",
+            "fat": "24g",
+            "fiber": "3g"
+        }
+    },
+    {
+        "id": 73,
+        "name": "Traditional Italian Minestrone Soup with Pesto",
+        "tagline": "Hearty Tuscan vegetable soup packed with cannellini beans, ditalini pasta, kale & fresh basil pesto.",
+        "cuisine": "Italian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 30,
+        "prepTime": 12,
+        "cookTime": 18,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 442,
+        "calories": 260,
+        "servings": 3,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "260 kcal",
+            "protein": "33g",
+            "carbs": "48g",
+            "fat": "25g",
+            "fiber": "4g"
+        }
+    },
+    {
+        "id": 74,
+        "name": "Authentic Japanese Ebi & Vegetable Tempura",
+        "tagline": "Lacy, ultra-crisp ice water battered black tiger prawns, sweet potato & lotus root with tentsuyu dip.",
+        "cuisine": "Japanese",
+        "category": "Non-Vegetarian",
+        "diet": "Pescatarian",
+        "time": 25,
+        "prepTime": 10,
+        "cookTime": 15,
+        "difficulty": "Easy",
+        "rating": 4.9,
+        "reviewsCount": 446,
+        "calories": 420,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "420 kcal",
+            "protein": "34g",
+            "carbs": "49g",
+            "fat": "26g",
+            "fiber": "5g"
+        }
+    },
+    {
+        "id": 75,
+        "name": "Traditional Indian Royal Malai Kofta",
+        "tagline": "Melt-in-mouth paneer and potato dumplings stuffed with nuts, simmered in a silky golden cashew cream gravy.",
+        "cuisine": "Indian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 40,
+        "prepTime": 16,
+        "cookTime": 24,
+        "difficulty": "Medium",
+        "rating": 5,
+        "reviewsCount": 450,
+        "calories": 520,
+        "servings": 2,
+        "spicyLevel": 4,
+        "featured": true,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "520 kcal",
+            "protein": "35g",
+            "carbs": "50g",
+            "fat": "12g",
+            "fiber": "6g"
+        }
+    },
+    {
+        "id": 76,
+        "name": "Authentic Mexican Chiles Rellenos",
+        "tagline": "Charred poblano peppers stuffed with melted Oaxaca cheese, coated in airy egg batter with warm salsa roja.",
+        "cuisine": "Mexican",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 40,
+        "prepTime": 16,
+        "cookTime": 24,
+        "difficulty": "Medium",
+        "rating": 4.7,
+        "reviewsCount": 454,
+        "calories": 450,
+        "servings": 3,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1534352956036-cd81e27dd615?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "450 kcal",
+            "protein": "36g",
+            "carbs": "51g",
+            "fat": "13g",
+            "fiber": "7g"
+        }
+    },
+    {
+        "id": 77,
+        "name": "Traditional French Soupe à l'Oignon Gratinée",
+        "tagline": "Caramelized onions slow simmered in rich beef broth, topped with toasted baguette and melted Gruyère cheese.",
+        "cuisine": "French",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 55,
+        "prepTime": 22,
+        "cookTime": 33,
+        "difficulty": "Hard",
+        "rating": 4.8,
+        "reviewsCount": 458,
+        "calories": 390,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "390 kcal",
+            "protein": "37g",
+            "carbs": "52g",
+            "fat": "14g",
+            "fiber": "8g"
+        }
+    },
+    {
+        "id": 78,
+        "name": "Authentic Korean Kimchi Jjigae with Pork",
+        "tagline": "Spicy aged kimchi stew simmering with pork belly, tofu cubes, anchovy broth, and scallions in hot earthenware.",
+        "cuisine": "Korean",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 30,
+        "prepTime": 12,
+        "cookTime": 18,
+        "difficulty": "Medium",
+        "rating": 4.9,
+        "reviewsCount": 462,
+        "calories": 420,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1553163147-622ab57be1c7?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "420 kcal",
+            "protein": "38g",
+            "carbs": "53g",
+            "fat": "15g",
+            "fiber": "3g"
+        }
+    },
+    {
+        "id": 79,
+        "name": "Traditional Spanish Tortilla de Patatas",
+        "tagline": "Classic Spanish thick omelette cooked with olive oil poached potatoes, caramelized onions, and custard-soft eggs.",
+        "cuisine": "Spanish",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 30,
+        "prepTime": 12,
+        "cookTime": 18,
+        "difficulty": "Medium",
+        "rating": 5,
+        "reviewsCount": 466,
+        "calories": 360,
+        "servings": 3,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "360 kcal",
+            "protein": "39g",
+            "carbs": "54g",
+            "fat": "16g",
+            "fiber": "4g"
+        }
+    },
+    {
+        "id": 80,
+        "name": "Authentic Indian Tandoori Chicken Tikka",
+        "tagline": "Charcoal grilled boneless chicken chunks marinated in mustard oil, hung curd, and roasted Punjabi spices.",
+        "cuisine": "Indian",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 35,
+        "prepTime": 14,
+        "cookTime": 21,
+        "difficulty": "Medium",
+        "rating": 4.7,
+        "reviewsCount": 470,
+        "calories": 460,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "460 kcal",
+            "protein": "20g",
+            "carbs": "55g",
+            "fat": "17g",
+            "fiber": "5g"
+        }
+    },
+    {
+        "id": 81,
+        "name": "Traditional New England Clam Chowder",
+        "tagline": "Rich, creamy soup with tender sweet Atlantic clams, diced potatoes, salt pork lardons, and oyster crackers.",
+        "cuisine": "American",
+        "category": "Non-Vegetarian",
+        "diet": "Pescatarian",
+        "time": 35,
+        "prepTime": 14,
+        "cookTime": 21,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 474,
+        "calories": 480,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "480 kcal",
+            "protein": "21g",
+            "carbs": "56g",
+            "fat": "18g",
+            "fiber": "6g"
+        }
+    },
+    {
+        "id": 82,
+        "name": "Authentic Italian Handmade Potato Gnocchi",
+        "tagline": "Pillow-soft handmade potato gnocchi tossed with sweet San Marzano tomato sauce, fresh mozzarella & basil.",
+        "cuisine": "Italian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 35,
+        "prepTime": 14,
+        "cookTime": 21,
+        "difficulty": "Medium",
+        "rating": 4.9,
+        "reviewsCount": 478,
+        "calories": 410,
+        "servings": 3,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1621996346565-e3d5d6281699?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "410 kcal",
+            "protein": "22g",
+            "carbs": "57g",
+            "fat": "19g",
+            "fiber": "7g"
+        }
+    },
+    {
+        "id": 83,
+        "name": "Traditional British Savory Shepherd's Pie",
+        "tagline": "Rich ground lamb stew with peas and carrots, crowned with buttery golden-peaked mashed potato crust.",
+        "cuisine": "British",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 50,
+        "prepTime": 20,
+        "cookTime": 30,
+        "difficulty": "Hard",
+        "rating": 5,
+        "reviewsCount": 482,
+        "calories": 560,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1534939561126-855b8675edd7?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "560 kcal",
+            "protein": "23g",
+            "carbs": "58g",
+            "fat": "20g",
+            "fiber": "8g"
+        }
+    },
+    {
+        "id": 84,
+        "name": "Authentic Middle Eastern Fresh Tabbouleh",
+        "tagline": "Vibrant salad of finely chopped flat-leaf parsley, mint, ripe tomatoes, fine bulgur, olive oil & lemon.",
+        "cuisine": "Mediterranean",
+        "category": "Vegetarian",
+        "diet": "Vegan",
+        "time": 15,
+        "prepTime": 6,
+        "cookTime": 9,
+        "difficulty": "Easy",
+        "rating": 4.7,
+        "reviewsCount": 486,
+        "calories": 210,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "210 kcal",
+            "protein": "24g",
+            "carbs": "59g",
+            "fat": "21g",
+            "fiber": "3g"
+        }
+    },
+    {
+        "id": 85,
+        "name": "Traditional Mysore Masala Dosa",
+        "tagline": "Crisp red rice crepe spread with spicy garlic red chutney and loaded with mashed spiced potato masala.",
+        "cuisine": "Indian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 30,
+        "prepTime": 12,
+        "cookTime": 18,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 490,
+        "calories": 390,
+        "servings": 3,
+        "spicyLevel": 2,
+        "featured": true,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "390 kcal",
+            "protein": "25g",
+            "carbs": "60g",
+            "fat": "22g",
+            "fiber": "4g"
+        }
+    },
+    {
+        "id": 86,
+        "name": "Authentic Japanese Crispy Katsu Sando",
+        "tagline": "Thick panko breaded cutlet sandwiched in fluffy Japanese milk bread with tonkatsu sauce and shredded cabbage.",
+        "cuisine": "Japanese",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 20,
+        "prepTime": 8,
+        "cookTime": 12,
+        "difficulty": "Easy",
+        "rating": 4.9,
+        "reviewsCount": 494,
+        "calories": 510,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "510 kcal",
+            "protein": "26g",
+            "carbs": "61g",
+            "fat": "23g",
+            "fiber": "5g"
+        }
+    },
+    {
+        "id": 87,
+        "name": "Traditional Mexican Pastel de Tres Leches",
+        "tagline": "Ultra-moist sponge cake soaked in condensed milk, evaporated milk, and heavy cream topped with whipped cream.",
+        "cuisine": "Mexican",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 45,
+        "prepTime": 18,
+        "cookTime": 27,
+        "difficulty": "Medium",
+        "rating": 5,
+        "reviewsCount": 498,
+        "calories": 420,
+        "servings": 2,
+        "spicyLevel": 4,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "420 kcal",
+            "protein": "27g",
+            "carbs": "62g",
+            "fat": "24g",
+            "fiber": "6g"
+        }
+    },
+    {
+        "id": 88,
+        "name": "Authentic Vietnamese Fresh Summer Rolls (Gỏi Cuốn)",
+        "tagline": "Translucent rice paper rolls with prawns, pork, vermicelli noodles, fresh mint, and hoisin peanut dip.",
+        "cuisine": "Vietnamese",
+        "category": "Non-Vegetarian",
+        "diet": "Pescatarian",
+        "time": 20,
+        "prepTime": 8,
+        "cookTime": 12,
+        "difficulty": "Easy",
+        "rating": 4.7,
+        "reviewsCount": 502,
+        "calories": 260,
+        "servings": 3,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "260 kcal",
+            "protein": "28g",
+            "carbs": "63g",
+            "fat": "25g",
+            "fiber": "7g"
+        }
+    },
+    {
+        "id": 89,
+        "name": "Traditional Italian Focaccia Genovese",
+        "tagline": "Airy, golden olive oil dimpled flatbread baked with fresh rosemary sprigs and Maldon flaky sea salt.",
+        "cuisine": "Italian",
+        "category": "Vegetarian",
+        "diet": "Vegan",
+        "time": 35,
+        "prepTime": 14,
+        "cookTime": 21,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 506,
+        "calories": 310,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "310 kcal",
+            "protein": "29g",
+            "carbs": "64g",
+            "fat": "26g",
+            "fiber": "8g"
+        }
+    },
+    {
+        "id": 90,
+        "name": "Authentic Chinese Crispy Peking Duck Rolls",
+        "tagline": "Crisp glazed duck skin wrapped in paper-thin steamed Mandarin pancakes with scallions, cucumber & sweet bean sauce.",
+        "cuisine": "Chinese",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 60,
+        "prepTime": 24,
+        "cookTime": 36,
+        "difficulty": "Hard",
+        "rating": 4.9,
+        "reviewsCount": 510,
+        "calories": 580,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "580 kcal",
+            "protein": "30g",
+            "carbs": "35g",
+            "fat": "12g",
+            "fiber": "3g"
+        }
+    },
+    {
+        "id": 91,
+        "name": "Traditional Greek Chicken Souvlaki with Tzatziki",
+        "tagline": "Oregano and lemon marinated chicken skewers served with warm pita bread, tomatoes, and cool cucumber tzatziki.",
+        "cuisine": "Greek",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 25,
+        "prepTime": 10,
+        "cookTime": 15,
+        "difficulty": "Easy",
+        "rating": 5,
+        "reviewsCount": 514,
+        "calories": 480,
+        "servings": 3,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "480 kcal",
+            "protein": "31g",
+            "carbs": "36g",
+            "fat": "13g",
+            "fiber": "4g"
+        }
+    },
+    {
+        "id": 92,
+        "name": "Traditional French Classic Quiche Lorraine",
+        "tagline": "Buttery shortcrust pastry filled with savory egg custard, smoked bacon lardons, and aged Gruyère cheese.",
+        "cuisine": "French",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 45,
+        "prepTime": 18,
+        "cookTime": 27,
+        "difficulty": "Medium",
+        "rating": 4.7,
+        "reviewsCount": 518,
+        "calories": 460,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "460 kcal",
+            "protein": "32g",
+            "carbs": "37g",
+            "fat": "14g",
+            "fiber": "5g"
+        }
+    },
+    {
+        "id": 93,
+        "name": "Authentic Indian Royal Rasmalai",
+        "tagline": "Delicate cottage cheese discs soaked in sweetened cardamom milk infused with saffron and slivered pistachios.",
+        "cuisine": "Indian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 40,
+        "prepTime": 16,
+        "cookTime": 24,
+        "difficulty": "Medium",
+        "rating": 4.8,
+        "reviewsCount": 522,
+        "calories": 320,
+        "servings": 2,
+        "spicyLevel": 2,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "320 kcal",
+            "protein": "33g",
+            "carbs": "38g",
+            "fat": "15g",
+            "fiber": "6g"
+        }
+    },
+    {
+        "id": 94,
+        "name": "Traditional Moroccan Chicken & Almond Pastilla",
+        "tagline": "Crispy warqa pastry pie filled with savory spiced chicken and sweet crunchy cinnamon almonds, dusted with sugar.",
+        "cuisine": "Middle Eastern",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 55,
+        "prepTime": 22,
+        "cookTime": 33,
+        "difficulty": "Hard",
+        "rating": 4.9,
+        "reviewsCount": 526,
+        "calories": 510,
+        "servings": 3,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "510 kcal",
+            "protein": "34g",
+            "carbs": "39g",
+            "fat": "16g",
+            "fiber": "7g"
+        }
+    },
+    {
+        "id": 95,
+        "name": "Authentic Japanese Fluffy Soufflé Pancakes",
+        "tagline": "Jiggly, cloud-like tall Japanese pancakes served with whipped butter, maple syrup, and fresh berries.",
+        "cuisine": "Japanese",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 20,
+        "prepTime": 8,
+        "cookTime": 12,
+        "difficulty": "Easy",
+        "rating": 5,
+        "reviewsCount": 530,
+        "calories": 340,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": true,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "340 kcal",
+            "protein": "35g",
+            "carbs": "40g",
+            "fat": "17g",
+            "fiber": "8g"
+        }
+    },
+    {
+        "id": 96,
+        "name": "Traditional Turkish Kiymali Pide",
+        "tagline": "Boat-shaped crispy baked Turkish flatbread stuffed with spiced minced meat, tomatoes, peppers, and melted cheese.",
+        "cuisine": "Middle Eastern",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 30,
+        "prepTime": 12,
+        "cookTime": 18,
+        "difficulty": "Medium",
+        "rating": 4.7,
+        "reviewsCount": 534,
+        "calories": 490,
+        "servings": 2,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "490 kcal",
+            "protein": "36g",
+            "carbs": "41g",
+            "fat": "18g",
+            "fiber": "3g"
+        }
+    },
+    {
+        "id": 97,
+        "name": "Authentic Amritsari Crispy Fish Fry",
+        "tagline": "Crispy golden carom seed (ajwain) and gram flour crusted river fish fillets sprinkled with chaat masala.",
+        "cuisine": "Indian",
+        "category": "Non-Vegetarian",
+        "diet": "Pescatarian",
+        "time": 25,
+        "prepTime": 10,
+        "cookTime": 15,
+        "difficulty": "Easy",
+        "rating": 4.8,
+        "reviewsCount": 538,
+        "calories": 390,
+        "servings": 3,
+        "spicyLevel": 2,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "390 kcal",
+            "protein": "37g",
+            "carbs": "42g",
+            "fat": "19g",
+            "fiber": "4g"
+        }
+    },
+    {
+        "id": 98,
+        "name": "Traditional Texas Smoked BBQ Beef Brisket",
+        "tagline": "Slow wood-smoked beef brisket with pepper bark, deep smoke ring, and sweet tangy Texas barbecue mop sauce.",
+        "cuisine": "American",
+        "category": "Non-Vegetarian",
+        "diet": "Non-Vegetarian",
+        "time": 75,
+        "prepTime": 30,
+        "cookTime": 45,
+        "difficulty": "Hard",
+        "rating": 4.9,
+        "reviewsCount": 542,
+        "calories": 740,
+        "servings": 4,
+        "spicyLevel": 1,
+        "featured": false,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "740 kcal",
+            "protein": "38g",
+            "carbs": "43g",
+            "fat": "20g",
+            "fiber": "5g"
+        }
+    },
+    {
+        "id": 99,
+        "name": "Grand Royal Mughal Shahi Tukda",
+        "tagline": "Golden ghee-fried bread triangles soaked in fragrant sugar syrup, drenched in thick rabri & silver vark.",
+        "cuisine": "Indian",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 30,
+        "prepTime": 12,
+        "cookTime": 18,
+        "difficulty": "Medium",
+        "rating": 5,
+        "reviewsCount": 546,
+        "calories": 430,
+        "servings": 2,
+        "spicyLevel": 4,
+        "featured": false,
+        "popular": false,
+        "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "430 kcal",
+            "protein": "39g",
+            "carbs": "44g",
+            "fat": "21g",
+            "fiber": "6g"
+        }
+    },
+    {
+        "id": 100,
+        "name": "Traditional Mexican Churro Bites with Dulce de Leche",
+        "tagline": "Bite-sized cinnamon sugar churro poppers served with warm caramel dulce de leche dipping sauce.",
+        "cuisine": "Mexican",
+        "category": "Vegetarian",
+        "diet": "Vegetarian",
+        "time": 25,
+        "prepTime": 10,
+        "cookTime": 15,
+        "difficulty": "Easy",
+        "rating": 4.7,
+        "reviewsCount": 550,
+        "calories": 380,
+        "servings": 3,
+        "spicyLevel": 1,
+        "featured": true,
+        "popular": true,
+        "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1000&q=80",
+        "author": "Chef Master Collection",
+        "ingredients": [
+            {
+                "name": "Primary Fresh Protein or Vegetable Base",
+                "amount": 400,
+                "unit": "g"
+            },
+            {
+                "name": "Extra Virgin Olive Oil or Pure Desi Ghee",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Aromatic Herbs & Ground Spices Blend",
+                "amount": 1.5,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Garlic, Ginger & Minced Onions",
+                "amount": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Fresh Produce & Herb Garnish",
+                "amount": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Sea Salt & Freshly Cracked Pepper",
+                "amount": 1,
+                "unit": "tsp"
+            }
+        ],
+        "instructions": [
+            "Prepare and measure all fresh ingredients and aromatics according to recipe portions.",
+            "Heat oil or ghee in a heavy skillet or pot over medium heat, releasing fragrant aromas of spices.",
+            "Add the main ingredients and sear until deeply colored and caramelized to build rich flavor base.",
+            "Simmer gently with seasonings and sauces until texture is tender and flavors harmoniously meld.",
+            "Garnish with fresh herbs, adjust seasoning to taste, and serve hot immediately."
+        ],
+        "nutrition": {
+            "calories": "380 kcal",
+            "protein": "20g",
+            "carbs": "45g",
+            "fat": "22g",
+            "fiber": "7g"
         }
     }
 ];

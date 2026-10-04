@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Finder - Discover Delicious Recipes 🍴</title>
-    <meta name="description" content="Discover, search, and cook gourmet recipes from around the world. Filter by ingredients, cuisine, dietary needs, and prep time with step-by-step guides.">
-    
+    <meta name="description"
+        content="Discover, search, and cook gourmet recipes from around the world. Filter by ingredients, cuisine, dietary needs, and prep time with step-by-step guides.">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/recipes.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/motion.css">
 </head>
+
 <body>
 
     <!-- Sticky Navigation Bar -->
@@ -94,7 +99,9 @@
                 <div class="hero-search-wrapper" data-motion="fade-up" data-motion-delay="200">
                     <form class="hero-search-form" action="recipes.html" method="GET">
                         <i class="fas fa-search search-icon"></i>
-                        <input type="text" name="q" placeholder="Search for recipes or ingredients (e.g. Chicken, Pasta, Rice)..." required autocomplete="off">
+                        <input type="text" name="q"
+                            placeholder="Search for recipes or ingredients (e.g. Chicken, Pasta, Rice)..." required
+                            autocomplete="off">
                         <button type="submit" class="btn btn-primary">
                             <i class="fas fa-search"></i> Search
                         </button>
@@ -103,33 +110,15 @@
                     <!-- Quick Cuisine Tags -->
                     <div class="quick-tags">
                         <span class="quick-tag-label">Popular:</span>
-                        <a href="recipes.html?q=Traditional" class="tag-pill" style="background:var(--primary-light); color:var(--primary); border-color:var(--primary);"><i class="fas fa-crown"></i> Traditional</a>
+                        <a href="recipes.html?q=Traditional" class="tag-pill"
+                            style="background:var(--primary-light); color:var(--primary); border-color:var(--primary);"><i
+                                class="fas fa-crown"></i> Traditional</a>
                         <a href="recipes.html?cuisine=Indian" class="tag-pill">🍛 Indian</a>
                         <a href="recipes.html?cuisine=Italian" class="tag-pill">🍝 Italian</a>
                         <a href="recipes.html?cuisine=Chinese" class="tag-pill">🥢 Chinese</a>
                         <a href="recipes.html?cuisine=Mexican" class="tag-pill">🌮 Mexican</a>
                         <a href="recipes.html?diet=Vegetarian" class="tag-pill">🌱 Vegetarian</a>
                         <a href="recipes.html?time=20" class="tag-pill">⚡ Under 20m</a>
-                    </div>
-                </div>
-
-                <!-- Stats Ribbon -->
-                <div class="hero-stats" data-motion="fade-up" data-motion-delay="250">
-                    <div class="stat-item">
-                        <div class="stat-number">1,200+</div>
-                        <div class="stat-label">Handcrafted Recipes</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">26+</div>
-                        <div class="stat-label">Traditional & Modern Dishes</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">4.9 ★</div>
-                        <div class="stat-label">Community Rating</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Free & Accessible</div>
                     </div>
                 </div>
             </div>
@@ -140,7 +129,8 @@
             <div class="section-header">
                 <div class="section-title-wrap">
                     <h2>👑 Traditional & Heritage Classics</h2>
-                    <p>Centuries-old authentic recipes passed down through generations with original spices and methods</p>
+                    <p>Centuries-old authentic recipes passed down through generations with original spices and methods
+                    </p>
                 </div>
                 <a href="recipes.html?q=Traditional" class="btn btn-outline btn-sm">
                     View All Traditional <i class="fas fa-arrow-right"></i>
@@ -175,7 +165,9 @@
         </section>
 
         <!-- Curated Recipe Categories Feature -->
-        <section style="background: var(--bg-surface); padding: 70px 0; border-top:1px solid var(--border-subtle); border-bottom:1px solid var(--border-subtle);" data-motion="fade-up">
+        <section
+            style="background: var(--bg-surface); padding: 70px 0; border-top:1px solid var(--border-subtle); border-bottom:1px solid var(--border-subtle);"
+            data-motion="fade-up">
             <div class="container">
                 <div class="section-header" style="text-align:center; display:block; margin-bottom:40px;">
                     <h2>Explore by Cuisine Collections</h2>
@@ -183,33 +175,53 @@
                 </div>
 
                 <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:24px;">
-                    <a href="recipes.html?cuisine=Indian" class="curated-card" style="position:relative; height:200px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); display:block;" data-motion="zoom-in" data-motion-delay="100">
-                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=600&q=80" alt="Indian Cuisine" style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;">
-                        <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%); display:flex; flex-direction:column; justify-content:flex-end; padding:20px; color:#fff;">
+                    <a href="recipes.html?cuisine=Indian" class="curated-card"
+                        style="position:relative; height:200px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); display:block;"
+                        data-motion="zoom-in" data-motion-delay="100">
+                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=600&q=80"
+                            alt="Indian Cuisine"
+                            style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;">
+                        <div
+                            style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%); display:flex; flex-direction:column; justify-content:flex-end; padding:20px; color:#fff;">
                             <h3 style="color:#fff; font-size:1.3rem;">🍛 Indian Delicacies</h3>
                             <span style="font-size:0.85rem; color:#FBBF24;">Biryani, Dosas & Paneer</span>
                         </div>
                     </a>
 
-                    <a href="recipes.html?cuisine=Italian" class="curated-card" style="position:relative; height:200px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); display:block;" data-motion="zoom-in" data-motion-delay="200">
-                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="Italian Cuisine" style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;">
-                        <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%); display:flex; flex-direction:column; justify-content:flex-end; padding:20px; color:#fff;">
+                    <a href="recipes.html?cuisine=Italian" class="curated-card"
+                        style="position:relative; height:200px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); display:block;"
+                        data-motion="zoom-in" data-motion-delay="200">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80"
+                            alt="Italian Cuisine"
+                            style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;">
+                        <div
+                            style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%); display:flex; flex-direction:column; justify-content:flex-end; padding:20px; color:#fff;">
                             <h3 style="color:#fff; font-size:1.3rem;">🍝 Italian Classics</h3>
                             <span style="font-size:0.85rem; color:#FBBF24;">Artisan Pizza & Creamy Pastas</span>
                         </div>
                     </a>
 
-                    <a href="recipes.html?cuisine=Chinese" class="curated-card" style="position:relative; height:200px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); display:block;" data-motion="zoom-in" data-motion-delay="300">
-                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80" alt="Chinese Cuisine" style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;">
-                        <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%); display:flex; flex-direction:column; justify-content:flex-end; padding:20px; color:#fff;">
+                    <a href="recipes.html?cuisine=Chinese" class="curated-card"
+                        style="position:relative; height:200px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); display:block;"
+                        data-motion="zoom-in" data-motion-delay="300">
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80"
+                            alt="Chinese Cuisine"
+                            style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;">
+                        <div
+                            style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%); display:flex; flex-direction:column; justify-content:flex-end; padding:20px; color:#fff;">
                             <h3 style="color:#fff; font-size:1.3rem;">🥢 Asian Wok & Bowls</h3>
                             <span style="font-size:0.85rem; color:#FBBF24;">Kung Pao, Chow Mein & Ramen</span>
                         </div>
                     </a>
 
-                    <a href="recipes.html?diet=Vegetarian" class="curated-card" style="position:relative; height:200px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); display:block;" data-motion="zoom-in" data-motion-delay="400">
-                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="Plant-Based & Healthy" style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;">
-                        <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%); display:flex; flex-direction:column; justify-content:flex-end; padding:20px; color:#fff;">
+                    <a href="recipes.html?diet=Vegetarian" class="curated-card"
+                        style="position:relative; height:200px; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-md); display:block;"
+                        data-motion="zoom-in" data-motion-delay="400">
+                        <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
+                            alt="Plant-Based & Healthy"
+                            style="width:100%; height:100%; object-fit:cover; transition:transform 0.4s ease;">
+                        <div
+                            style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%); display:flex; flex-direction:column; justify-content:flex-end; padding:20px; color:#fff;">
                             <h3 style="color:#fff; font-size:1.3rem;">🌱 Green & Healthy</h3>
                             <span style="font-size:0.85rem; color:#FBBF24;">Salads, Buddha Bowls & Smoothies</span>
                         </div>
@@ -220,11 +232,13 @@
 
         <!-- Random Recipe Callout Banner -->
         <section class="container" style="padding: 70px 24px;" data-motion="scale-up">
-            <div style="background: linear-gradient(135deg, rgba(255, 90, 54, 0.12) 0%, rgba(245, 158, 11, 0.15) 100%); border: 1.5px solid var(--primary-light); border-radius: var(--radius-xl); padding: 48px; text-align: center; position: relative; overflow: hidden;">
+            <div
+                style="background: linear-gradient(135deg, rgba(255, 90, 54, 0.12) 0%, rgba(245, 158, 11, 0.15) 100%); border: 1.5px solid var(--primary-light); border-radius: var(--radius-xl); padding: 48px; text-align: center; position: relative; overflow: hidden;">
                 <span class="motion-float" style="font-size: 3rem; display: block; margin-bottom: 12px;">🎲 👩‍🍳</span>
                 <h2 style="font-size: 2.2rem; margin-bottom: 12px;">Can't Decide What to Cook Tonight?</h2>
                 <p style="color: var(--text-secondary); max-width: 540px; margin: 0 auto 28px; font-size: 1.05rem;">
-                    Let our culinary wheel of flavor pick a surprise dish for you! Complete with ingredients, nutritional metrics, and cooking instructions.
+                    Let our culinary wheel of flavor pick a surprise dish for you! Complete with ingredients,
+                    nutritional metrics, and cooking instructions.
                 </p>
                 <button class="btn btn-primary btn-lg btn-random-recipe">
                     <i class="fas fa-dice"></i> Surprise Me with a Random Recipe
@@ -257,7 +271,8 @@
                         <span class="brand-icon">🍳</span>
                         <span>Recipe<span class="highlight">Finder</span></span>
                     </a>
-                    <p>Your daily culinary companion for discovering vibrant flavors, healthy wholesome ingredients, and easy step-by-step home cooking.</p>
+                    <p>Your daily culinary companion for discovering vibrant flavors, healthy wholesome ingredients, and
+                        easy step-by-step home cooking.</p>
                     <div class="footer-socials">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -272,24 +287,31 @@
                         <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
                         <li><a href="recipes.html"><i class="fas fa-chevron-right"></i> Search Recipes</a></li>
                         <li><a href="favorites.html"><i class="fas fa-chevron-right"></i> My Favorites</a></li>
-                        <li><a href="recipes.html?diet=Vegetarian"><i class="fas fa-chevron-right"></i> Vegetarian Hub</a></li>
+                        <li><a href="recipes.html?diet=Vegetarian"><i class="fas fa-chevron-right"></i> Vegetarian
+                                Hub</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4>Cuisines</h4>
                     <ul class="footer-links">
-                        <li><a href="recipes.html?cuisine=Indian"><i class="fas fa-chevron-right"></i> Indian Spice</a></li>
-                        <li><a href="recipes.html?cuisine=Italian"><i class="fas fa-chevron-right"></i> Italian Bistro</a></li>
-                        <li><a href="recipes.html?cuisine=Chinese"><i class="fas fa-chevron-right"></i> Asian Street</a></li>
-                        <li><a href="recipes.html?cuisine=Mexican"><i class="fas fa-chevron-right"></i> Mexican Fiesta</a></li>
+                        <li><a href="recipes.html?cuisine=Indian"><i class="fas fa-chevron-right"></i> Indian Spice</a>
+                        </li>
+                        <li><a href="recipes.html?cuisine=Italian"><i class="fas fa-chevron-right"></i> Italian
+                                Bistro</a></li>
+                        <li><a href="recipes.html?cuisine=Chinese"><i class="fas fa-chevron-right"></i> Asian Street</a>
+                        </li>
+                        <li><a href="recipes.html?cuisine=Mexican"><i class="fas fa-chevron-right"></i> Mexican
+                                Fiesta</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h4>Newsletter</h4>
-                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 12px;">Get weekly trending recipes and cooking hacks straight to your inbox.</p>
-                    <form class="newsletter-form" onsubmit="event.preventDefault(); showToast('Subscribed to Recipe Finder newsletter!', 'success', 'fa-envelope-open-text'); this.reset();">
+                    <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 12px;">Get weekly trending
+                        recipes and cooking hacks straight to your inbox.</p>
+                    <form class="newsletter-form"
+                        onsubmit="event.preventDefault(); showToast('Subscribed to Recipe Finder newsletter!', 'success', 'fa-envelope-open-text'); this.reset();">
                         <input type="email" placeholder="Your email address" required>
                         <button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-paper-plane"></i></button>
                     </form>
@@ -324,4 +346,5 @@
         });
     </script>
 </body>
+
 </html>

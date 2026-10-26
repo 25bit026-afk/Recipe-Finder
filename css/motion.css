@@ -18,15 +18,51 @@
     transition: width 0.1s linear;
 }
 
-/* Page Entry Fade */
+/* Animations Disabled */
+.all-sides-motion-frame,
+.side-flank-layer,
+.floating-food-layer,
+.moving-gradient-bg,
+.gradient-orb,
+.falling-ingredients-container,
+.bubbles-container,
+.animated-shapes-layer,
+.steam-wrap,
+.hero-food-carousel,
+.cooking-stage-card,
+.anim-control-dock,
+.edge-runner-top,
+.edge-runner-bottom,
+.edge-runner-left,
+.edge-runner-right,
+.perimeter-inset-glow,
+.corner-glow-orb {
+    display: none !important;
+}
+
 body {
-    animation: motionPageFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: none !important;
     position: relative;
 }
 
-@keyframes motionPageFadeIn {
-    0% { opacity: 0; transform: translateY(6px); }
-    100% { opacity: 1; transform: translateY(0); }
+[data-motion] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+}
+
+.recipes-grid .recipe-card {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+}
+
+.motion-float {
+    animation: none !important;
+}
+
+.tilt-glare {
+    display: none !important;
 }
 
 /* ==========================================================================

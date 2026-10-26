@@ -387,10 +387,6 @@
                 const popularRecipes = RECIPES_DATA.filter(r => r.popular && r.id < 17).slice(0, 6);
                 popGrid.innerHTML = popularRecipes.map(recipe => renderRecipeCard(recipe)).join('');
             }
-
-            if (typeof initSteamAnimation === 'function') {
-                initSteamAnimation();
-            }
         });
     </script>
 </body>

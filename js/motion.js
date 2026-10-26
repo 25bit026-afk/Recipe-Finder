@@ -8,14 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollProgressBar();
     initScrollObserver();
     initStatsCounter();
-    init3DTilt();
     initButtonRipples();
     
-    // All-Sides Ambient Motion Engine (Top, Right, Bottom, Left & 4 Corners)
-    initAllSidesAmbientMotion();
-    initSteamAnimation();
-    initMovingGradient();
-    initParallaxScroll();
+    // Remove all animation layers and motion
+    removeAllAmbientAnimations();
 });
 
 /* ==========================================================================
@@ -560,97 +556,30 @@ function initCookingAnimation() {
 }
 
 /* ==========================================================================
-   ALL-SIDES AMBIENT MOTION & PERIMETER ENGINE
-   Applies animated motion, glowing runners, and floating culinary accents
-   around ALL SIDES of the webpage (Top, Right, Bottom, Left & 4 Corners).
+   REMOVE ALL ANIMATIONS
+   Clean, static, pristine environment without motion or floating overlays
    ========================================================================== */
-function initAllSidesAmbientMotion() {
-    if (document.getElementById('allSidesMotionFrame')) return;
-
-    // 1. Perimeter Edge Runners & Ambient Inset Glow Frame
-    const frame = document.createElement('div');
-    frame.className = 'all-sides-motion-frame';
-    frame.id = 'allSidesMotionFrame';
-    frame.innerHTML = `
-        <div class="edge-runner-top"></div>
-        <div class="edge-runner-bottom"></div>
-        <div class="edge-runner-left"></div>
-        <div class="edge-runner-right"></div>
-        <div class="perimeter-inset-glow"></div>
-        <div class="corner-glow-orb orb-top-left"></div>
-        <div class="corner-glow-orb orb-top-right"></div>
-        <div class="corner-glow-orb orb-bottom-left"></div>
-        <div class="corner-glow-orb orb-bottom-right"></div>
-    `;
-    document.body.appendChild(frame);
-
-    // 2. Left & Right Margin Flank Floating Culinary Items
-    if (!document.getElementById('sideFlankLayer')) {
-        const flankLayer = document.createElement('div');
-        flankLayer.className = 'side-flank-layer';
-        flankLayer.id = 'sideFlankLayer';
-
-        const leftItems = [
-            { icon: '🌿', class: 'flank-left-1', name: 'Fresh Rosemary' },
-            { icon: '🧄', class: 'flank-left-2', name: 'Roasted Garlic' },
-            { icon: '🍋', class: 'flank-left-3', name: 'Zesty Lemon' },
-            { icon: '🥑', class: 'flank-left-4', name: 'Fresh Avocado' },
-            { icon: '🌶️', class: 'flank-left-5', name: 'Organic Chili' }
-        ];
-
-        const rightItems = [
-            { icon: '🍕', class: 'flank-right-1', name: 'Artisan Pizza' },
-            { icon: '🍜', class: 'flank-right-2', name: 'Steaming Ramen' },
-            { icon: '🥟', class: 'flank-right-3', name: 'Dim Sum' },
-            { icon: '🍣', class: 'flank-right-4', name: 'Sushi Nigiri' },
-            { icon: '🥐', class: 'flank-right-5', name: 'Golden Croissant' }
-        ];
-
-        [...leftItems, ...rightItems].forEach(item => {
-            const el = document.createElement('div');
-            el.className = `side-flank-item ${item.class}`;
-            el.textContent = item.icon;
-            el.title = `${item.name} - Click for culinary cheer!`;
-
-            el.addEventListener('click', (e) => {
-                e.stopPropagation();
-                el.style.transform = 'scale(1.7) rotate(360deg)';
-                if (window.showToast) {
-                    window.showToast(`${item.icon} ${item.name}!`, 'info', 'fa-sparkles');
-                }
-                setTimeout(() => {
-                    el.style.transform = '';
-                }, 600);
-            });
-
-            flankLayer.appendChild(el);
-        });
-
-        document.body.appendChild(flankLayer);
-
-        // Gentle mouse interactive parallax for sides
-        const isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
-        if (!isTouch) {
-            window.addEventListener('mousemove', (e) => {
-                const xPercent = (e.clientX / window.innerWidth) - 0.5;
-                const yPercent = (e.clientY / window.innerHeight) - 0.5;
-                
-                const leftElList = flankLayer.querySelectorAll('[class*="flank-left"]');
-                const rightElList = flankLayer.querySelectorAll('[class*="flank-right"]');
-                
-                leftElList.forEach((el, idx) => {
-                    const factor = (idx + 1) * 3;
-                    el.style.transform = `translate3d(${xPercent * factor}px, ${yPercent * factor}px, 0)`;
-                });
-                
-                rightElList.forEach((el, idx) => {
-                    const factor = (idx + 1) * 3;
-                    el.style.transform = `translate3d(${-xPercent * factor}px, ${yPercent * factor}px, 0)`;
-                });
-            }, { passive: true });
-        }
-    }
+function removeAllAmbientAnimations() {
+    ['allSidesMotionFrame', 'sideFlankLayer', 'floatingFoodLayer', 'fallingIngredientsContainer', 'movingGradientBg', 'bubblesContainer', 'animatedShapesLayer', 'animControlDock'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.remove();
+    });
+    document.querySelectorAll('.gradient-orb, .steam-wrap, .corner-glow-orb, .edge-runner-top, .edge-runner-bottom, .edge-runner-left, .edge-runner-right, .side-flank-item').forEach(el => el.remove());
 }
+
+function initAllSidesAmbientMotion() {
+    removeAllAmbientAnimations();
+}
+
+function initFloatingFoodItems() {}
+function initFallingIngredients() {}
+function initSteamAnimation() {}
+function initMovingGradient() {}
+function initParallaxScroll() {}
+function initBubblesAndParticles() {}
+function initAnimatedShapes() {}
+function initCookingAnimation() {}
+function init3DTilt() {}
 
 /* ==========================================================================
    Favorite Heart Sparkle Burst

@@ -38,6 +38,9 @@ function loadRecipeFromUrl() {
     renderRecipeDetails();
     renderRelatedRecipes();
     initTimer();
+    if (typeof initSteamAnimation === 'function') {
+        initSteamAnimation();
+    }
 }
 
 function showRecipeNotFound() {
@@ -71,13 +74,16 @@ function renderRecipeDetails() {
         spicyPeppers += '🌶️';
     }
 
-    root.innerHTML = `
+        const isHotDish = /soup|ramen|curry|stew|biryani|chili|pasta|coffee|tea|chowder|hot/i.test(currentRecipe.name + ' ' + (currentRecipe.category || ''));
+
+        root.innerHTML = `
         <div class="details-hero">
             <div class="details-image-card">
                 <img src="${currentRecipe.image}" alt="${currentRecipe.name}">
                 <span class="badge-diet ${isNonVeg ? 'non-veg' : ''}">
                     <i class="fas ${isNonVeg ? 'fa-drumstick-bite' : 'fa-leaf'}"></i> ${currentRecipe.diet}
                 </span>
+                ${isHotDish ? `<span class="hot-food-badge steam-emitter" style="position:absolute; bottom:16px; right:16px; z-index:5; background:rgba(0,0,0,0.65); color:#fff; border:none; backdrop-filter:blur(6px);">♨️ Freshly Prepared</span>` : ''}
             </div>
 
             <div class="details-header">

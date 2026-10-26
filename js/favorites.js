@@ -51,6 +51,9 @@ function renderFavoritesList() {
     if (typeof window.refreshMotionObserver === 'function') {
         window.refreshMotionObserver();
     }
+    if (typeof initSteamAnimation === 'function') {
+        initSteamAnimation();
+    }
 }
 
 function initFavoritesActions() {

@@ -257,6 +257,9 @@ function initSearchEngine() {
         if (typeof window.refreshMotionObserver === 'function') {
             window.refreshMotionObserver();
         }
+        if (typeof initSteamAnimation === 'function') {
+            initSteamAnimation();
+        }
     }
 
     function renderActiveFilters() {

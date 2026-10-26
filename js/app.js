@@ -134,6 +134,7 @@ function updateFavoriteBadge() {
 function renderRecipeCard(recipe) {
     const isFav = isFavorite(recipe.id);
     const isNonVeg = recipe.diet.toLowerCase().includes('non-veg') || recipe.category.toLowerCase().includes('non-veg');
+    const isHotDish = /soup|ramen|curry|stew|biryani|chili|pasta|coffee|tea|chowder|hot/i.test(recipe.name + ' ' + (recipe.category || ''));
     
     // Generate spicy peppers
     let spicyHtml = '';
@@ -152,6 +153,7 @@ function renderRecipeCard(recipe) {
                 <span class="badge-time">
                     <i class="far fa-clock"></i> ${recipe.time} min
                 </span>
+                ${isHotDish ? `<span class="hot-food-badge steam-emitter" style="position:absolute; bottom:12px; left:12px; z-index:2; padding:3px 10px; font-size:0.75rem; background:rgba(0,0,0,0.6); color:#fff; border:none; backdrop-filter:blur(4px);">♨️ Hot & Fresh</span>` : ''}
                 <button class="btn-fav-toggle ${isFav ? 'active' : ''}" onclick="handleCardFavClick(event, ${recipe.id})" title="${isFav ? 'Remove Favorite' : 'Add to Favorites'}" aria-label="Favorite">
                     <i class="${isFav ? 'fas' : 'far'} fa-heart"></i>
                 </button>
